@@ -1,0 +1,54 @@
+header {
+    padding: 2vw;
+}
+
+.header__desktop{
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+}
+
+.header__desktop__first__ctn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__desktop__btns{
+    display: flex;
+    gap: 2vw;
+}
+
+.header__desktop__second__ctn ul {
+    display: flex;
+    gap: 2vw;
+    color: var(--primary-color);
+    font-weight: 550;
+}
+
+.header__desktop__second__ctn ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+.header__desktop__second__ctn a {
+    position: relative;
+}
+
+.header__desktop__second__ctn a:hover::before {
+    width: 100%;
+}
+
+.header__desktop__second__ctn a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    transition: all 0.4s;
+    bottom: -10%;
+    width: 0%;
+    height: .2vw;
+    border-radius: 1vw;
+    background-color: var(--primary-color);
+}
+
+
