@@ -1,8 +1,45 @@
 <footer>
   <div class="footer__first__ctn">
-    
+    <div class="footer__first__ctn__first__column">
+      <div class="title">
+        <h5 class="fw-bold mb-3">Contáctenos</h5>
+      </div>
+      <div class="">
+        <span class="fw-bold d-flex align-center gap-3" ><i class="text-primary fa-regular fa-address-book"></i>Detalles de contact</span>
+        <ul class="mt-3">
+          <li><p>Ubicación:</p></li>
+          <li><p>Dirección:</p></li>
+          <li><p>Telefono:</p></li>
+          <li><p>Email:</p></li>
+        </ul>
+      </div>
+      <div class="">
+        <span class="fw-bold d-flex align-center gap-3"><i class="text-primary fa-regular fa-clock"></i>Horario de atención</span>
+        <ul class="mt-3">
+          <li>
+            <p>Lunea a Viernes:</p>
+          </li>
+          <li>
+            <p>Sabado y Domingo:</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <app-contact-form></app-contact-form>
   </div>
   <div class="footer__second__ctn"></div>
-  <div class="footer__third__ctn"></div>
-
+  <div class="footer__third__ctn d-flex pt-5 pr-5 pl-5 pb-3 ">
+    <img class="wave_footer" src="assets/svg/wave.svg" alt="">
+    <div class="logo_ctn">
+      <img src="assets/img/logo.png" alt="Logo Conaldefa" />
+    </div>
+    <div class="contact_links">
+      <ul class="d-flex flex-column g-2 p-0 m-0">
+        <li><a class="btn-primary" routerLink=""><i class="fa-solid fa-phone"></i>(601) 745 14 70</a></li>
+        <li><a class="btn-primary" routerLink=""><i class="fa-solid fa-envelope"></i>colnaldefa@colnaldefa.org</a></li>
+        <li><a class="btn-primary" ><i class="fa-solid fa-location-dot"></i>Manizales, Caldas</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__fourth__ctn"></div>
 </footer>

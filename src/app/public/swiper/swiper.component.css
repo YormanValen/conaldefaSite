@@ -1,0 +1,16 @@
+swiper-container {
+  @apply w-full;
+}
+
+.swiper-button-prev {
+    @apply ml-1.5;
+}
+
+
+swiper-slide {
+  @apply h-full w-80;
+}
+
+swiper-slide img {
+  @apply block w-full;
+}
