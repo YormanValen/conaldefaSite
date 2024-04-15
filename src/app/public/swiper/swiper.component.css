@@ -4,6 +4,7 @@ swiper-container {
 
 .swiper-button-prev {
     @apply ml-1.5;
+    z-index: 100;
 }
 
 
@@ -13,4 +14,6 @@ swiper-slide {
 
 swiper-slide img {
   @apply block w-full;
+
 }
+

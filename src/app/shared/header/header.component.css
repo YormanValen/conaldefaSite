@@ -33,6 +33,7 @@ header {
 
 .header__desktop__second__ctn a {
     position: relative;
+    padding: 0 !important;
 }
 
 .header__desktop__second__ctn a:hover::before {

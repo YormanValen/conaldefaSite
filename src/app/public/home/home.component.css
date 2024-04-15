@@ -12,3 +12,67 @@
     align-items: center;
     justify-content: center;
 }
+
+.rediuf_ctn {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* Estilos para el mapa */
+
+/* Estilo base para los países */
+.mapa_mundo path {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Estilo al hacer hover sobre los países */
+  .mapa_mundo path:hover {
+    transform: scale(1.03); /* Ajusta el factor de escala según tus necesidades */
+    cursor: pointer; /* Cambia el cursor a un puntero para indicar interactividad */
+    transform-origin:  center; 
+  }
+
+  /** comunity section **/
+  .comunity_section {
+    position: relative;
+    height: 100vh;
+    padding: 4% 6%;
+    background-image: url('../../../assets/img/img_banner.png');
+  }
+
+  .comunity_section img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.comunity_ctn {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.comunity_ctn__contain {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    z-index: 99;
+    
+}
+
+.comunity_ctn__contain h4 {
+    color: white;    
+}
+
+.comunity_ctn__contain a {
+    border: 2px solid white;
+    
+}
