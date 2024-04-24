@@ -26,6 +26,12 @@ header {
     font-weight: 550;
 }
 
+.header__desktop__second__ctn ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
 .header__desktop__second__ctn ul li {
     cursor: pointer;
     position: relative;

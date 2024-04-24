@@ -1,19 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './public/home/home.component';
+import { QuienesSomosComponent } from './public/quienes-somos/quienes-somos.component';
 
 const routes: Routes = [
-  {
-    path: 'public',
-    loadChildren: () => import('./public/public.module').then((m) => m.PublicModule),
-  },
-  //quiero una ruta que cuando inicie la app valla al home.component
-  {
-    path: 'home',
-    loadChildren: () => import('./public/home/home.component').then((m) => m.HomeComponent),
-  },
-  { path: '', redirectTo: 'public', pathMatch: 'full' },
-  { path: '**', redirectTo: 'public' },
-  
+  { path: 'home', component: HomeComponent },
+  { path: 'quienes-somos', component: QuienesSomosComponent },
 ];
 
 @NgModule({

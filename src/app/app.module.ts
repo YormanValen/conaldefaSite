@@ -8,13 +8,22 @@ import { FormsModule } from '@angular/forms'; // Importar FormsModule aquí
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
 import { PublicModule } from './public/public.module';
+import { RouterModule } from '@angular/router';
 // register Swiper custom elements
 register();
 
-
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, FormsModule, PublicModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    FormsModule,
+    PublicModule,
+    AppRoutingModule, // Añade esto para importar tu configuración de rutas
+    RouterModule, // Añade esto para importar tu configuración de rutas
+  
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
