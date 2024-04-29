@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-swiper',
@@ -6,10 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./swiper.component.css']
 })
 export class SwiperComponent {
-sliderImages = [
-  "/assets/img/banner1.jpg",
-  "/assets/img/banner2.jpg",
-];
+  @Input() images: string[] = [];
+
 
 
 }

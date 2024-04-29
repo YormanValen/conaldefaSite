@@ -1,3 +1,9 @@
+
+
+p{
+    font-size: 20px;
+}
+
 .txt_ctn {
     align-items: center;
 }
@@ -15,7 +21,7 @@
 
 .rediuf_ctn {
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
 
@@ -24,16 +30,23 @@
 
 /* Estilos para el mapa */
 
+.mapa_mundo {
+    width: 20vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  
+}
+
 /* Estilo base para los países */
 .mapa_mundo path {
     transition: transform 0.3s ease;
+    cursor: pointer;
   }
   
   /* Estilo al hacer hover sobre los países */
   .mapa_mundo path:hover {
-    transform: scale(1.03); /* Ajusta el factor de escala según tus necesidades */
-    cursor: pointer; /* Cambia el cursor a un puntero para indicar interactividad */
-    transform-origin:  center; 
+   
   }
 
   /** comunity section **/

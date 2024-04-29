@@ -1,5 +1,4 @@
-@import '~wowjs/css/libs/animate.css';
-
+@import "~wowjs/css/libs/animate.css";
 
 * {
   margin: 0;
@@ -11,17 +10,18 @@
 }
 
 @font-face {
-  font-family: 'Mulish';
-  src: url('./assets/fonts/Mulish-Regular.ttf');
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-Regular.ttf");
 }
 
 :root {
   --deep_blue: #045699;
+  --banner_blue: #74a8ba;
   --soft_blue: #228ffc;
   --gray: #808080;
   --primary-color: #3b8da9;
   --text-color: #494949;
-  --section-color: #CAEBF6;
+  --section-color: #caebf6;
 }
 
 body {
@@ -46,7 +46,7 @@ a {
   display: inline-block;
   text-decoration: none;
   transition: 0.4s;
-  padding: .5vw 2vw !important;
+  padding: 0.5vw 2vw !important;
 }
 
 button {
@@ -85,32 +85,38 @@ span {
 }
 
 section {
-  padding: 5% 8%  ;
+  padding: 5% 8%;
   width: 100%;
 }
 
-h1
- {
+h1 {
   font-size: 2vw;
   line-height: 1;
 }
 
-h2,h3,h4,h5,h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 1.5vw;
   line-height: 1;
 }
 
-
-
-
 p {
   color: var(--text-color);
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-weight: 500;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
 }
+
+
 
 @media (max-width: 996px) {
   section {
@@ -141,3 +147,5 @@ a {
   }
 }
 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

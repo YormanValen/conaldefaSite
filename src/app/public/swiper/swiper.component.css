@@ -1,6 +1,9 @@
 swiper-container {
   @apply w-full;
+  --swiper-navigation-color: white;
 }
+
+
 
 .swiper-button-prev {
     @apply ml-1.5;

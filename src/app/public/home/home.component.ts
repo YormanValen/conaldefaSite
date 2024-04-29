@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  sliderImages = [
+    "/assets/img/banner1.jpg",
+    "/assets/img/banner2.jpg",
+  ];
+
 }

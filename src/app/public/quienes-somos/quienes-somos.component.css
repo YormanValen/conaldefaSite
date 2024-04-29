@@ -405,6 +405,12 @@
   text-align: left;
 }
 
+.integrante_ctn h6 {
+  color: white;
+  font-weight: 600;
+  text-align: left;
+}
+
 .integrante_ctn p {
   color: white;
 }

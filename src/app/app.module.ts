@@ -9,6 +9,12 @@ import { FormsModule } from '@angular/forms'; // Importar FormsModule aquí
 import { register } from 'swiper/element/bundle';
 import { PublicModule } from './public/public.module';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AcceptTermsDialogComponent } from './public/accept-terms-dialog/accept-terms-dialog.component';
+
+
+
 // register Swiper custom elements
 register();
 
@@ -21,7 +27,8 @@ register();
     FormsModule,
     PublicModule,
     AppRoutingModule, // Añade esto para importar tu configuración de rutas
-    RouterModule, // Añade esto para importar tu configuración de rutas
+    RouterModule, BrowserAnimationsModule, 
+    MatDialogModule
   
   ],
   providers: [],

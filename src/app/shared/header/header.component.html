@@ -1,8 +1,10 @@
 <header>
-  <div class="header__desktop d-flex">
+  <div class="header__desktop">
     <div class="header__desktop__first__ctn d-flex">
       <div class="logo">
-        <img src="assets/img/logo.png" alt="Logo Conaldefa" />
+        <a routerLink="home">
+          <img src="assets/img/logo.png" alt="Logo Conaldefa" />
+        </a>
       </div>
       <div class="header__desktop__btns">
         <a class="btn-primary" routerLink="">Tramites</a>
@@ -12,27 +14,90 @@
     </div>
     <div class="header__desktop__second__ctn">
       <ul class="menu_navbar">
-        <a class="fw-bold text-decoration-none" routerLink="quienes-somos"
-          >¿Quienes somos?</a
-        >
+        <button routerLink="quienes-somos" class="btn">
+          <span>¿Quienes somos?</span>
+        </button>
+
         <li>
-          <a class="fw-bold text-decoration-none" routerLink="">Servicios</a>
+          <button routerLink="" class="btn">
+            <span>Servicios</span>
+          </button>
         </li>
         <li>
-          <a class="fw-bold text-decoration-none" routerLink=""
-            >Red Institucional</a
-          >
+          <button routerLink="red-institucional" class="btn">
+            <span>Red Institucional</span>
+          </button>
         </li>
         <li>
-          <a class="fw-bold text-decoration-none" routerLink="">Colegiatura</a>
+          <button routerLink="" class="btn">
+            <span>Colegiatura</span>
+          </button>
         </li>
         <li>
-          <a class="fw-bold text-decoration-none" routerLink="">Normatividad</a>
+          <button routerLink="" class="btn">
+            <span>Normatividad</span>
+          </button>
         </li>
         <li>
-          <a class="fw-bold text-decoration-none" routerLink=""
-            >Nuestros Egresados</a
-          >
+          <button routerLink="" class="btn">
+            <span>Nuestros Egresados</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header_mobile">
+    <div class="blur" (click)="toggleMenu()" [ngClass]="{'blur_active': isMenuOpen}"></div>
+    <div class="header_mobile__first__ctn">
+      <div class="logo">
+        <a routerLink="home">
+          <img src="assets/img/logo.png" alt="Logo Conaldefa" />
+        </a>
+      </div>
+      <div class="header_mobile__btns" >
+        <label class="hamburger"  >
+          <input type="checkbox" [checked]="isMenuOpen" (click)="toggleMenu()" />
+          <svg viewBox="0 0 32 32">
+            <path
+              class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+    </div>
+    <div class="header_mobile__second__ctn" [ngClass]="{'menu_active': isMenuOpen}">
+      <ul class="menu_navbar">
+        <li>
+          <button routerLink="quienes-somos" class="btn">
+            <span>¿Quienes somos?</span>
+          </button>
+        </li>
+        <li>
+          <button routerLink="" class="btn">
+            <span>Servicios</span>
+          </button>
+        </li>
+        <li>
+          <button routerLink="red-institucional" class="btn">
+            <span>Red Institucional</span>
+          </button>
+        </li>
+        <li>
+          <button routerLink="" class="btn">
+            <span>Colegiatura</span>
+          </button>
+        </li>
+        <li>
+          <button routerLink="" class="btn">
+            <span>Normatividad</span>
+          </button>
+        </li>
+        <li>
+          <button routerLink="" class="btn">
+            <span>Nuestros Egresados</span>
+          </button>
         </li>
       </ul>
     </div>
