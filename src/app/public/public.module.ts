@@ -6,11 +6,12 @@ import { HomeComponent } from './home/home.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { RedInstitucionalComponent } from './red-institucional/red-institucional.component';
 import { AcceptTermsDialogComponent } from './accept-terms-dialog/accept-terms-dialog.component';
+import { ServiciosComponent } from './servicios/servicios.component';
 
 @NgModule({
-  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent],
+  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent],
   imports: [CommonModule],
-  exports: [SwiperComponent, HomeComponent, QuienesSomosComponent],
+  exports: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PublicModule {}
