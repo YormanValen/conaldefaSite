@@ -7,11 +7,12 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { RedInstitucionalComponent } from './red-institucional/red-institucional.component';
 import { AcceptTermsDialogComponent } from './accept-terms-dialog/accept-terms-dialog.component';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { NormatividadComponent } from './normatividad/normatividad.component';
 
 @NgModule({
-  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent],
+  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent],
   imports: [CommonModule],
-  exports: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent],
+  exports: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PublicModule {}

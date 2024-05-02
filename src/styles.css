@@ -41,7 +41,7 @@ svg {
 
 a {
   cursor: pointer;
-  font-size: 1vw;
+  font-size: 1.2vw;
   width: fit-content;
   display: inline-block;
   text-decoration: none;

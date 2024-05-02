@@ -45,6 +45,10 @@ swiper-slide img {
   object-fit: cover;
 }
 
+.colaboradores_slide  {
+  padding: 5vw 0vw;
+}
+
 /* objetivos_section */
 
 .objetivos_section {
