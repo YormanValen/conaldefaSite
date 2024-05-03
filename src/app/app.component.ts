@@ -12,12 +12,12 @@ export class AppComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
-    // this.openDialog();
+     this.openDialog();
   }
 
-  // openDialog(): void {
-  //   this.dialog.open(AcceptTermsDialogComponent, {
-  //     disableClose: true, // Esto evita que el usuario cierre el diálogo haciendo clic fuera del mismo
-  //   });
-  // }
+  openDialog(): void {
+    this.dialog.open(AcceptTermsDialogComponent, {
+      disableClose: true, // Esto evita que el usuario cierre el diálogo haciendo clic fuera del mismo
+    });
+  }
 }

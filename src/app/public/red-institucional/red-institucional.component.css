@@ -45,19 +45,18 @@ swiper-slide img {
   object-fit: cover;
 }
 
-.colaboradores_slide  {
+.colaboradores_slide {
   padding: 5vw 0vw;
 }
 
 /* objetivos_section */
 
 .objetivos_section {
-  background-color: #3B8DA9;
+  background-color: #3b8da9;
   display: flex;
-
 }
 
-.objetivos_section h4{
+.objetivos_section h4 {
   font-weight: 700;
   color: white;
 }
@@ -67,8 +66,30 @@ swiper-slide img {
   color: white;
 }
 
-.objetivos_section ul li p{
+.objetivos_section ul li p {
   color: white;
 }
 
+@media (max-width: 767px) {
+  .banner_section {
+    padding: 5% 10%;
+  }
 
+  .banner_section .banner_content {
+    padding: 2vw;
+    text-align: center;
+  }
+
+  .mapa_mundo_section svg {
+    width: 50vw;
+  }
+
+  swiper-slide img {
+    width: 30vw;
+  }
+
+  .objetivos_section {
+    flex-direction: column;
+  }
+
+}

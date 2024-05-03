@@ -11,7 +11,13 @@
 
 @font-face {
   font-family: "Mulish";
-  src: url("./assets/fonts/Mulish-Regular.ttf");
+  src: url("./assets/fonts/Mulish-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("./assets/fonts/DancingScript-Bold.ttf");
+  font-weight: bold;
 }
 
 :root {
@@ -43,10 +49,9 @@ a {
   cursor: pointer;
   font-size: 1.2vw;
   width: fit-content;
-  display: inline-block;
   text-decoration: none;
   transition: 0.4s;
-  padding: 0.5vw 2vw !important;
+  padding: 0.5vw 2vw;
 }
 
 button {
@@ -82,6 +87,7 @@ i {
 
 span {
   transition: all 0.4s;
+  font-size: 1vw;
 }
 
 section {
@@ -116,11 +122,9 @@ ul {
 a {
 }
 
-
-
 @media (max-width: 996px) {
   section {
-    padding: 20% 10%;
+    padding: 10% 8%;
   }
 
   h1 {
@@ -130,6 +134,10 @@ a {
   h2 {
     font-size: 7vw;
   }
+  h3{
+    font-size: 6vw !important;
+    hyphens: auto;
+  }
   p,
   ol,
   ul {
@@ -137,6 +145,7 @@ a {
   }
   button {
     padding: 2vw 6vw;
+    font-size: 3.5vw;
   }
   i {
     font-size: 6vw;
@@ -145,7 +154,17 @@ a {
   a {
     font-size: 3.5vw;
   }
+
+  span {
+    font-size: 3.5vw;
+  }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

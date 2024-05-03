@@ -1,5 +1,5 @@
 <app-swiper [images]="sliderImages"></app-swiper>
-<section>
+<section class="quienes_somos_section">
   <div class="txt_ctn d-flex flex-column gap-4">
     <h5 class="fw-bold text-lg-center">
       El Colegio Profesional de Desarrollo Familiar es una comunidad vibrante de
@@ -7,7 +7,9 @@
       través de la formación, investigación, incidencia política y colaboración,
       trabajamos para mejorar la vida de las familias en todo el mundo.
     </h5>
-    <a class="btn-primary" routerLink="">Comencemos</a>
+    <button class="btn" (click)="navigateToQuienesSomos()">
+      <span>Ver más</span>
+    </button>
   </div>
 </section>
 <section class="nuestros_servicios_section">
@@ -22,7 +24,9 @@
       <div class="first_column">
         <img src="assets/svg/13184991_5138232.svg" alt="user_svg" />
       </div>
-      <div class="second_column d-flex flex-column align-items-center items-center text-lg-left">
+      <div
+        class="second_column d-flex flex-column align-items-center items-center text-lg-left"
+      >
         <ul>
           <li>
             <p>
@@ -35,23 +39,37 @@
           <li><p>4. Construcción de Tribunales de Ética</p></li>
           <li><p>5. Cursos y Diplomados</p></li>
         </ul>
-        <a class="btn-primary" routerLink="">Comencemos</a>
+        <button class="btn" (click)="navigateToServicios()">
+          <span>Ver más</span>
+        </button>
       </div>
     </div>
   </div>
 </section>
 
-<section class="d-flex flex-column gap-2">
+<section class="d-flex flex-column gap-5 redcuf_section">
   <div class="title text-lg-center">
-    <h2>REDIUF</h2>
+    <h2>REDCUF</h2>
   </div>
   <div class="rediuf_ctn">
-    <div class="txt_ctn">
+    <div class="txt_ctn d-flex flex-column align-center gap-3">
       <p>
         Tenemos una red de aliados que apoyan nuestra labor y estan
         comprometidos por la mejora de un mundo mejor para las familias
       </p>
-      <a class="btn-primary" routerLink="">Conocelos</a>
+      <div class="aliados_img">
+        <img src="assets/webp/slide_1.webp" alt="aliados" />
+        <img src="assets/webp/slide_2.webp" alt="aliados" />
+        <img src="assets/webp/slide_3.webp" alt="aliados" />
+        <img src="assets/webp/slide_5.webp" alt="aliados" />
+        <img src="assets/webp/slide_6.webp" alt="aliados" /><img
+          src="assets/webp/slide_7.webp"
+          alt="aliados"
+        />
+      </div>
+      <button class="btn" (click)="navigateToRedInstitucional()">
+        <span>Ver más</span>
+      </button>
     </div>
     <div class="map_ctn d-flex justify-center align-center">
       <svg
@@ -298,9 +316,16 @@
   </div>
 </section>
 
-<section class="comunity_section">
+<section class="comunity_section p-0">
   <div class="comunity_ctn">
-    <img src="assets/svg/wave_2.svg" alt="" />
+    <img src="../../../assets/img/img_banner.png" alt="">
+    <svg viewBox="0 0 1438 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1440 0H1392C1344 0 1248 0 1152 32C1056 64 960 128 864 160C768 192 672 192 576 154.7C480 117 384 43 288 37.3C192 32 96 96 48 128L0 160V256H48C96 256 192 256 288 256C384 256 480 256 576 256C672 256 768 256 864 256C960 256 1056 256 1152 256C1248 256 1344 256 1392 256H1440V0Z"
+        fill="#3B8DA9"
+      />
+    </svg>
+
     <div class="comunity_ctn__contain">
       <h4>
         Somos Una Comunidad <br />

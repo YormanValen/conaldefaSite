@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
+import {  Router } from '@angular/router';
+
 
 
 @Component({
@@ -13,11 +15,9 @@ export class QuienesSomosComponent implements OnInit{
   }
 
   ngOnInit() {
-    this.wowService.init();
   }
 
   reset(){
-    this.wowService.init();
   }
 
 

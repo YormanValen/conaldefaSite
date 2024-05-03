@@ -8,11 +8,12 @@ import { RedInstitucionalComponent } from './red-institucional/red-institucional
 import { AcceptTermsDialogComponent } from './accept-terms-dialog/accept-terms-dialog.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { NormatividadComponent } from './normatividad/normatividad.component';
+import { MatriculateComponent } from './matriculate/matriculate.component';
 
 @NgModule({
-  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent],
+  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent],
   imports: [CommonModule],
-  exports: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent],
+  exports: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PublicModule {}

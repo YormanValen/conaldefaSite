@@ -87,7 +87,6 @@ header {
   width: 100%;
   padding: 0;
   color: white;
-  font-size: 0.9vw;
   font-weight: 700;
   letter-spacing: 0.3em;
   z-index: 20;
@@ -166,7 +165,7 @@ header {
 
   .header_mobile__first__ctn{
     display: flex;
-    padding: 5vw;
+    padding: 8vw;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -174,7 +173,7 @@ header {
 
   .header_mobile__first__ctn .header_mobile__btns {
     position: absolute;
-    right: 1.5vw;
+    right: 4vw;
     top: 50%;
     transform: translate(0, -50%);
   }
@@ -243,11 +242,21 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2vw;
+    gap: 0vw;
   }
 
   .menu_navbar li {
     width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--gray);
+    text-decoration: none;
+  }
+
+  
+
+  .menu_navbar li a{
+    text-decoration: none;
   }
 
   .menu_navbar .btn {

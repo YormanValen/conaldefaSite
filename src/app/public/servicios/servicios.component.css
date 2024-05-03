@@ -58,6 +58,15 @@
   }
 }
 
+@keyframes spin-around-mobile {
+  from {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
 .servicio_ctn {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -130,4 +139,49 @@
   .compromiso_conaldefa_section h5{
     color: white;
     font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    
+    .banner_section {
+      padding: 5% 10%;
+    }
+
+    .banner_section .banner_content {
+      padding: 2vw;
+      text-align: center;
+    }
+
+    .servicio_ctn {
+      grid-template-columns: 100%;
+      text-align: center;
+    }
+
+    .servicio_ctn .text_ctn{
+      align-items: center;
+    }
+
+    .servicio_ctn .text_ctn .h3_w {
+      width: 65vw;
+    }
+
+    .servicio_ctn .lupa_svg {
+      width: 15vw !important;
+      animation:  spin-around-mobile 4s infinite linear;
+    }
+  
+
+    .servicio_ctn .inspeccion_vigilancia_svg {
+      width: 50vw !important;
+    }
+
+    .servicio_ctn .expedicion_tarjeta_svg {
+      width: 50vw !important;
+    }
+
+    .servicio_ctn .tribunal_nacional_etica_svg {
+      width: 50vw !important;
+    }
+  
+  
   }
