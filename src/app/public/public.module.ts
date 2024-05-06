@@ -9,9 +9,10 @@ import { AcceptTermsDialogComponent } from './accept-terms-dialog/accept-terms-d
 import { ServiciosComponent } from './servicios/servicios.component';
 import { NormatividadComponent } from './normatividad/normatividad.component';
 import { MatriculateComponent } from './matriculate/matriculate.component';
+import { InfoMatriculaDialogComponent } from './info-matricula-dialog/info-matricula-dialog.component';
 
 @NgModule({
-  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent],
+  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent, InfoMatriculaDialogComponent],
   imports: [CommonModule],
   exports: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

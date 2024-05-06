@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { InfoMatriculaDialogComponent } from '../../public/info-matricula-dialog/info-matricula-dialog.component';
+
+
 
 @Component({
   selector: 'app-matriculate',
@@ -6,5 +10,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./matriculate.component.css']
 })
 export class MatriculateComponent {
+  constructor(public dialog: MatDialog) { }
+
+  ngOnInit() {
+    
+ }
+
+ openDialog(): void {
+   this.dialog.open(InfoMatriculaDialogComponent, {
+     disableClose: true, // Esto evita que el usuario cierre el diálogo haciendo clic fuera del mismo
+   });
+ }
 
 }

@@ -10,6 +10,16 @@
     width: 100%;
 }
 
+.footer__first__ctn__first__column p {
+  font-size: 1.1vw;
+}
+
+.footer__first__ctn__first__column h5 {
+  display: flex;
+  align-items: center;
+}
+
+
 .footer__first__ctn__second__column {
     width: 100%;
 }
@@ -47,12 +57,18 @@
   .footer__first__ctn {
     grid-template-columns: 1fr;
     padding: 5vw;
+    gap: 5vw;
   }
 
   .footer__first__ctn__first__column{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer__first__ctn__first__column p {
+    text-align: center;
+    font-size: 3vw;
   }
 
   .footer__first__ctn__first__column ul{
