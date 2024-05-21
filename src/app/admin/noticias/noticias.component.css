@@ -1,0 +1,25 @@
+.noticia_section {
+    padding: 3% 3%;
+    width: 100%;
+}
+
+.noticias_ctn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.noticia_item {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+
+}
+
+.noticia_section .img_ctn img {
+  width: 40vw;
+}

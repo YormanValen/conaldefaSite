@@ -38,6 +38,8 @@
           stroke-width="0.163636"
           stroke-linecap="round"
           stroke-linejoin="round"
+          (mouseover)="showModal($event, 'CH')"
+              (mouseleave)="hideModal()"
         />
         <g id="Group 3">
           <path
@@ -58,6 +60,8 @@
               stroke-width="0.163636"
               stroke-linecap="round"
               stroke-linejoin="round"
+              (mouseover)="showModal($event, 'AR')"
+              (mouseleave)="hideModal()"
             />
             <path
               id="BZ"
@@ -99,6 +103,8 @@
               id="CO"
               d="M172.945 168.085L171.28 168.58L170.56 170.02L169.525 170.83L168.715 171.91L168.31 173.98L167.5 175.69L168.805 175.87L169.075 177.175L169.615 177.85L169.75 178.975L169.435 180.055L169.48 180.685L170.11 180.91L170.65 181.9L173.935 181.63L175.42 181.99L177.13 184.51L178.165 184.195L180.01 184.33L181.45 184.015L182.35 184.51L181.81 186.04L181.225 187.03L180.955 189.1L181.45 191.035L182.125 191.89L182.215 192.52L180.91 193.96L181.81 194.59L182.485 195.625L183.205 198.505L182.71 198.865L182.26 197.155L181.54 196.21L180.685 197.245L175.735 197.155V198.955L177.22 199.27L177.13 200.395L176.635 200.08L175.195 200.53L175.15 202.645L176.32 203.725L176.725 205.345L176.68 206.605L175.69 214.525L174.385 212.995L173.62 212.95L175.195 209.98L173.215 208.63L171.685 208.9L170.74 208.405L169.345 209.17L167.455 208.765L165.88 205.75L164.71 205.03L163.9 203.635L162.19 202.285L161.515 202.555L160.435 201.88L159.175 200.935L158.455 201.385L156.295 200.98L155.665 199.72L155.17 199.765L152.65 198.145L152.335 197.245L153.28 197.02L153.19 195.58L153.82 194.5L155.08 194.32L156.205 192.52L157.195 190.99L156.295 190.315L156.835 188.65L156.34 185.995L156.925 185.23L156.61 182.8L155.62 181.225L156.025 179.83L156.835 180.055L157.33 179.2L156.835 177.49L157.15 177.085L158.455 177.175L160.48 175.15L161.56 174.835L161.605 173.89L162.235 171.415L163.765 170.11L165.34 170.02L165.61 169.435L167.59 169.66L169.66 168.22L170.695 167.59L172 166.195L172.9 166.375L173.485 167.14L172.945 168.085Z"
               fill="#F7A66B"
+              (mouseover)="showModal($event, 'CO')"
+              (mouseleave)="hideModal()"
               stroke="black"
               stroke-width="0.163636"
               stroke-linecap="round"
@@ -127,6 +133,8 @@
               d="M161.515 202.555L161.875 204.76L161.11 206.605L158.365 209.665L155.35 210.79L153.82 213.31L153.415 215.245L152.02 216.46L150.895 214.975L149.86 214.66L148.825 214.885L148.69 213.85L149.41 213.175L149.095 211.96L150.4 209.8L149.815 208.54L148.87 209.89L147.295 208.585L147.79 207.775L147.34 205.165L148.24 204.715L148.69 202.915L149.635 201.07L149.5 199.9L150.895 199.27L152.65 198.145L155.17 199.765L155.665 199.72L156.295 200.98L158.455 201.385L159.175 200.935L160.435 201.88L161.515 202.555Z"
               fill="#78D0A7"
               stroke="black"
+              (mouseover)="showModal($event, 'EC')"
+              (mouseleave)="hideModal()"
               stroke-width="0.163636"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -163,6 +171,8 @@
               d="M112.15 127.45L113.14 127.36L111.7 129.925L110.89 131.995L110.08 135.865L109.585 137.26L109.765 138.835L110.35 140.275L110.53 142.48L111.88 144.64L112.24 146.305L113.005 147.7L115.57 148.465L116.425 149.68L118.765 148.87L120.7 148.6L122.68 148.06L124.3 147.565L126.055 146.395L126.865 144.73L127.405 142.3L127.945 141.445L129.745 140.68L132.49 140.005L134.695 140.14L136.225 139.87L136.765 140.5L136.495 141.895L134.92 143.605L134.11 145.36L134.515 145.855L133.975 147.115L133.03 149.365L132.49 148.6L131.995 148.645L131.5 148.69L130.375 150.445L129.97 150.085L129.655 150.22L129.61 150.67L127.27 150.625H124.93L124.705 152.245L123.58 152.29L124.39 153.235L125.245 153.91L125.47 154.54L125.83 154.72L125.65 155.71H122.41L120.925 158.05L121.24 158.59L120.88 159.265L120.7 160.12L118.18 157.015L117.01 156.07L115.03 155.305L113.59 155.53L111.43 156.61L110.125 156.88L108.46 156.115L106.615 155.575L104.455 154.27L102.61 153.865L99.955 152.515L98.02 151.12L97.525 150.355L96.13 150.175L93.7 149.275L92.845 147.97L90.415 146.305L89.425 144.505L89.065 143.065L89.92 142.795L89.785 141.985L90.505 141.22L90.685 140.23L90.01 138.925V137.8L89.425 136.315L87.715 133.435L85.645 131.185L84.79 129.385L82.945 128.215L82.63 127.495L83.395 125.74L82.315 125.065L81.19 123.625L81.1 121.645L79.84 121.375L78.805 119.89L78.04 118.45L78.175 117.55L77.5 115.39L77.365 113.185L77.725 112.06L76.33 110.89L75.475 111.025L74.395 110.26L73.585 111.43L73.54 112.78L73.09 114.985L73.54 116.155L74.8 118.135L74.98 118.855L75.295 119.035L75.34 120.025L75.79 119.98V121.87L76.375 122.59L76.6 123.625L77.815 125.065L77.995 127.765L78.445 129.025L78.85 130.375L78.715 131.905L79.885 131.995L80.605 133.3L81.28 134.605L81.145 135.145L79.885 136.18H79.435L79.12 134.425L77.815 132.76L76.285 131.365L75.16 130.645L75.7 128.53L75.655 126.955L74.71 126.055L73.315 124.795L72.91 125.155L72.46 124.39L71.11 123.715L70.12 122.005L70.345 121.825L71.29 121.96L72.505 120.88L72.955 119.575L71.65 117.505L70.48 116.74L70.12 114.94L69.85 113.005L69.49 110.71L69.4 108.1L72.235 107.875L75.43 107.56L75.025 108.145L78.175 109.54L83.08 111.565H87.94H89.875L90.235 110.35H94.465L95.05 111.385L95.995 112.33L97.075 113.59L97.435 115.075L97.615 116.695L98.65 117.55L100.45 118.405L102.61 116.155L104.635 116.065L106.075 117.235L106.795 119.215L107.2 120.925L108.28 122.545L108.37 124.57L108.775 125.92L110.53 126.82L112.15 127.45Z"
               fill="#F26D71"
               stroke="black"
+              (mouseover)="showModal($event, 'MX')"
+              (mouseleave)="hideModal()"
               stroke-width="0.163636"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -253,6 +263,14 @@
       </g>
     </g>
   </svg>
+  <!-- Modal para mostrar la información -->
+  <div #infoModal class="info-modal" [ngClass]="{ show: showModalState }">
+    <div class="info-modal-content">
+      <span class="close" (click)="hideModal()"></span>
+      <h5>{{ modalTitle }}</h5>
+      <p>{{ modalContent }}</p>
+    </div>
+  </div>
 </section>
 
 <section class="colaboradores_slide">
@@ -275,16 +293,23 @@
     <h4>Objetivos de la Red:</h4>
     <ul>
       <li>
-        <p>Promover la cooperación académica y científica entre sus miembros.</p>
+        <p>
+          Promover la cooperación académica y científica entre sus miembros.
+        </p>
       </li>
       <li>
-        <p>Estimular la movilidad estudiantil y profesoral entre los programas de pregrado participantes.</p>
+        <p>
+          Estimular la movilidad estudiantil y profesoral entre los programas de
+          pregrado participantes.
+        </p>
       </li>
       <li>
         <p>Promover convenios de doble titulación en el campo de la familia.</p>
       </li>
       <li>
-        <p>Definir conjuntamente estándares académicos de formación en familia.</p>
+        <p>
+          Definir conjuntamente estándares académicos de formación en familia.
+        </p>
       </li>
     </ul>
   </div>
@@ -298,10 +323,16 @@
         <p>Naturaleza voluntaria y solidaria en sus acciones.</p>
       </li>
       <li>
-        <p>Proyección internacional y articulación con otras redes académicas y científicas en familia.</p>
+        <p>
+          Proyección internacional y articulación con otras redes académicas y
+          científicas en familia.
+        </p>
       </li>
       <li>
-        <p>Respeto y reconocimiento de la diversidad de posturas ideológicas y epistemológicas.</p>
+        <p>
+          Respeto y reconocimiento de la diversidad de posturas ideológicas y
+          epistemológicas.
+        </p>
       </li>
       <li>
         <p>Enfoque de Convergencia y compromiso institucional.</p>

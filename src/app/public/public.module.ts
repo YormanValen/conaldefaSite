@@ -1,5 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { SwiperComponent } from './swiper/swiper.component';
 import { HomeComponent } from './home/home.component';
@@ -13,7 +14,7 @@ import { InfoMatriculaDialogComponent } from './info-matricula-dialog/info-matri
 
 @NgModule({
   declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent, InfoMatriculaDialogComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, BrowserModule],
   exports: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

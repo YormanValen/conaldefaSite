@@ -164,6 +164,10 @@
         grid-template-columns: 100%;
     }
 
+    .column_ctn .first_column img {
+        width: 50vw;
+    }
+
     .redcuf_section{
         gap: 2vw  !important;
         align-items: center;

@@ -12,6 +12,10 @@
 }
 
 /** mapa_mundo_section */
+.mapa_mundo {
+  cursor: pointer;
+  position: relative;
+}
 
 .mapa_mundo_section {
   display: flex;
@@ -21,6 +25,28 @@
 
 .mapa_mundo_section svg {
   width: 30vw;
+}
+
+.info-modal {
+  position: fixed; /* Use 'fixed' or 'absolute' depending on layout */
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Ensure it's on top */
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: white;
+  border-radius: .5vw;
+  
+}
+
+.info-modal p {
+  color: white;
+  
+}
+
+.info-modal.show {
+  display: block; /* Show when needed */
+  box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+
 }
 
 swiper-container {

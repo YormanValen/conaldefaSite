@@ -1,0 +1,33 @@
+
+<section class="noticia_section">
+  <div class="title">
+  </div>
+  <div *ngIf="noticias.length > 0">
+    <ul class="d-flex flex-column gap-3">
+      <li class="noticias_ctn" *ngFor="let noticia of noticias">
+        <div class="noticia_item" >
+          <div class="titulo">
+            <h4>{{ noticia.titulo }}</h4>
+          </div>
+          <div class="img_ctn d-flex justify-content-center">
+            <img
+              *ngIf="noticia.imagen_url"
+              [src]="noticia.imagen_url"
+              alt="Imagen de {{ noticia.titulo }}"
+            />
+          </div>
+          <div class="contenido">
+            <p>{{ noticia.contenido }}</p>
+          </div>
+          <div class="contenido d-flex flex-column">
+            <span>Fecha de Publicación:</span>
+            <span>{{ noticia.fecha_publicacion }}</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="noticias.length === 0">
+    <p>No hay noticias disponibles.</p>
+  </div>
+</section>
