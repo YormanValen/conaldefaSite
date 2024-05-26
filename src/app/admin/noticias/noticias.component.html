@@ -1,28 +1,24 @@
-
 <section class="noticia_section">
   <div class="title">
   </div>
   <div *ngIf="noticias.length > 0">
-    <ul class="d-flex flex-column gap-3">
+    <ul class="d-flex gap-3">
       <li class="noticias_ctn" *ngFor="let noticia of noticias">
-        <div class="noticia_item" >
+        <div class="noticia_item">
           <div class="titulo">
             <h4>{{ noticia.titulo }}</h4>
           </div>
           <div class="img_ctn d-flex justify-content-center">
-            <img
-              *ngIf="noticia.imagen_url"
-              [src]="noticia.imagen_url"
-              alt="Imagen de {{ noticia.titulo }}"
-            />
+            <img *ngIf="noticia.imagen_url" [src]="noticia.imagen_url" alt="Imagen de {{ noticia.titulo }}" />
           </div>
           <div class="contenido">
-            <p>{{ noticia.contenido }}</p>
+            <p>{{ noticia.contenido | slice:0:30 }}...</p> <!-- Muestra solo los primeros 100 caracteres -->
           </div>
           <div class="contenido d-flex flex-column">
             <span>Fecha de Publicación:</span>
-            <span>{{ noticia.fecha_publicacion }}</span>
+            <span>{{ noticia.fecha_publicacion | slice:0:10 }}</span>
           </div>
+          <button class="btn-primary" (click)="verMas(noticia.id)">Ver más</button>
         </div>
       </li>
     </ul>

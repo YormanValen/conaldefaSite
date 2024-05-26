@@ -1,17 +1,27 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ContactService } from '../../services/contact.service';
 
 @Component({
-  selector: 'app-contact-form',
+  selector: 'app-contact',
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.css']
 })
-export class ContactFormComponent {
+export class ContactComponent {
 
-  constructor() { }
+  constructor(private contactService: ContactService) { }
 
-  onSubmit(form: NgForm) {
-    // Aquí manejas la lógica de envío de datos, por ejemplo, hacer una petición HTTP
-    console.log(form.value);
+  onSubmit(contactForm: NgForm) {
+    if (contactForm.valid) {
+      this.contactService.sendContactForm(contactForm.value).subscribe(
+        response => {
+          console.log(response);
+          contactForm.reset();
+        },
+        error => {
+          console.log(error);
+        }
+      );
+    }
   }
 }

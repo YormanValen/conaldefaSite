@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NoticiasService } from 'src/app/services/noticias.service';
 
 @Component({
@@ -9,12 +10,16 @@ import { NoticiasService } from 'src/app/services/noticias.service';
 export class NoticiasComponent implements OnInit {
   noticias: any[] = [];
 
-  constructor(private noticiasService: NoticiasService) {}
+  constructor(private noticiasService: NoticiasService, private router: Router) {}
 
   ngOnInit(): void {
     this.noticiasService.getNoticias().subscribe((data) => {
       this.noticias = data;
       console.log(this.noticias);
     });
+  }
+
+  verMas(id: number) {
+    this.router.navigate(['/noticia', id]);
   }
 }

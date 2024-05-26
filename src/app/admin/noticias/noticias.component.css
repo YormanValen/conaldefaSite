@@ -1,5 +1,5 @@
 .noticia_section {
-    padding: 3% 3%;
+    padding: 2vw;
     width: 100%;
 }
 
@@ -11,15 +11,20 @@
 }
 
 .noticia_item {
+  width: 20vw;
+  height: 35vw;
   border-radius: 10px;
+  border: .1vw solid black;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  gap: 2vw;
+  gap: 10px;
 
 }
 
-.noticia_section .img_ctn img {
-  width: 40vw;
+.noticia_item p {
+  margin: 0;
 }
+
