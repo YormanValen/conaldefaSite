@@ -1,0 +1,7 @@
+<div *ngIf="noticia">
+    <h2>{{ noticia.titulo }}</h2>
+    <img *ngIf="noticia.imagen_url" [src]="noticia.imagen_url" alt="Imagen de {{ noticia.titulo }}">
+    <p>{{ noticia.contenido }}</p>
+    <p><strong>Fecha de Publicación:</strong> {{ noticia.fecha_publicacion }}</p>
+  </div>
+  

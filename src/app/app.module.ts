@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AcceptTermsDialogComponent } from './public/accept-terms-dialog/accept-terms-dialog.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { NoticiaDetailComponent } from './admin/noticia-detail/noticia-detail.component';
+import { ResolutionDetailComponent } from './admin/resolution-detail/resolution-detail.component';
 
 
 
@@ -22,7 +24,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 register();
 
 @NgModule({
-  declarations: [AppComponent, NoticiasComponent],
+  declarations: [AppComponent, NoticiasComponent, NoticiaDetailComponent, ResolutionDetailComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

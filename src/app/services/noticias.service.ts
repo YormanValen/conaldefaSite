@@ -13,4 +13,8 @@ export class NoticiasService {
   getNoticias(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
   }
+
+  getNoticia(id: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
+  }
 }
