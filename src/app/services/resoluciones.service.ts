@@ -7,7 +7,7 @@ import { Resolution } from '../models/resolution.model';
   providedIn: 'root'
 })
 export class ResolucionesService {
-  private apiUrl = 'http://127.0.0.1:8000/api/resolutions'; // Asegúrate de que la URL sea correcta
+  private apiUrl = 'https://admin.conaldefa.org/api/resolutions'; // Asegúrate de que la URL sea correcta
 
 
   constructor(private http: HttpClient) { }
