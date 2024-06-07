@@ -1,0 +1,19 @@
+.noticia_ctn {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticia_ctn .content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    border-radius: 1vw;
+}
+
+.noticia_ctn img {
+    width: 30vw;
+}

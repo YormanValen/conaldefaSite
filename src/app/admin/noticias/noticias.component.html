@@ -1,7 +1,10 @@
 <section class="noticia_section">
   <div class="title"></div>
-  <div class="d-flex flex-column gap-2"  *ngIf="noticias.length > 0">
-    <ul class="d-flex gap-3 ">
+  <div class="d-flex flex-column gap-2" *ngIf="noticias.length > 0">
+    <ul class="d-flex gap-3  d-flex flex-column">
+      <div class="title">
+        <h2>Noticias</h2>
+      </div>
       <li class="noticias_ctn" *ngFor="let noticia of noticias">
         <div class="noticia_item">
           <div class="titulo">
@@ -30,6 +33,9 @@
     </ul>
 
     <ul>
+    <div class="title">
+      <h2>Resoluciones</h2>
+    </div>
       <li class="resoluciones_ctn" *ngFor="let resolucion of resoluciones">
         <div class="resolucion_item">
           <div class="titulo">

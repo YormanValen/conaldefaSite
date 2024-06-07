@@ -9,6 +9,7 @@ import { MatriculateComponent } from './public/matriculate/matriculate.component
 import { NoticiasComponent } from './admin/noticias/noticias.component';
 import { NoticiaDetailComponent } from './admin/noticia-detail/noticia-detail.component';
 import { ResolutionDetailComponent } from './admin/resolution-detail/resolution-detail.component';
+import { NuestrosAsociadosComponent } from './public/nuestros-asociados/nuestros-asociados.component';
 
 
 const routerOptions: ExtraOptions = {};
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'normatividad', component: NormatividadComponent },
   { path: 'matriculate', component: MatriculateComponent },
   { path: 'noticias', component: NoticiasComponent }, // Agregar la ruta de noticias
+  { path: 'nuestros-asociados', component: NuestrosAsociadosComponent },
   { path: 'noticias/:id', component: NoticiaDetailComponent },
   { path: 'resoluciones/:id', component: ResolutionDetailComponent },
 

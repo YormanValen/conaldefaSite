@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NoticiasService {
-  private apiUrl = 'http://127.0.0.1:8000/index'; // Asegúrate de que la URL sea correcta
+  private apiUrl = 'https://admin.conaldefa.org/index'; // Asegúrate de que la URL sea correcta
 
   constructor(private http: HttpClient) { }
 
