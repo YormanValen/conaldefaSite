@@ -1,6 +1,6 @@
 
-  <swiper-container navigation="true" pagination-clickable="true" navigation="true" space-between="30"
-  loop="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-  <swiper-slide *ngFor="let item of images"><img [src]="item" alt=""></swiper-slide>
+  <swiper-container  center-mode="true" pagination-clickable="true" navigation="false" space-between="30" loop autoplay speed="1000" effect="fade" class="mySwiper" 
+   >
+  <swiper-slide class="d-flex justify-content-center" *ngFor="let item of images"><img class="" [src]="item" alt=""></swiper-slide>
   </swiper-container>
 

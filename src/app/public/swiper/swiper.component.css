@@ -4,7 +4,6 @@ swiper-container {
 }
 
 
-
 .swiper-button-prev {
     @apply ml-1.5;
     z-index: 100;
@@ -16,7 +15,10 @@ swiper-slide {
 }
 
 swiper-slide img {
-  @apply block w-full;
+  width: 70vw;
+  border: 5px solid var(--primary-color);
+  border-radius: 1vw;
+  @apply block;
 
 }
 
