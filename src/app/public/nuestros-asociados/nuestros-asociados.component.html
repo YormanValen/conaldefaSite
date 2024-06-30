@@ -1,80 +1,127 @@
 <section class="banner_section d-flex flex-column">
-    <div class="title">
-        <h1>#NuestrosAsociados</h1>
-    </div>
-    <div class="banner_content">
-        CONALDEFA se enorgullece de contar con una comunidad vibrante
-        de egresados en Desarrollo Familiar que trabajan incansablemente
-        por el bienestar de las familias colombianas. En esta página, te
-        invitamos a conocer a algunos de nuestros asociados, sus
-        experiencias y proyectos, y a ver cómo la pasión por el desarrollo
-        familiar se traduce en un impacto real en la sociedad.
-    </div>
+  <div class="title">
+    <h1>#NuestrosAsociados</h1>
+  </div>
+  <div class="banner_content">
+    CONALDEFA se enorgullece de contar con una comunidad vibrante de egresados
+    en Desarrollo Familiar que trabajan incansablemente por el bienestar de las
+    familias colombianas. En esta página, te invitamos a conocer a algunos de
+    nuestros asociados, sus experiencias y proyectos, y a ver cómo la pasión por
+    el desarrollo familiar se traduce en un impacto real en la sociedad.
+  </div>
 </section>
 
 <section class="nuestros_asociados_section">
-    <div class="title">
-        <h2>Conoce a algunos de nuestros asociados y sus experiencias.</h2>
+  <div class="title">
+    <h2>Conoce a algunos de nuestros asociados y sus experiencias.</h2>
+  </div>
+
+  <div class="resenas_ctn">
+    <div class="resenas_item">
+      <div class="img">
+        <img
+          src="assets/img/DanielaGonzales.jpg"
+          alt="Testimonio Daniela Gonzales"
+        />
+      </div>
+      <div class="resena">
+        <p>
+          “Ser profesional en desarrollo familiar es el compromiso permanente
+          para generar conexiones con las personas según particularidades y
+          contextos. Es la oportunidad de hablar de la familia desde un rol
+          activo en la sociedad y por ende su protagonismo en la resignificacion
+          de practicas y discursos parentales. A nivel personal, es una
+          profesion que me ha permitido adquirír aprendizajes de la propia vida
+          familiar a fin de mantener un clima calido y armonioso, asi como
+          afianzar mi proceso de relacionamiento familiar."
+        </p>
+        <span>Daniela Gonzales</span>
+      </div>
     </div>
 
-    <div class="resenas_ctn ">
-        <div class="resenas_item">
-            <div class="img">
-                <img src="assets/webp/hombre_sonriendo.webp" alt="Hombre sonriendo">
-            </div>
-            <div class="resena">
-                <p>“Ser profesional en Desarrollo Familiar es un privilegio. Me apasiona acompañar a las familias en sus
-                    desafíos y celebrar sus éxitos. Cada día aprendo algo nuevo y me inspiro en su resiliencia y
-                    capacidad de transformación."</p>
-                <span>Juan David Castro</span>
-            </div>
-        </div>
-
-        <div class="resenas_item">
-            <div class="img">
-                <img src="assets/webp/hombre_sonriendo.webp" alt="Hombre sonriendo">
-            </div>
-            <div class="resena">
-                <p>“El Desarrollo Familiar me enseñó que cada familia es un universo único, lleno de potencial para
-                    crecer y florecer. Mi pasión es ayudarlos a descubrir su fuerza interior y a construir relaciones
-                    más fuertes y amorosas." </p>
-                <span>Mariana Arboleda</span>
-            </div>
-        </div>
-
-        <div class="resenas_item">
-            <div class="img">
-                <img src="assets/webp/hombre_sonriendo.webp" alt="Hombre sonriendo">
-            </div>
-            <div class="resena">
-                <p>"El Desarrollo Familiar es mi vocación. Me encanta ver cómo las familias superan obstáculos y
-                    construyen un futuro mejor. La cooperación es esencial para lograr este cambio positivo."</p>
-                <span>Gabriela Torres</span>
-            </div>
-        </div>
+    <div class="resenas_item">
+      <div class="img">
+        <img src="assets/img/MonicaOsorio.jpg" alt="Testimonio Monica Osorio" />
+      </div>
+      <div class="resena">
+        <p>
+          “Ser profesional en desarrollo Familiar significa ser parte de
+          procesos de cambio, reconociendo y potenciando capacidades a nivel
+          familiar que se visibilizan en la sociedad, desde mi profesión aporto
+          a que la familia logre espacios de vida familiar fortaleciendo
+          vínculos…"
+        </p>
+        <span>Mónica Osorio</span>
+      </div>
     </div>
+
+    <div class="resenas_item">
+      <div class="img">
+        <img src="assets/webp/hombre_sonriendo.webp" alt="Hombre sonriendo" />
+      </div>
+      <div class="resena">
+        <p>
+          "El significado que tiene para mi ser profesional en desarrollo
+          familiar, es ser un agente que moviliza y genera acciones
+          transformativas en las familias y comunidades de la zona rural del
+          Municipio de Riosucio Caldas, reconociendo las diferentes etapas del
+          curso de vida que tiene cada persona en especial aquellos que se
+          encuentran en su infancia, siendo esta una etapa fundamental para el
+          desarrollo de habilidades sociales y la toma de conciencia del
+          entorno. "
+        </p>
+        <span></span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="carousel_section">
-    <div class="title">
-        <h3>Ell@s ya la tienen. ¿Y tu?</h3>
-    </div>
+  <div class="title">
+    <h3>Ell@s ya la tienen. ¿Y tu?</h3>
+  </div>
 
-    <div class="fotos_ctn">
-        <div class="img_ctn">
-            <img src="assets/img/asociados_2.png" alt="asociado">
-        </div>
-        <div class="img_ctn">
-            <img src="assets/img/asociados_1.png" alt="asociado">
-        </div>
-        <div class="img_ctn">
-            <img src="assets/img/asociados_3.png" alt="asociado">
-        </div>
-    </div>
+  <div class="carousel_ctn">
+    <swiper-container 
+  [centeredSlides]="swiperConfig.centeredSlides"
+  [paginationClickable]="swiperConfig.paginationClickable"
+  [navigation]="swiperConfig.navigation"
+  [spaceBetween]="swiperConfig.spaceBetween"
+  [loop]="swiperConfig.loop"
+  [autoplay]="swiperConfig.autoplay"
+  [speed]="swiperConfig.speed"
+  [effect]="swiperConfig.effect"
+  [slidesPerView]="swiperConfig.slidesPerView"
+  [breakpoints]="swiperConfig.breakpoints"
+  class="mySwiper">
+  <swiper-slide class="d-flex justify-content-center" *ngFor="let item of images">
+    <img class="" [src]="item" alt="">
+  </swiper-slide>
+  
+  <!-- Flechas de navegación personalizadas -->
+  <div class="swiper-button-prev custom-swiper-button"></div>
+  <div class="swiper-button-next custom-swiper-button"></div>
+</swiper-container>
+  </div>
 
-    <div class="btn_matriculate d-flex justify-content-center align-item-center">
-        <a href="https://gmail.us21.list-manage.com/track/click?u=87a6b3d1f08aa9c74e5694697&id=ec147b1578&e=d0ae0f1e4b" target="_blank" class="btn-matriculate">Matricúlate
-        </a>
+  <!-- <div class="fotos_ctn">
+    <div class="img_ctn">
+      <img src="assets/img/asociados_2.png" alt="asociado" />
     </div>
+    <div class="img_ctn">
+      <img src="assets/img/asociados_1.png" alt="asociado" />
+    </div>
+    <div class="img_ctn">
+      <img src="assets/img/asociados_3.png" alt="asociado" />
+    </div>
+  </div> -->
 
+  <div class="btn_matriculate d-flex justify-content-center align-item-center">
+    <a
+      href="https://gmail.us21.list-manage.com/track/click?u=87a6b3d1f08aa9c74e5694697&id=ec147b1578&e=d0ae0f1e4b"
+      target="_blank"
+      class="btn-matriculate"
+      >Matricúlate
+    </a>
+  </div>
 </section>

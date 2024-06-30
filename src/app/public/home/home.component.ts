@@ -12,6 +12,7 @@ import { AcceptTermsDialogComponent } from '../../public/accept-terms-dialog/acc
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit  {
+  
   constructor(private router: Router, private viewportScroller: ViewportScroller, public dialog: MatDialog) { }
   sliderImages = [
     '/assets/webp/banner_1.webp',

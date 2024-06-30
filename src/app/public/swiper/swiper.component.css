@@ -1,3 +1,6 @@
+
+
+/** Carrousel section **/
 swiper-container {
   @apply w-full;
   --swiper-navigation-color: white;
@@ -21,4 +24,3 @@ swiper-slide img {
   @apply block;
 
 }
-
