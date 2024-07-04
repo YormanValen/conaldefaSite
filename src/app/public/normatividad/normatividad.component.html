@@ -508,3 +508,34 @@
       </div>
   </div>
 </section>
+
+<section class="resolucion_section">
+  <div class="d-flex flex-column gap-2" *ngIf="resoluciones.length > 0">
+    <ul>
+      <div class="title">
+        <h2>Resoluciones</h2>
+      </div>
+      <li class="resoluciones_ctn" *ngFor="let resolucion of resoluciones">
+        <div class="resolucion_item">
+          <div class="titulo">
+            <h4>{{ resolucion.title }}</h4>
+          </div>
+          <div class="contenido">
+            <p>{{ resolucion.content | slice : 0 : 30 }}...</p>
+            <!-- Muestra solo los primeros 100 caracteres -->
+          </div>
+          <div class="contenido d-flex flex-column">
+            <span>Fecha de Publicación:</span>
+            <span>{{ resolucion.resolution_date | slice : 0 : 10 }}</span>
+          </div>
+          <button
+            class="btn-primary"
+            [routerLink]="['/resoluciones', resolucion.id]"
+          >
+            Ver más
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
