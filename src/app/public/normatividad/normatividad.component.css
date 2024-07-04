@@ -130,7 +130,6 @@
 }
 
 @media (max-width: 767px) {
-
   .banner_section {
     padding: 5% 10%;
   }
@@ -139,11 +138,11 @@
     padding: 2vw;
   }
 
-  .normas_section{
+  .normas_section {
     gap: 8vw;
   }
 
-  .normas_section .norma_ctn{
+  .normas_section .norma_ctn {
     grid-template-columns: 100%;
   }
 
@@ -158,6 +157,71 @@
   .norma_ctn .icon_ctn svg {
     width: 20vw;
   }
-
 }
 
+/** Boton descargar **/
+
+.cssbuttons-io-button {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, #3b8da9 0%, #75b5ca 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em var(--primary-color);
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
+
+.cssbuttons-io-button span {
+  font-size: 1.2vw;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #3b8da9;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #3b8da9;
+}
+
+/** Resolucion section **/
+
+.resolucion_section {
+  padding: 1vw;
+}
+
+.resolucion_section .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.resolucion_item {
+  width: 20vw;
+  height: fit-content;
+  border-radius: 10px;
+  border: 0.1vw solid black;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .cssbuttons-io-button span {
+    font-size: 5vw;
+  }
+}

@@ -1,173 +1,190 @@
 .banner_section {
-    align-items: center;
-    gap: 1vw;
-    color: white;
-    padding: 5% 20%;
-    background-color: var(--banner_blue);
+  align-items: center;
+  gap: 1vw;
+  color: white;
+  padding: 5% 20%;
+  background-color: var(--banner_blue);
 }
 
 .banner_section .banner_content {
-    border: 2px solid white;
-    padding: 1vw;
-    border-radius: 1vw;
+  border: 2px solid white;
+  padding: 1vw;
+  border-radius: 1vw;
 }
 
 @media (max-width: 767px) {
-    .banner_section {
-        padding: 5% 10%;
-    }
+  .banner_section {
+    padding: 5% 10%;
+  }
 
-    .banner_section .banner_content {
-        border: 2px solid white;
-        padding: 2vw;
-        border-radius: 1vw;
-    }
-
+  .banner_section .banner_content {
+    border: 2px solid white;
+    padding: 2vw;
+    border-radius: 1vw;
+  }
 }
 
 /* nuestros_asociados_section */
 
 .nuestros_asociados_section {
-    display: flex;
-    flex-direction: column;
-    gap: 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15vw;
 }
 
 .nuestros_asociados_section .resenas_ctn {
-    display: grid;
-    gap: 1.5vw;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 1.5vw;
+  grid-template-columns: repeat(3, 1fr);
 }
 
+.nuestros_asociados_section .resena {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
 
 .nuestros_asociados_section .title h2 {
-    font-weight: bolder;
-    text-align: center;
-    color: #FF5500;
+  font-weight: bolder;
+  text-align: center;
+  color: #ff5500;
 }
 
 .nuestros_asociados_section .resenas_item {
-    border: #F7A66B 5px solid;
-    padding: 4vw 2vw 1vw 2vw;
-    position: relative;
-    border-radius: 4vw;
+  border: #f7a66b 5px solid;
+  padding: 4vw 2vw 1vw 2vw;
+  position: relative;
+  border-radius: 4vw;
 }
 
 .nuestros_asociados_section .resenas_item .img {
-    border: #F7A66B 5px solid;
-    border-radius: 50%;
-    position: absolute;
-    overflow: hidden;
-    top: -10vw;
-    left: 50%;
-    transform: translateX(-50%);
+  border: #f7a66b 5px solid;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  top: -10vw;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nuestros_asociados_section .resenas_item .img img {
-    width: 15vw;
+  width: 15vw;
 }
 
 @media (max-width: 767px) {
+  .nuestros_asociados_section {
+    display: flex;
+    flex-direction: column;
+    gap: 30vw;
+  }
 
-    .nuestros_asociados_section {
-        display: flex;
-        flex-direction: column;
-        gap: 30vw;
-    }
+  .nuestros_asociados_section .resenas_ctn {
+    display: grid;
+    gap: 25vw;
+    grid-template-columns: 100%;
+  }
 
-    .nuestros_asociados_section .resenas_ctn {
-        display: grid;
-        gap: 25vw;
-        grid-template-columns: 100%;
-    }
+  .nuestros_asociados_section .resenas_item {
+    border: #f7a66b 5px solid;
+    padding: 10vw 2vw 1vw 2vw;
+    position: relative;
+    border-radius: 4vw;
+  }
 
-    .nuestros_asociados_section .resenas_item {
-        border: #F7A66B 5px solid;
-        padding: 10vw 2vw 1vw 2vw;
-        position: relative;
-        border-radius: 4vw;
-    }
+  .nuestros_asociados_section .resenas_item .img {
+    border: #f7a66b 5px solid;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    top: -25vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    .nuestros_asociados_section .resenas_item .img {
-        border: #F7A66B 5px solid;
-        border-radius: 50%;
-        position: absolute;
-        overflow: hidden;
-        top: -25vw;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .nuestros_asociados_section .resenas_item .img img {
-        width: 30vw;
-    }
+  .nuestros_asociados_section .resenas_item .img img {
+    width: 30vw;
+  }
 }
 
 /** fotos ctn **/
 
 .carousel_section {
-    display: flex;
-    background-color: #FF5500;
-    justify-content: center;
-    flex-direction: column;
-    gap: 6vw;
-    padding: 2% 5%;
+  display: flex;
+  background-color: #ff5500;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6vw;
+  padding: 2% 5%;
 }
 
+swiper-slide {
+  padding: 0.5vw;
+  border-radius: 2vw;
+  background-color: #ffb06b;
+  overflow: hidden;
+
+}
+
+swiper-slide img {
+    overflow: hidden;
+    border-radius: 2vw;
+
+}
+
+
+
 .carousel_section .title h3 {
-    font-weight: bolder;
-    color: white;
+  font-weight: bolder;
+  color: white;
 }
 
 .carousel_section .fotos_ctn {
-    display: grid;
-    position: relative;
-    grid-template-columns: 40% 20% 40%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 40% 20% 40%;
 }
 
 .carousel_section .fotos_ctn .img_ctn img {
-    padding: .5vw;
-    border-radius: 2vw;
-    background-color: #FFB06B;
+  padding: 0.5vw;
+  border-radius: 2vw;
+  background-color: #ffb06b;
 }
 
 .carousel_section .fotos_ctn .img_ctn:nth-child(2) {
-    position: relative;
+  position: relative;
 }
-
 
 .carousel_section .fotos_ctn .img_ctn:nth-child(2) img {
-    position: absolute;
-    transform: scale(2);
+  position: absolute;
+  transform: scale(2);
 }
 
-
 .btn-matriculate {
-    background-color: #FA7E3F;
-    padding: 3px 10px;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Dancing Script', sans-serif;
-    letter-spacing: 2px;
-    font-size: 25px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 2px dashed #FA7E3F;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .4s;
+  background-color: #fa7e3f;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Dancing Script", sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed #fa7e3f;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.4s;
 }
 
 .btn-matriculate:hover {
-    transition: .4s;
-    border: 2px dashed #FA7E3F;
-    background-color: #fff;
-    color: #FA7E3F;
+  transition: 0.4s;
+  border: 2px dashed #fa7e3f;
+  background-color: #fff;
+  color: #fa7e3f;
 }
 
 @media (max-width: 767px) {
-
-    .carousel_section{
-        align-items: center;
-    }
-
+  .carousel_section {
+    align-items: center;
+  }
 }

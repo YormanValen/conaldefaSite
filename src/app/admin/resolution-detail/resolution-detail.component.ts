@@ -22,4 +22,9 @@ export class ResolutionDetailComponent implements OnInit {
       this.resolution = data;
     });
   }
+
+   // Método para obtener la URL completa del PDF
+  getPdfUrl(pdfFile: string): string {
+    return `https://admin.conaldefa.org/${pdfFile}`;
+  }
 }

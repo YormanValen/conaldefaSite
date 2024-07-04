@@ -21,9 +21,23 @@
 /* services section */
 
 .servicios_section {
-    display: flex;
-    gap: 5vw;
-    flex-direction: column;
+  display: flex;
+  gap: 5vw;
+  flex-direction: column;
+}
+
+/** cursos y diplomados **/
+
+.cursos_diplomados_ctn .cursos_diplomados_svg {
+  width: 25vw;
+}
+
+.cursos_diplomados_ctn .text_ctn h3 {
+  color: #e74830 !important;
+}
+
+.cursos_diplomados_ctn .text_ctn span {
+  color: #e06a58 !important;
 }
 
 .inspeccion_vigilancia {
@@ -45,8 +59,8 @@
   animation: spin-around 4s infinite linear;
 }
 
-.inspeccion_vigilancia .inspeccion_vigilancia_svg{
-    width: 28vw;
+.inspeccion_vigilancia .inspeccion_vigilancia_svg {
+  width: 25vw;
 }
 
 @keyframes spin-around {
@@ -68,15 +82,15 @@
 }
 
 .servicio_ctn {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 2vw;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2vw;
 }
 
 .servicio_ctn .icon_ctn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .servicio_ctn .text_ctn {
@@ -90,98 +104,100 @@
 
 .servicio_ctn .text_ctn h3 {
   font-weight: bold;
-  color: #3C738C;
+  color: #3c738c;
 }
 
 .servicio_ctn .text_ctn span {
-  color: #3B8DA9;
+  color: #3b8da9;
   font-weight: 600;
 }
 
 .servicio_ctn .text_ctn p {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .expedicion_tarjeta_profesional_ctn .expedicion_tarjeta_svg {
-    width: 25vw;
+  width: 25vw;
 }
 
 .expedicion_tarjeta_profesional_ctn .text_ctn h3 {
-    font-weight: bold;
-    color: #CC454E;
+  font-weight: bold;
+  color: #cc454e;
+}
+
+.expedicion_tarjeta_profesional_ctn .text_ctn span {
+  color: #e06a58;
+  font-weight: 600;
+}
+
+.tribunal_nacional_etica .tribunal_nacional_etica_svg {
+  width: 25vw;
+}
+
+.tribunal_nacional_etica .text_ctn h3 {
+  font-weight: bold;
+  color: #67c797;
+}
+
+.tribunal_nacional_etica .text_ctn span {
+  color: #67c797;
+  font-weight: 600;
+}
+
+/* compromiso conaldefa section */
+
+.compromiso_conaldefa_section {
+  background-color: #74a8ba;
+}
+
+.compromiso_conaldefa_section h5 {
+  color: white;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .banner_section {
+    padding: 5% 10%;
   }
-  
-  .expedicion_tarjeta_profesional_ctn .text_ctn span {
-    color: #E06A58;
-    font-weight: 600;
+
+  .banner_section .banner_content {
+    padding: 2vw;
+    text-align: center;
   }
 
-  .tribunal_nacional_etica .tribunal_nacional_etica_svg {
-    width: 25vw;
+  .servicio_ctn {
+    grid-template-columns: 100%;
+    text-align: center;
   }
 
-  .tribunal_nacional_etica .text_ctn h3 {
-    font-weight: bold;
-    color: #67C797;
-  }
-  
-  .tribunal_nacional_etica .text_ctn span {
-    color: #67C797;
-    font-weight: 600;
-  }
-
-  /* compromiso conaldefa section */
-
-  .compromiso_conaldefa_section{
-    background-color: #74A8BA;
+  .text_ctn {
+    padding: 20px; /* Ajusta según sea necesario */
+    background-color: white; /* Asegura un fondo blanco para el texto */
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+    margin: auto; /* Centra el contenedor */
+    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
+    word-wrap: break-word; /* Permite el ajuste de palabras largas */
+    white-space: normal; /* Permite el ajuste de palabras largas */
+    text-align: center; /* Justifica el texto */
   }
 
-  .compromiso_conaldefa_section h5{
-    color: white;
-    font-weight: 600;
+  .h3_w, .text_ctn span, .text_ctn p {
+    hyphens: none; /* Evita que se inserten guiones en las palabras */
+    word-break: normal; /* Evita la ruptura de palabras */
+    overflow-wrap: anywhere; /* Permite el ajuste de palabras largas */
   }
 
-  @media (max-width: 767px) {
-    
-    .banner_section {
-      padding: 5% 10%;
-    }
-
-    .banner_section .banner_content {
-      padding: 2vw;
-      text-align: center;
-    }
-
-    .servicio_ctn {
-      grid-template-columns: 100%;
-      text-align: center;
-    }
-
-    .servicio_ctn .text_ctn{
-      align-items: center;
-    }
-
-    .servicio_ctn .text_ctn .h3_w {
-      width: 65vw;
-    }
-
-    .servicio_ctn .lupa_svg {
-      width: 15vw !important;
-      animation:  spin-around-mobile 4s infinite linear;
-    }
-  
-
-    .servicio_ctn .inspeccion_vigilancia_svg {
-      width: 50vw !important;
-    }
-
-    .servicio_ctn .expedicion_tarjeta_svg {
-      width: 50vw !important;
-    }
-
-    .servicio_ctn .tribunal_nacional_etica_svg {
-      width: 50vw !important;
-    }
-  
-  
+  .servicio_ctn .lupa_svg {
+    width: 15vw !important;
+    animation: spin-around-mobile 4s infinite linear;
   }
+
+  .servicio_ctn .cursos_diplomados_svg,
+  .servicio_ctn .inspeccion_vigilancia_svg,
+  .servicio_ctn .expedicion_tarjeta_svg,
+  .servicio_ctn .tribunal_nacional_etica_svg {
+    width: 50vw !important;
+  }
+}
+
+
