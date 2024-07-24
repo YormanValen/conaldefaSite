@@ -1,10 +1,5 @@
 .quienes_somos_section {
   background-color: #74a8ba;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1vw;
 }
 
 .quienes_somos_section h1 {
@@ -18,10 +13,18 @@
   text-align: center;
 }
 
+.quienes_somos_content {
+  border: 2px solid white;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw;
+  border-radius: 1vw;
+}
+
 @media (max-width: 767px) {
-
-
-
 }
 
 /** Nuestra historia **/
@@ -61,18 +64,17 @@
 }
 
 @media (max-width: 767px) {
-
-  .nuestra_historia_section .card_ctn  {
+  .nuestra_historia_section .card_ctn {
     grid-template-columns: 100%;
     justify-items: center;
     gap: 3vw;
   }
 
-  .nuestra_historia_section .card_ctn  span{
-   border-radius: 3vw;
+  .nuestra_historia_section .card_ctn span {
+    border-radius: 3vw;
   }
 
-  .nuestra_historia_section .card_ctn .info_fecha::before{
+  .nuestra_historia_section .card_ctn .info_fecha::before {
     top: -5% !important;
     display: none !important;
     left: 50% !important;
@@ -80,13 +82,14 @@
     height: 2vw !important;
   }
 
-  .nuestra_historia_section .card_ctn .info_fecha{
+  .nuestra_historia_section .card_ctn .info_fecha {
     border-radius: 3vw !important;
     width: 90vw !important;
     padding: 5% !important;
   }
 
-  .nuestra_historia_section .card_ctn .info_fecha .card_1, .card_2{
+  .nuestra_historia_section .card_ctn .info_fecha .card_1,
+  .card_2 {
     border-radius: 3vw !important;
     width: 90vw !important;
     padding: 5% !important;
@@ -96,16 +99,16 @@
     gap: 7vw !important;
   }
 
-  .junta_directiva_section .junta_directiva_ctn{
+  .junta_directiva_section .junta_directiva_ctn {
     grid-template-columns: 100%;
     gap: 4vw;
   }
 
-  .junta_directiva_section .junta_directiva_ctn .integrantes_1{
+  .junta_directiva_section .junta_directiva_ctn .integrantes_1 {
     order: 2;
   }
 
-  .junta_directiva_section .junta_directiva_ctn .integrantes_1 .integrante_ctn{
+  .junta_directiva_section .junta_directiva_ctn .integrantes_1 .integrante_ctn {
     display: flex;
     padding-top: 2vw;
     border-bottom: #808080 solid 2px;
@@ -113,25 +116,27 @@
     align-items: center;
   }
 
-  .junta_directiva_section .junta_directiva_ctn .integrantes_1 .integrante_ctn .presidente_ctn{
+  .junta_directiva_section
+    .junta_directiva_ctn
+    .integrantes_1
+    .integrante_ctn
+    .presidente_ctn {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .junta_directiva_section .junta_directiva_ctn .integrantes_2{
+  .junta_directiva_section .junta_directiva_ctn .integrantes_2 {
     order: 3;
   }
 
-  .junta_directiva_section .junta_directiva_ctn .integrantes_2 .integrante_ctn{
+  .junta_directiva_section .junta_directiva_ctn .integrantes_2 .integrante_ctn {
     display: flex;
     padding-top: 2vw;
     border-bottom: #808080 solid 2px;
     flex-direction: column;
     align-items: center;
   }
-  
-
 }
 
 /** 1983 **/

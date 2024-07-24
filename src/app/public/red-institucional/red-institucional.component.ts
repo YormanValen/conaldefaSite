@@ -53,18 +53,21 @@ export class RedInstitucionalComponent {
 
   ];
 
-  showModal(event: MouseEvent, countryCode: string): void {
+  showModal(event: MouseEvent, countryCode: string, color: string): void {
     const country = this.countries.find((c) => c.code === countryCode);
     if (country) {
       this.modalTitle = country.name;
       this.modalContent = `${country.universidades.join(' - ')}`;
       this.showModalState = true;
-
+  
       // Positioning modal next to the mouse cursor
       if (this.modalRef) {
         let modalElement = this.modalRef.nativeElement;
         modalElement.style.top = `${event.clientY + 5}px`; // 5px offset from cursor
         modalElement.style.left = `${event.clientX + 5}px`;
+  
+        // Assigning the received color to the modal
+        modalElement.style.backgroundColor = color;
       }
     }
   }

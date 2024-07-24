@@ -75,10 +75,6 @@ button {
   transition: all 0.4s;
 }
 
-.btn-primary:hover {
-  background-color: var(--deep_blue);
-  transform: translateY(-5px);
-}
 
 i {
   cursor: auto;
