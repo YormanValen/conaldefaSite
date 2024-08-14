@@ -12,9 +12,11 @@ import { NormatividadComponent } from './normatividad/normatividad.component';
 import { MatriculateComponent } from './matriculate/matriculate.component';
 import { InfoMatriculaDialogComponent } from './info-matricula-dialog/info-matricula-dialog.component';
 import { NuestrosAsociadosComponent } from './nuestros-asociados/nuestros-asociados.component';
+import { CodigoDeEticaComponent } from './codigo-de-etica/codigo-de-etica.component';
+import { ReporteDeCasosComponent } from './reporte-de-casos/reporte-de-casos.component';
 
 @NgModule({
-  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent, InfoMatriculaDialogComponent, NuestrosAsociadosComponent],
+  declarations: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent, InfoMatriculaDialogComponent, NuestrosAsociadosComponent, CodigoDeEticaComponent, ReporteDeCasosComponent],
   imports: [CommonModule, RouterModule, BrowserModule],
   exports: [SwiperComponent, HomeComponent, QuienesSomosComponent, RedInstitucionalComponent, AcceptTermsDialogComponent, ServiciosComponent, NormatividadComponent, MatriculateComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

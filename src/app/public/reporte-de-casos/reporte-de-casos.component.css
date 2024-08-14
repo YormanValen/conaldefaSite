@@ -1,0 +1,31 @@
+/* banner section */
+
+.banner_section {
+  align-items: center;
+  gap: 1vw;
+  color: white;
+  padding: 5% 20%;
+  background-color: var(--banner_blue);
+}
+
+.banner_section .title h1 {
+  font-weight: bold;
+}
+
+.banner_section .banner_content {
+  border: 2px solid white;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.banner_section .banner_content p {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+/** list_ctn */
+
+.list_ctn ul {
+  list-style-type: disc;
+}

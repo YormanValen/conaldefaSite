@@ -1,0 +1,64 @@
+/* banner section */
+
+.banner_section {
+    align-items: center;
+    gap: 1vw;
+    color: white;
+    padding: 5% 20%;
+    background-color: var(--banner_blue);
+  }
+  
+  .banner_section .title h1 {
+    font-weight: bold;
+  }
+  
+  .banner_section .banner_content {
+    border: 2px solid white;
+    padding: 1vw;
+    border-radius: 1vw;
+    
+  }
+
+  .banner_section .banner_content p{
+   color: white;
+   width: 100%;
+   text-align: center;
+    
+  }
+
+
+/** Boton descargar **/
+
+.cssbuttons-io-button {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.5em 0.8em 1.2em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, #3b8da9 0%, #75b5ca 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em var(--primary-color);
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+  }
+  
+  .cssbuttons-io-button span {
+    font-size: 1.2vw;
+  }
+  
+  .cssbuttons-io-button svg {
+    margin-right: 8px;
+  }
+  
+  .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #3b8da9;
+  }
+  
+  .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #3b8da9;
+  }
+  
