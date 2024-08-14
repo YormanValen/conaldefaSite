@@ -55,12 +55,12 @@
   position: absolute;
   top: 25%;
   left: 30%;
-  width: 7vw;
+  width: 6vw;
   animation: spin-around 4s infinite linear;
 }
 
-.inspeccion_vigilancia .inspeccion_vigilancia_svg {
-  width: 25vw;
+.inspeccion_vigilancia .inspeccion_vigilancia_svg{
+    width: 20vw;
 }
 
 @keyframes spin-around {
@@ -117,7 +117,28 @@
 }
 
 .expedicion_tarjeta_profesional_ctn .expedicion_tarjeta_svg {
-  width: 25vw;
+    width: 20vw;
+}
+
+.tribunal_nacional_etica .tribunal_nacional_etica_svg {
+    width: 20vw;
+}
+
+
+/* cursos diplomados ctn */
+
+.cursos_diplomados_ctn .cursos_diplomados_svg {
+    width: 20vw;
+}
+
+.cursos_diplomados_ctn .text_ctn h3 {
+    font-weight: bold;
+    color: #E74830;
+}
+
+.cursos_diplomados_ctn .text_ctn span {
+  font-weight: 600;
+  color: #E06A58;
 }
 
 .expedicion_tarjeta_profesional_ctn .text_ctn h3 {
@@ -130,9 +151,9 @@
   font-weight: 600;
 }
 
-.tribunal_nacional_etica .tribunal_nacional_etica_svg {
-  width: 25vw;
-}
+  .tribunal_nacional_etica .tribunal_nacional_etica_svg {
+    width: 20vw;
+  }
 
 .tribunal_nacional_etica .text_ctn h3 {
   font-weight: bold;
@@ -170,27 +191,22 @@
     text-align: center;
   }
 
-  .text_ctn {
-    padding: 20px; /* Ajusta según sea necesario */
-    background-color: white; /* Asegura un fondo blanco para el texto */
-    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
-    margin: auto; /* Centra el contenedor */
-    overflow-wrap: break-word; /* Permite el ajuste de palabras largas */
-    word-wrap: break-word; /* Permite el ajuste de palabras largas */
-    white-space: normal; /* Permite el ajuste de palabras largas */
-    text-align: center; /* Justifica el texto */
-  }
+    .servicio_ctn .text_ctn{
+      align-items: center;
+    }
 
-  .h3_w, .text_ctn span, .text_ctn p {
-    hyphens: none; /* Evita que se inserten guiones en las palabras */
-    word-break: normal; /* Evita la ruptura de palabras */
-    overflow-wrap: anywhere; /* Permite el ajuste de palabras largas */
-  }
+    .servicio_ctn .text_ctn .h3_w {
+      width: 100%;
+    }
 
-  .servicio_ctn .lupa_svg {
-    width: 15vw !important;
-    animation: spin-around-mobile 4s infinite linear;
-  }
+    .servicio_ctn .lupa_svg {
+      width: 15vw !important;
+      animation:  spin-around-mobile 4s infinite linear;
+    }
+
+    .servicio_ctn .cursos_diplomados_svg {
+      width: 50vw !important;
+    }
 
   .servicio_ctn .cursos_diplomados_svg,
   .servicio_ctn .inspeccion_vigilancia_svg,

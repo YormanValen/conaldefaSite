@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { ContactService } from '../../services/contact.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -24,7 +24,7 @@ export class ContactComponent {
           }, 5000); // Oculta el mensaje después de 5 segundos
         },
         error => {
-          console.log(error);
+          console.error('Error al enviar el mensaje', error);
         }
       );
     }
