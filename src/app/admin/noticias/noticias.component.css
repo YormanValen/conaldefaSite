@@ -27,6 +27,14 @@
   margin: 0;
 }
 
+.resoluciones_ctn {
+  display: flex;
+  justify-content: center;
+
+  gap: 1vw;
+
+}
+
 .resolucion_item {
   width: 20vw;
   height: fit-content;

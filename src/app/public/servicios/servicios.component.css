@@ -41,12 +41,12 @@
   position: absolute;
   top: 25%;
   left: 30%;
-  width: 7vw;
+  width: 6vw;
   animation: spin-around 4s infinite linear;
 }
 
 .inspeccion_vigilancia .inspeccion_vigilancia_svg{
-    width: 28vw;
+    width: 20vw;
 }
 
 @keyframes spin-around {
@@ -103,7 +103,28 @@
 }
 
 .expedicion_tarjeta_profesional_ctn .expedicion_tarjeta_svg {
-    width: 25vw;
+    width: 20vw;
+}
+
+.tribunal_nacional_etica .tribunal_nacional_etica_svg {
+    width: 20vw;
+}
+
+
+/* cursos diplomados ctn */
+
+.cursos_diplomados_ctn .cursos_diplomados_svg {
+    width: 20vw;
+}
+
+.cursos_diplomados_ctn .text_ctn h3 {
+    font-weight: bold;
+    color: #E74830;
+}
+
+.cursos_diplomados_ctn .text_ctn span {
+  font-weight: 600;
+  color: #E06A58;
 }
 
 .expedicion_tarjeta_profesional_ctn .text_ctn h3 {
@@ -117,7 +138,7 @@
   }
 
   .tribunal_nacional_etica .tribunal_nacional_etica_svg {
-    width: 25vw;
+    width: 20vw;
   }
 
   .tribunal_nacional_etica .text_ctn h3 {
@@ -162,14 +183,17 @@
     }
 
     .servicio_ctn .text_ctn .h3_w {
-      width: 65vw;
+      width: 100%;
     }
 
     .servicio_ctn .lupa_svg {
       width: 15vw !important;
       animation:  spin-around-mobile 4s infinite linear;
     }
-  
+
+    .servicio_ctn .cursos_diplomados_svg {
+      width: 50vw !important;
+    }
 
     .servicio_ctn .inspeccion_vigilancia_svg {
       width: 50vw !important;

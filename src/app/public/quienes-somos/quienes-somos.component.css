@@ -299,6 +299,39 @@
   font-weight: 900;
 }
 
+/**2009**/
+
+.nuestra_historia_section .linea_historica_ctn .card_2009 .fecha_ctn span {
+  background-color: #D8E8C2;
+  padding: 5px;
+  font-weight: 900;
+  border-radius: 0.5vw;
+}
+
+.nuestra_historia_section .card_2009 .info_fecha {
+  background-color: #D8E8C2;
+  padding: 1vw 1vw 1vw 5vw;
+  border-radius: 20vw 0 0 20vw;
+  text-align: center;
+  position: relative;
+}
+
+.nuestra_historia_section .card_2009 .info_fecha::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  top: 50%;
+  border-radius: 100%;
+  width: 1vw;
+  height: 1vw;
+  background-color: #D8E8C2;
+  transform: translate(0, -50%);
+}
+
+.nuestra_historia_section .card_2009 .info_fecha span {
+  font-weight: 900;
+}
+
 /** 2014 **/
 
 .nuestra_historia_section .linea_historica_ctn .card_2014 .fecha_ctn span {

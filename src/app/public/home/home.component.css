@@ -14,6 +14,17 @@
 
 }
 
+.nuestros_servicios_section .servicio {
+    display: grid;
+    grid-template-rows: 80% 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.nuestros_servicios_section .servicio img {
+    width: 17vw;
+}
+
 .btn {
     position: relative;
     display: flex;
@@ -160,9 +171,14 @@
         text-align: center;
     }
 
-    .nuestros_servicios_section .column_ctn{
-        grid-template-columns: 100%;
+    .nuestros_servicios_ctn img {
+        width: 30vw !important;
     }
+
+   .nuestros_servicios_ctn .row {
+    flex-direction: column;
+    gap: 2vw;
+   }  
 
     .column_ctn .first_column img {
         width: 50vw;
