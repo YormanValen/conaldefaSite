@@ -142,39 +142,47 @@
   <div class="title">
     <h3>Nuestra Junta Directiva</h3>
   </div>
-  <div class="junta_directiva_ctn">
-    <div class="integrantes_1">
-      <div class="integrante_ctn">
-        <div class="presidente_ctn">
-          <h5>Presidente:</h5>
-          <p>Gabriel Gallego Montes</p>
-          <h6>Suplente</h6>
-          <p>María Victoria Álvarez Vélez</p>
-        </div>
-      </div>
-      <div class="integrante_ctn">
-        <h5>Secretaria:</h5>
-        <p>Mariana Ocampo</p>
-        <h6>Suplente</h6>
-        <p>Oscar Emilio Gómez Uribe</p>
-      </div>
-    </div>
-    <div class="icon_ctn">
-      <img src="assets/svg/Teamwork.svg" alt="teamwork vector" />
-    </div>
-    <div class="integrantes_2">
-      <div class="integrante_ctn">
-        <h5>Vicepresidente:</h5>
-        <p>Carmenza Quintero Cardona</p>
-        <h6>Suplente</h6>
-        <p>Ovidio Herrera Rivera</p>
-      </div>
-      <div class="integrante_ctn">
-        <h5>Tesorera:</h5>
-        <p>Maria Clemencia Quintero</p>
-        <h6>Suplente</h6>
-        <p>Edisson Hernán Restrepo</p>
-      </div>
+  <div class="junta_directiva_ctn w-100">
+    <div class="carousel_ctn">
+      <swiper-container
+        [centeredSlides]="swiperConfig.centeredSlides"
+        [paginationClickable]="swiperConfig.paginationClickable"
+        [navigation]="true"
+        [spaceBetween]="swiperConfig.spaceBetween"
+        [loop]="swiperConfig.loop"
+        [autoplay]="swiperConfig.autoplay"
+        [speed]="swiperConfig.speed"
+        [effect]="swiperConfig.effect"
+        [slidesPerView]="swiperConfig.slidesPerView"
+        class="mySwiper"
+      >
+        <ng-container *ngFor="let member of members">
+          <swiper-slide class="swiper-slide">
+            <div class="slide-content">
+              <div class="img_ctn">
+                <img [src]="member.img" alt="{{ member.name }}" />
+              </div>
+              <div class="text_ctn p-3 d-flex flex-column h-100 justify-content-evenly">
+                <h4 class="position_text">
+                  {{ member.position }}:  <br> <span>{{ member.name }}</span>
+                </h4>
+                <p>
+                  <span><strong>Educación:</strong> </span
+                  >{{ member.education }}
+                </p>
+                <p>
+                  <span><strong>Experiencia:</strong> </span
+                  >{{ member.experience }}
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+        </ng-container>
+
+        <!-- Flechas de navegación personalizadas -->
+        <div class="swiper-button-prev custom-swiper-button"></div>
+        <div class="swiper-button-next custom-swiper-button"></div>
+      </swiper-container>
     </div>
   </div>
 </section>

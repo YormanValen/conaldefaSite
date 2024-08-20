@@ -82,39 +82,31 @@
   </div>
 
   <div class="carousel_ctn">
-    <swiper-container 
-  [centeredSlides]="swiperConfig.centeredSlides"
-  [paginationClickable]="swiperConfig.paginationClickable"
-  [navigation]="swiperConfig.navigation"
-  [spaceBetween]="swiperConfig.spaceBetween"
-  [loop]="swiperConfig.loop"
-  [autoplay]="swiperConfig.autoplay"
-  [speed]="swiperConfig.speed"
-  [effect]="swiperConfig.effect"
-  [slidesPerView]="swiperConfig.slidesPerView"
-  [breakpoints]="swiperConfig.breakpoints"
-  class="mySwiper">
-  <swiper-slide class="d-flex justify-content-center" *ngFor="let item of images">
-    <img class="" [src]="item" alt="">
-  </swiper-slide>
-  
-  <!-- Flechas de navegación personalizadas -->
-  <div class="swiper-button-prev custom-swiper-button"></div>
-  <div class="swiper-button-next custom-swiper-button"></div>
-</swiper-container>
-  </div>
+    <swiper-container
+      [centeredSlides]="swiperConfig.centeredSlides"
+      [paginationClickable]="swiperConfig.paginationClickable"
+      [navigation]="swiperConfig.navigation"
+      [spaceBetween]="swiperConfig.spaceBetween"
+      [loop]="swiperConfig.loop"
+      [autoplay]="swiperConfig.autoplay"
+      [speed]="swiperConfig.speed"
+      [effect]="swiperConfig.effect"
+      [slidesPerView]="swiperConfig.slidesPerView"
+      [breakpoints]="swiperConfig.breakpoints"
+      class="mySwiper"
+    >
+      <swiper-slide
+        class="d-flex justify-content-center"
+        *ngFor="let item of images"
+      >
+        <img class="" [src]="item" alt="" />
+      </swiper-slide>
 
-  <!-- <div class="fotos_ctn">
-    <div class="img_ctn">
-      <img src="assets/img/asociados_2.png" alt="asociado" />
-    </div>
-    <div class="img_ctn">
-      <img src="assets/img/asociados_1.png" alt="asociado" />
-    </div>
-    <div class="img_ctn">
-      <img src="assets/img/asociados_3.png" alt="asociado" />
-    </div>
-  </div> -->
+      <!-- Flechas de navegación personalizadas -->
+      <div class="swiper-button-prev custom-swiper-button"></div>
+      <div class="swiper-button-next custom-swiper-button"></div>
+    </swiper-container>
+  </div>
 
   <div class="btn_matriculate d-flex justify-content-center align-item-center">
     <a
