@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Buscar por Cédula</h2>
+    
+    <input type="text" [(ngModel)]="cedula" placeholder="Ingrese la cédula" />
+    <button (click)="searchGraduate()">Buscar</button>
+  
+    <!-- Mostrar el resultado si se encuentra el graduado -->
+    <div *ngIf="graduate">
+      <p><strong>Nombre:</strong> {{ graduate.nombre }}</p>
+      <p><strong>Matriculado:</strong> {{ graduate.matriculado ? 'Sí' : 'No' }}</p>
+      <p><strong>Colegiado:</strong> {{ graduate.colegiado ? 'Sí' : 'No' }}</p>
+    </div>
+  
+    <!-- Mostrar error si no se encuentra -->
+    <div *ngIf="error" class="error">
+      {{ error }}
+    </div>
+  </div>
+  
