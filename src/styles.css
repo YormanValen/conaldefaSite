@@ -23,6 +23,8 @@
   font-style: normal;
 }
 
+
+
 @font-face {
   font-family: 'Mulish';
   src: url('./assets/fonts/Mulish-Bold.ttf') format('truetype');
@@ -33,6 +35,13 @@
 @font-face {
   font-family: 'Mulish';
   src: url('./assets/fonts/Mulish-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish-ExtraBold-Italic';
+  src: url('./assets/fonts/Mulish-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
@@ -174,7 +183,7 @@ ul {
   }
 
   span {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 }
 

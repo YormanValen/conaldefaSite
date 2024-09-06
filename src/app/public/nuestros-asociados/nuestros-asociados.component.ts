@@ -15,6 +15,10 @@ export class NuestrosAsociadosComponent {
     '/assets/img/asociados_6.jpeg',
     '/assets/img/asociados_7.jpeg',
     '/assets/img/asociados_8.jpeg',
+    '/assets/img/asociados_9.png',
+    '/assets/img/asociados_10.png',
+
+
   ];
 
   swiperConfig = {

@@ -5,7 +5,7 @@
   gap: 1vw;
   color: white;
   padding: 5% 20%;
-  background-color: var(--banner_blue);
+  background: linear-gradient(to right, #3b8da9 0%, #a2c7eb 100%);
 }
 
 .banner_section .title h1 {
@@ -38,6 +38,7 @@
 
 .cursos_diplomados_ctn .text_ctn span {
   color: #e06a58 !important;
+  font-size: 1.2vw ;
 }
 
 .inspeccion_vigilancia {
@@ -148,6 +149,7 @@
 
 .expedicion_tarjeta_profesional_ctn .text_ctn span {
   color: #e06a58;
+  font-size: 1.2vw ;
   font-weight: 600;
 }
 
@@ -162,13 +164,19 @@
 
 .tribunal_nacional_etica .text_ctn span {
   color: #67c797;
+  font-size: 1.2vw ;
+  font-weight: 600;
+}
+
+.inspeccion_vigilancia .text_ctn span {
+  font-size: 1.2vw ;
   font-weight: 600;
 }
 
 /* compromiso conaldefa section */
 
 .compromiso_conaldefa_section {
-  background-color: #74a8ba;
+  background-color: #74a8ba;  
 }
 
 .compromiso_conaldefa_section h5 {

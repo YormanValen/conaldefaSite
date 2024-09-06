@@ -5,7 +5,7 @@
   gap: 1vw;
   color: white;
   padding: 5% 20%;
-  background-color: var(--banner_blue);
+  background: linear-gradient(to right, #3b8da9 0%, #a2c7eb 100%);
 }
 
 .banner_section .title h1 {
@@ -28,4 +28,8 @@
 
 .list_ctn ul {
   list-style-type: disc;
+}
+
+.reporte-casos-ctn h5 {
+  font-weight: bold;
 }

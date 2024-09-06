@@ -40,7 +40,9 @@
         <li class="dropdown">
           <button class="">Tribunal de ética</button>
           <ul class="dropdown-menu">
-            <li><a routerLink="/código deontológico">Código deontológico</a></li>
+            <li>
+              <a routerLink="/código deontológico">Código deontológico</a>
+            </li>
             <li><a routerLink="/reporte de casos">Reporte de casos</a></li>
           </ul>
         </li>
@@ -104,13 +106,27 @@
         </li>
         <li>
           <a (click)="toggleMenu()" routerLink="/normatividad" class="">
-            Normatividad
+            Resoluciones y Acuerdos
           </a>
         </li>
         <li>
-          <a (click)="toggleMenu()" routerLink="" class="">
+          <a (click)="toggleMenu()" routerLink="/nuestros-asociados" class="">
             Nuestros Asociados
           </a>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" routerLink="/noticias" class="">
+            Noticias
+          </a>
+        </li>
+        <li class="dropdown">
+          <button class="">Tribunal de ética</button>
+          <ul class="dropdown-menu">
+            <li>
+              <a routerLink="/código deontológico">Código deontológico</a>
+            </li>
+            <li><a routerLink="/reporte de casos">Reporte de casos</a></li>
+          </ul>
         </li>
       </ul>
     </div>

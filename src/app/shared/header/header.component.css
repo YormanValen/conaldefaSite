@@ -261,6 +261,15 @@ header {
   .menu_navbar .btn span {
     font-size: 2.2vw;
   }
+
+  .header_mobile__second__ctn .dropdown-menu {
+    width: 100%;
+    left: 0;
+  }
+
+  .header_mobile__second__ctn .dropdown-menu li {
+   padding: 0;
+  }
 }
 
 /* Estilo del elemento principal */

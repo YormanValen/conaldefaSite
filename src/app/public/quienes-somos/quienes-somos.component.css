@@ -1,5 +1,5 @@
 .quienes_somos_section {
-  background-color: #74a8ba;
+  background: linear-gradient(to right, #3b8da9 0%, #a2c7eb 100%);
 }
 
 .quienes_somos_section h1 {
@@ -10,18 +10,18 @@
 
 .quienes_somos_section p {
   color: white;
+  border: 2px solid white;
   text-align: center;
+  border-radius: 1vw;
+  padding: 1vw;
 }
 
 .quienes_somos_content {
-  border: 2px solid white;
-  padding: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 1vw;
-  border-radius: 1vw;
 }
 
 @media (max-width: 767px) {
@@ -130,7 +130,7 @@
 }
 
 .nuestra_historia_section .card_1983 .info_fecha h6 {
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 /** 1984 **/
@@ -163,6 +163,10 @@
 }
 
 .nuestra_historia_section .card_1984 .info_fecha span {
+  font-weight: 900;
+}
+
+.nuestra_historia_section .card_1984 .info_fecha h6 {
   font-weight: 900;
 }
 
@@ -199,6 +203,10 @@
   font-weight: 900;
 }
 
+.nuestra_historia_section .card_1988 .info_fecha h6 {
+  font-weight: 900;
+}
+
 /** 1992 **/
 
 .nuestra_historia_section .linea_historica_ctn .card_1992 .fecha_ctn span {
@@ -229,6 +237,10 @@
 }
 
 .nuestra_historia_section .card_1992 .info_fecha span {
+  font-weight: 900;
+}
+
+.nuestra_historia_section .card_1992 .info_fecha h6 {
   font-weight: 900;
 }
 
@@ -265,6 +277,10 @@
   font-weight: 900;
 }
 
+.nuestra_historia_section .card_1998 .info_fecha h6 {
+  font-weight: 900;
+}
+
 /**2009**/
 
 .nuestra_historia_section .linea_historica_ctn .card_2009 .fecha_ctn span {
@@ -295,6 +311,10 @@
 }
 
 .nuestra_historia_section .card_2009 .info_fecha span {
+  font-weight: 900;
+}
+
+.nuestra_historia_section .card_2009 .info_fecha h6 {
   font-weight: 900;
 }
 
@@ -337,6 +357,10 @@
   font-weight: 900;
 }
 
+.nuestra_historia_section .card_2014 .info_fecha h6 {
+  font-weight: 900;
+}
+
 /** 2018 **/
 
 .nuestra_historia_section .linea_historica_ctn .card_2018 .fecha_ctn span {
@@ -367,6 +391,10 @@
 }
 
 .nuestra_historia_section .card_2018 .info_fecha span {
+  font-weight: 900;
+}
+
+.nuestra_historia_section .card_2018 .info_fecha h6 {
   font-weight: 900;
 }
 
@@ -403,6 +431,10 @@
   font-weight: 900;
 }
 
+.nuestra_historia_section .card_2021 .info_fecha h6 {
+  font-weight: 900;
+}
+
 /** 2023 **/
 
 .nuestra_historia_section .linea_historica_ctn .card_2023 .fecha_ctn span {
@@ -432,7 +464,7 @@
   transform: translate(0, -50%);
 }
 
-.nuestra_historia_section .card_2023 .info_fecha span {
+.nuestra_historia_section .card_2023 .info_fecha h6 {
   font-weight: 900;
 }
 
@@ -448,22 +480,78 @@
 
 .junta_directiva_section .title h3 {
   color: white;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 3vw;
 }
 
 .swiper-slide {
   padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide-content {
   display: grid;
+  width: 63vw;
   align-items: center;
   grid-template-columns: 30% 1fr;
   background-color: white;
   border-radius: 5vw 2vw 2vw 5vw;
 }
 
-.slide-content .position_text {
-  color: #145A7E;
+.slide-content .img_ctn {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
+.slide-content .img_ctn::before {
+  position: absolute;
+  border-radius: 2vw;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  background: linear-gradient(to right, #145A7E 0%, white 100%);
+}
+
+.slide-content .img_ctn img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content .text_ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.slide-content .text_ctn p {
+  color: #145a7e;
+}
+
+.slide-content .position_text {
+  color: #145a7e;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-content .position_text {
+  font-size: 2.3vw;
+  margin: 0;
+  font-family: "Mulish-ExtraBold-Italic";
+}
+
+.slide-content .position_text span {
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.slide-content .text_ctn .span_title {
+  font-size: 1.2vw;
+  font-weight: 800;
+}

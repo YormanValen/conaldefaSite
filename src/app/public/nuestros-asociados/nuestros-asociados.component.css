@@ -3,7 +3,7 @@
   gap: 1vw;
   color: white;
   padding: 5% 20%;
-  background-color: var(--banner_blue);
+  background: linear-gradient(to right, #3b8da9 0%, #a2c7eb 100%);
 }
 
 .banner_section .banner_content {
@@ -43,6 +43,10 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-evenly;
+}
+
+.nuestros_asociados_section .resena p {
+  text-align: justify;
 }
 
 .nuestros_asociados_section .title h2 {
@@ -123,16 +127,12 @@ swiper-slide {
   border-radius: 2vw;
   background-color: #ffb06b;
   overflow: hidden;
-
 }
 
 swiper-slide img {
-    overflow: hidden;
-    border-radius: 2vw;
-
+  overflow: hidden;
+  border-radius: 2vw;
 }
-
-
 
 .carousel_section .title h3 {
   font-weight: bolder;
@@ -158,6 +158,18 @@ swiper-slide img {
 .carousel_section .fotos_ctn .img_ctn:nth-child(2) img {
   position: absolute;
   transform: scale(2);
+}
+
+.mySwiper .custom-swiper-button {
+  color: white !important; /* Fuerza el color blanco */
+}
+
+.mySwiper .custom-swiper-button.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.mySwiper .custom-swiper-button:hover {
+  color: #fff !important; /* Mantiene el color blanco al hacer hover */
 }
 
 .btn-matriculate {

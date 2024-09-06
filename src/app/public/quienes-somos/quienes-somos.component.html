@@ -35,7 +35,7 @@
         <span>1984</span>
       </div>
       <div class="info_fecha wow slideInRight">
-        <span>Ingreso de primeros estudiantes</span>
+        <h6>Ingreso de primeros estudiantes</h6>
         <p>Currículo en prueba</p>
       </div>
     </div>
@@ -44,10 +44,9 @@
         <span>1988</span>
       </div>
       <div class="info_fecha wow slideInRight">
-        <span
-          >Primera promocion de Desarrolo Familiar en la Universidad de
-          Caldas</span
-        >
+        <h6>
+          Primera promocion de Desarrolo Familiar en la Universidad de Caldas
+        </h6>
       </div>
     </div>
     <div class="card_ctn card_1992">
@@ -55,10 +54,10 @@
         <span>1992</span>
       </div>
       <div class="info_fecha wow slideInRight">
-        <span
-          >Creación del programa de Desarrollo Familiar en la Universidad
+        <h6>
+          Creación del programa de Desarrollo Familiar en la Universidad
           Católica Luis Amigó
-        </span>
+        </h6>
       </div>
     </div>
     <div class="card_ctn card_1998">
@@ -66,7 +65,7 @@
         <span>1998</span>
       </div>
       <div class="info_fecha wow slideInRight">
-        <span>LEY 429 DE 1998</span>
+        <h6>LEY 429 DE 1998</h6>
         <p>Reglamento del ejercicio de la Profesión en Desarrollo Familiar</p>
       </div>
     </div>
@@ -75,7 +74,7 @@
         <span>2009</span>
       </div>
       <div class="info_fecha wow slideInRight">
-        <span>LEY 1361 DE 2009</span>
+        <h6>LEY 1361 DE 2009</h6>
         <p>Ley de Protección Integral a la Familia</p>
       </div>
     </div>
@@ -85,17 +84,17 @@
       </div>
       <div class="info_fecha wow slideInRight">
         <div class="card_1">
-          <span
-            >Demanda inconstitucionalidad Ley 1098 por vulnerar el derecho al
+          <h6>
+            Demanda inconstitucionalidad Ley 1098 por vulnerar el derecho al
             trabajo de lxs Profesionales en Desarrollo familiar
-          </span>
+          </h6>
           <p>CLÍNICA SOCIO-JURIDÍCA DE LA UNIVERSIDAD DE CALDAS</p>
         </div>
         <div class="card_1">
-          <span
-            >Sentencia C-505/14 de la Corte Constitucional, que declara
+          <h6>
+            Sentencia C-505/14 de la Corte Constitucional, que declara
             inconstitucional los artículo 73, 79 y 84.
-          </span>
+          </h6>
           <p>Comités de Adopción, Comisarias y Defensorías de Familia.</p>
         </div>
       </div>
@@ -105,7 +104,7 @@
         <span>2018</span>
       </div>
       <div class="info_fecha wow slideInRight">
-        <span>Creación del Colegio de Profesionales </span>
+        <h6>Creación del Colegio de Profesionales</h6>
         <img src="assets/img/logo.png" alt="" />
       </div>
     </div>
@@ -114,10 +113,10 @@
         <span>2021</span>
       </div>
       <div class="info_fecha wow slideInRight">
-        <span
-          >Incorporación en la ley 2126 sobre Comisarías de Familia, el perfil
+        <h6>
+          Incorporación en la ley 2126 sobre Comisarías de Familia, el perfil
           profesional en Desarrollo Familiar
-        </span>
+        </h6>
       </div>
     </div>
     <div class="card_ctn card_2023">
@@ -162,16 +161,19 @@
               <div class="img_ctn">
                 <img [src]="member.img" alt="{{ member.name }}" />
               </div>
-              <div class="text_ctn p-3 d-flex flex-column h-100 justify-content-evenly">
+              <div
+                class="text_ctn p-3 d-flex flex-column h-100 justify-content-center"
+              >
                 <h4 class="position_text">
-                  {{ member.position }}:  <br> <span>{{ member.name }}</span>
+                  {{ member.position }}:
+                  <span>{{ member.name }}</span>
                 </h4>
                 <p>
-                  <span><strong>Educación:</strong> </span
+                  <span class="span_title">Educación: </span
                   >{{ member.education }}
                 </p>
                 <p>
-                  <span><strong>Experiencia:</strong> </span
+                  <span class="span_title">Experiencia: </span
                   >{{ member.experience }}
                 </p>
               </div>

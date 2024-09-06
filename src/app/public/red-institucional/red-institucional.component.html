@@ -39,7 +39,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           (mouseover)="showModal($event, 'CH', '#98CEE9')"
-              (mouseleave)="hideModal()"
+          (mouseleave)="hideModal()"
         />
         <g id="Group 3">
           <path
@@ -282,9 +282,11 @@
     autoplay-delay="2000"
     autoplay-disable-on-interaction="true"
   >
-    <swiper-slide class="swiper_item" *ngFor="let item of sliderImages"
-      ><img [src]="item" alt=""
-    /></swiper-slide>
+    <swiper-slide class="swiper_item" *ngFor="let item of slides">
+      <a [href]="item.link" target="_blank">
+        <img [src]="item.img" alt="Imagen del slider" />
+      </a>
+    </swiper-slide>
   </swiper-container>
 </section>
 

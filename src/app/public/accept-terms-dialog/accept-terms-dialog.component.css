@@ -79,12 +79,8 @@
     width: 100%;
   }
 
-  .btn {
-    
-  }
-
   .btn span {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }
 
 }

@@ -76,14 +76,19 @@ export class RedInstitucionalComponent {
     this.showModalState = false;
   }
 
-  sliderImages = [
-    '/assets/img/slide_1.png',
-    '/assets/img/slide_2.png',
-    '/assets/img/slide_3.png',
-    '/assets/img/slide_4.png',
-    '/assets/img/slide_5.png',
-    '/assets/img/slide_6.png',
-    '/assets/img/slide_7.png',
-    '/assets/img/slide_8.png',
+  //aqui se definen las imagenes del slider y los links de las imagenes
+  slides = [
+    { img: "assets/img/slide_1.png", link: "https://www.ucaldas.edu.co/" },
+    { img: "assets/img/slide_2.png", link: "https://www.funlam.edu.co/" },
+    { img: "assets/img/slide_3.png", link: "https://www.uatx.mx/" },
+    { img: "assets/img/slide_4.png", link: "https://www.anahuac.mx/" },
+    { img: "assets/img/slide_5.png", link: "https://www.ucuenca.edu.ec/ " },
+    { img: "assets/img/slide_6.png", link: "https://www.uft.cl/ " },
+    { img: "assets/img/slide_7.png", link: "https://www.austral.edu.ar/ " }
   ];
+
+
+
+
+  
 }
