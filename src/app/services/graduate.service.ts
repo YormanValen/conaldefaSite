@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class GraduateService {
 
-  private apiUrl = 'http://127.0.0.1:8000/graduates'; // Cambia esta URL por tu API real
+  private apiUrl = 'https://admin.conaldefa.org/graduates'; // Cambia esta URL por tu API real
 
   constructor(private http: HttpClient) { }
 
