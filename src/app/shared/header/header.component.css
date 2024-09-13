@@ -244,6 +244,8 @@ header {
 
   .menu_navbar li {
     width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid var(--gray);
@@ -262,6 +264,11 @@ header {
     font-size: 2.2vw;
   }
 
+  .header_mobile__second__ctn .dropdown button {
+    color: #0a58ca;
+    font-weight: 500;
+  }
+
   .header_mobile__second__ctn .dropdown-menu {
     width: 100%;
     left: 0;
@@ -270,6 +277,12 @@ header {
   .header_mobile__second__ctn .dropdown-menu li {
    padding: 0;
   }
+
+  .menu_navbar .btn span {
+    font-size: 3vw;
+  }
+
+
 }
 
 /* Estilo del elemento principal */
