@@ -203,6 +203,10 @@
       align-items: center;
     }
 
+    .servicio_ctn .text_ctn span{
+      font-size: 3vw ;
+    }
+
     .servicio_ctn .text_ctn .h3_w {
       width: 100%;
     }

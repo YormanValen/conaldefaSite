@@ -1,18 +1,37 @@
 <div class="container">
-  <h2>Buscar por Cédula</h2>
-
-  <input type="text" [(ngModel)]="cedula" placeholder="Ingrese la cédula" />
-  <button (click)="searchGraduate()">Buscar</button>
-
+  <div class="search_box">
+    <div class="title">
+      <h2>Buscar por Cédula</h2>
+    </div>
+    <div class="btn_ctn">
+      <div class="input-group">
+        <input
+          required=""
+          type="text"
+          name="text"
+          [(ngModel)]="cedula" 
+          autocomplete="off"
+          class="input"
+        />
+        <label class="user-label">Ingresa la cédula</label>
+      </div>
+      <button class="btn" (click)="searchGraduate()">
+        <span>Buscar</span> <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+  </div>
   <!-- Mostrar el resultado si se encuentra el graduado -->
-  <div *ngIf="graduate" class="d-flex flex-column g-2">
+  <div *ngIf="graduate" class="datos_ctn d-flex flex-column g-2">
     <p><strong>Nombre:</strong> {{ graduate.nombre }}</p>
     <p>
       <strong>Matriculado:</strong> {{ graduate.matriculado ? "Sí" : "No" }}
     </p>
     <p><strong>Colegiado:</strong> {{ graduate.colegiado ? "Sí" : "No" }}</p>
+    <p><strong>Graduado: </strong> {{ graduate.graduado }}</p>
+    <p><strong>Vigencia: </strong> {{ graduate.vigencia }}</p>
+    <p><strong>Antecedentes: </strong> {{ graduate.antecedentes }}</p>
     <p>
-      <strong>Actualizado hasta:</strong>
+      <strong>Base de datos actualizada hasta:</strong>
       {{ graduate.created_at | date : "dd/MM/yyyy" }}
     </p>
   </div>
