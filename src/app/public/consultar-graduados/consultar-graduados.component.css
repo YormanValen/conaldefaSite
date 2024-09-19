@@ -149,15 +149,14 @@ input {
 }
 
 .container .datos_ctn {
-  background-color: #bebdbd;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   padding: 1vw;
   border-radius: 10px;
 }
 
 /** media queries */
 @media (max-width: 768px) {
-
-  .container{
+  .container {
     gap: 3vw;
   }
 
@@ -175,11 +174,11 @@ input {
     width: 22vw;
   }
 
-  .container .btn_ctn button i{
+  .container .btn_ctn button i {
     font-size: 2.5vw;
   }
 
-  .container .datos_ctn{
+  .container .datos_ctn {
     padding: 3vw;
   }
 }

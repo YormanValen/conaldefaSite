@@ -20,7 +20,7 @@ export class QuienesSomosComponent implements OnInit {
     },
     {
       img: '/assets/img/nuestra_junta/carmenza.png',
-      name: 'Carmenza Pérez',
+      name: 'Maria Carmenza Quintero Cardona',
       position: 'Vicepresidenta',
       education: 'Especialista en Alta Gerencia; Profesional en Desarrollo Familiar.',
       experience: 'Docente universitaria, coordinadora de proyectos sociales, y experiencia en el Instituto Colombiano de Bienestar Familiar y otras entidades. Enfocada en la atención a la primera infancia y adolescencia.',
@@ -57,8 +57,8 @@ export class QuienesSomosComponent implements OnInit {
       img: '/assets/img/nuestra_junta/edison.png',
       name: 'Edinson Hernán Restrepo',
       position: 'Tesorero suplente ',
-      education: 'Doctor en Estudios de Población, El Colegio de México; Magíster en Planeación y Administración del Desarrollo Regional, CIDER, Universidad de los Andes; Profesional en Desarrollo Familiar, Universidad de Caldas.',
-      experience: 'Docente en la Universidad de Caldas, Coordinador de Maestría en Género, y Presidente de CONALDEFA. Especializado en desarrollo familiar y evaluación de proyectos agropecuarios.',
+      education: 'Magister en Derecho Univ. Luis Amigó, (2024). Abogado, Univ. Luis Amigó, (2018). Conciliador Extrajudicial en Derecho, Univ. Luis Amigó, (2017). (Esp. en Derecho Penal y Criminología. Univ. Luis Amigó, (2019).',
+      experience: 'Profesional en Desarrollo Familiar. Fundación Univ. Luis Amigó, (2003). Diplomado en Pedagogía para Profesionales No Licenciados. Unaula. (2012). Teólogo con énfasis en Educación Cristiana. Seminario Bíblico de Colombia, (1994). Magister en Derecho Univ. Luis Amigó, (2024)',
     },
     {
       img: '/assets/img/nuestra_junta/mariaClemencia.png',
