@@ -2,8 +2,8 @@
   position: relative; /* Asegura que el contenedor tenga referencia para la posición absoluta de la sección */
 }
 
-.quienes_somos_section{
-    padding: 3%;
+.quienes_somos_section {
+  padding: 3%;
 }
 
 .quienes_somos_section .txt_ctn {
@@ -26,74 +26,114 @@
   align-items: center;
 }
 
-/* From Uiverse.io by abrahamcalsin */
-.quienes_somos_section button {
-  position: relative;
-  display: flex;
-  padding: 1vw 2vw;
-  width: fit-content;
-  height: fit-content;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background: #f58736;
-  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  cursor: pointer;
-  border: none;
-}
-
-.quienes_somos_section button:after {
-  content: " ";
-  width: 0%;
-  height: 100%;
-  background: white;
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-  right: 0;
-}
-
-.quienes_somos_section button:hover::after {
-  right: auto;
-  left: 0;
-  width: 100%;
-}
-
-.quienes_somos_section button span {
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  z-index: 20;
-  transition: all 0.3s ease-in-out;
-}
-
-.quienes_somos_section button:hover span {
-  color: #183153;
-  animation: scaleUp 0.3s ease-in-out;
-}
-
-@keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 /** nuestros_servicios_section */
+
+.nuestros_servicios_section {
+  padding: 4vw 0;
+}
+
+.nuestros_servicios_section .title {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.nuestros_servicios_section .title i {
+  color: #f58736;
+  font-size: 2vw;
+}
 
 .nuestros_servicios_section .title h2 {
   color: #002c3f;
   font-size: 70px;
-  font-weight: normal;
 
+  font-weight: normal;
+}
+
+/** redcuf_section */
+.redcuf_section {
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.redcuf_section .first_row {
+  display: grid;
+  color: #002c3f;
+  grid-template-columns: 60% 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.redcuf_section .first_row h2 {
+  font-size: 3.65vw;
+  font-weight: bolder;
+}
+
+.redcuf_section .first_row .aliados_img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  margin-top: 5vw;
+}
+
+.redcuf_section .second_row ul {
+  display: grid;
+  background-color: #002c3f;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0.8vw 0;
+  border-radius: 0.8vw;
+}
+
+.redcuf_section .second_row ul li {
+  padding: 0 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** se agrega un borde derecho blanco solido para los li menos para el ultimo */
+.redcuf_section .second_row ul li:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+.redcuf_section .second_row p {
+  font-size: 1.82vw;
+  margin: 0;
+  color: white;
+}
+
+/** comunity_section */
+
+.comunity_section{
+  padding: 0% 5%;
+}
+
+.comunity_section .comunity_ctn {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+.comunity_section .comunity_ctn{
+  background-color: #169BD4;
+  border-radius: 1vw;
+}
+
+.comunity_section .comunity_ctn .img_ctn img{
+  width: 100%;
+}
+
+.comunity_section .comunity_ctn .txt_ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  flex-direction: column;
+}
+
+.comunity_section .comunity_ctn p {
+  font-size: 35px;
+  line-height: 2vw;
+  color: white;
 }

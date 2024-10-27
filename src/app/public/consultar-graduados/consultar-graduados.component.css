@@ -21,7 +21,7 @@
 
 .container .btn_ctn button {
   display: flex;
-  width: 11vw;
+  width: 18vw;
   align-items: center;
   justify-content: center;
   gap: 0vw;
@@ -171,7 +171,7 @@ input {
   }
 
   .container .btn_ctn button {
-    width: 22vw;
+    width: 33vw;
   }
 
   .container .btn_ctn button i {

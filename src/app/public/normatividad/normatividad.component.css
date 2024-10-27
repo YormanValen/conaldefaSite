@@ -220,6 +220,15 @@
   gap: 10px;
 }
 
+.cards_ctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vw;
+  align-items: center;
+  padding: 0;
+  justify-items: center;
+}
+
 @media (max-width: 767px) {
 
   .compendio_section {
@@ -232,5 +241,31 @@
 
   .cssbuttons-io-button span {
     font-size: 3vw;
+  }
+
+  .cards_ctn {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3vw;
+    align-items: center;
+    padding: 0;
+    justify-items: center;
+  }
+
+  .cards_ctn li {
+    width: 80%;
+  }
+
+  .resolucion_item {
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+    border: 0.1vw solid black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
   }
 }

@@ -11,8 +11,8 @@ export class GraduateService {
 
   constructor(private http: HttpClient) { }
 
-  // Método para obtener información de un graduado por cédula
-  getGraduateByCedula(cedula: string): Observable<any> {
-    return this.http.get(`${this.apiUrl}/search?cedula=${cedula}`);
+  // Método para obtener información de un graduado por cédula, ahora usando una promesa
+  getGraduateByCedula(cedula: string): Promise<any> {
+    return this.http.get(`${this.apiUrl}/search?cedula=${cedula}`).toPromise();
   }
 }

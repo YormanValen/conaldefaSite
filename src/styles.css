@@ -10,38 +10,36 @@
 }
 
 @font-face {
-  font-family: 'Mulish';
-  src: url('./assets/fonts/Mulish-Regular.ttf') format('truetype');
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mulish';
-  src: url('./assets/fonts/Mulish-SemiBold.ttf') format('truetype');
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
-
-
 @font-face {
-  font-family: 'Mulish';
-  src: url('./assets/fonts/Mulish-Bold.ttf') format('truetype');
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mulish';
-  src: url('./assets/fonts/Mulish-ExtraBold.ttf') format('truetype');
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-ExtraBold.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mulish-ExtraBold-Italic';
-  src: url('./assets/fonts/Mulish-ExtraBoldItalic.ttf') format('truetype');
+  font-family: "Mulish-ExtraBold-Italic";
+  src: url("./assets/fonts/Mulish-ExtraBoldItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -108,7 +106,6 @@ button {
   transition: all 0.4s;
 }
 
-
 i {
   cursor: auto;
   transition: 0.4s;
@@ -121,7 +118,7 @@ span {
 }
 
 section {
-  padding: 5% 8%;
+  padding: 5%;
   width: 100%;
 }
 
@@ -149,7 +146,6 @@ ul {
   list-style: none;
 }
 
-
 @media (max-width: 996px) {
   section {
     padding: 10% 8%;
@@ -162,7 +158,7 @@ ul {
   h2 {
     font-size: 7vw;
   }
-  h3{
+  h3 {
     font-size: 6vw !important;
     hyphens: auto;
   }
@@ -189,10 +185,9 @@ ul {
 }
 
 .cdk-overlay-backdrop {
-  background-color: #002C3F;
-  opacity: .7 !important;
+  background-color: #002c3f;
+  opacity: 0.7 !important;
 }
-
 
 html,
 body {
@@ -202,3 +197,68 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+/* From Uiverse.io by abrahamcalsin */
+.btn_custom {
+  position: relative;
+  display: flex;
+  padding: 1vw 2vw;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #f58736;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.btn_custom:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.btn_custom:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.btn_custom span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_custom:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
