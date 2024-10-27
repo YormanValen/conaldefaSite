@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit  {
   }
   
   ngOnInit() {
-    this.openDialog();
+    //this.openDialog();
  }
 
  openDialog(): void {

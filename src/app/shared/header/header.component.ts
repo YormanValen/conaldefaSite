@@ -11,7 +11,6 @@ export class HeaderComponent {
 
   toggleMenu(): void {   
     this.isMenuOpen = !this.isMenuOpen;
-    console.log(this.isMenuOpen);
   } 
 
  

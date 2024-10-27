@@ -1,41 +1,34 @@
 <header>
   <div class="header__desktop">
-    <div class="header__desktop__first__ctn d-flex">
       <div class="logo">
         <a routerLink="home">
           <img src="assets/img/logo.png" alt="Logo Conaldefa" />
         </a>
       </div>
-      <div class="header__desktop__btns">
-        <a class="btn" routerLink="/consultar graduados"
-          ><span>Tramites</span></a
-        >
-      </div>
-    </div>
-    <div class="header__desktop__second__ctn">
       <ul class="menu_navbar">
-        <a routerLink="/quienes-somos" class=""> ¿Quienes somos? </a>
-
         <li>
-          <a routerLink="/nuestros-servicios" class=""> Servicios </a>
+          <a routerLink="/quienes-somos" class="">¿Quienes somos? </a>
         </li>
         <li>
-          <a routerLink="/red-institucional" class=""> Red Institucional </a>
+          <a routerLink="/nuestros-servicios" class="">Servicios </a>
         </li>
         <li>
-          <a routerLink="/matriculate" class=""> Colegiatura </a>
+          <a routerLink="/red-institucional" class="">Red Institucional </a>
         </li>
         <li>
-          <a routerLink="/normatividad" class=""> Resoluciones y Acuerdos </a>
+          <a routerLink="/matriculate" class="">Colegiatura </a>
         </li>
         <li>
-          <a routerLink="/nuestros-asociados" class=""> Nuestros Asociados </a>
+          <a routerLink="/normatividad" class="">Resoluciones y Acuerdos </a>
         </li>
         <li>
-          <a routerLink="/noticias" class=""> Noticias  y eventos</a>
+          <a routerLink="/nuestros-asociados" class="">Nuestros Asociados </a>
+        </li>
+        <li>
+          <a routerLink="/noticias" class=""> Noticias y eventos</a>
         </li>
         <li class="dropdown">
-          <button class="">Tribunal de ética</button>
+          <a class="">Tribunal de ética</a>
           <ul class="dropdown-menu">
             <li>
               <a routerLink="/código deontológico">Código deontológico</a>
@@ -43,9 +36,11 @@
             <li><a routerLink="/reporte de casos">Reporte de casos</a></li>
           </ul>
         </li>
+        <li>
+          <button>Trámites</button>
+        </li>
       </ul>
     </div>
-  </div>
 
   <div class="header_mobile">
     <div

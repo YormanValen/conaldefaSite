@@ -1,17 +1,17 @@
-<div class="pa-4">
+<div class="swiper_ctn pa-4">
 <app-swiper [images]="sliderImages"></app-swiper>
 </div>
 <section class="quienes_somos_section">
-  <div class="txt_ctn d-flex flex-column gap-4">
-    <h5 class="fw-bold text-lg-center">
+  <div class="txt_ctn gap-4">
+    <p class="text-lg-center">
       El Colegio Profesional de Desarrollo Familiar es una comunidad vibrante de
       profesionales comprometidos con el mejoramiento de las condiciones y la
       calidad de vida de las familias. A través de la proyección profesional, la
       investigación, la incidencia política y el fortalecimiento de redes a
       nivel nacional e internacional.
-    </h5>
+    </p>
     <button class="btn" (click)="navigateToQuienesSomos()">
-      <span>Conocenos</span>
+      <span>Conocénos</span>
     </button>
   </div>
 </section>
@@ -20,44 +20,9 @@
     class="nuestros_servicios_ctn d-flex items-center flex-column gap-3 align-items-center"
   >
     <div class="title text-lg-center">
-      <h2>Nuestros Servicios</h2>
+      <h2>Nuestros <strong>Servicios</strong></h2>
     </div>
-    <div class="row">
-      <div class="servicio col">
-        <div class="img_ctn">
-          <img src="assets/svg/cursos_home.svg" alt="imagen de cursos" />
-        </div>
-        <div class="txt_ctn text-center">
-          <p>Cursos y Diplomados de 
-            Actualización Profesional</p>
-        </div>
-      </div>
-      <div class="servicio col">
-        <div class="img_ctn">
-          <img src="assets/svg/expedicion_tarjeta_home.svg" alt="imagen de expedicion de tarjetas" />
-        </div>
-        <div class="txt_ctn">
-          <p>Expedición de
-            Tarjeta Profesional</p>
-        </div>
-      </div>
-      <div class="servicio col">
-        <div class="img_ctn">
-          <img src="assets/svg/tribunal_nacional.svg" alt="imagen de tribinal nacional" />
-        </div>
-        <div class="txt_ctn">
-          <p>Tribunal Nacional de Ética</p>
-        </div>
-      </div>
-      <div class="servicio col">
-        <div class="img_ctn">
-          <img src="assets/svg/inspeccion.svg" alt="imagen de inspeccion y vigilancia" />
-        </div>
-        <div class="txt_ctn">
-          <p>Inspección y Vigilancia</p>
-        </div>
-      </div>
-    </div>
+    
     <div class="btn_ctn">
       <button class="btn" (click)="navigateToServicios()">
         <span>Más información</span>

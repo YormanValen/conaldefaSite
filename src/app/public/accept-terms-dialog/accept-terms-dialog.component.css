@@ -1,14 +1,21 @@
 .pop-up_ctn {
-  padding: 1.5vw;
+  padding: 4vw;
   width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border-radius: 2vw;
+}
+
+.pop-up_ctn .ctn {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 2vw;
 }
 
 .pop-up_ctn p {
-  font-weight: 800;
+  margin: 0;
   text-align: justify;
 }
 
@@ -74,14 +81,18 @@
 }
 
 @media (max-width: 767px) {
-
   .pop-up_ctn {
-    padding: 3vw;
-    width: 100%;
+    padding: 8vw;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    gap: 5vw;
+    justify-items: center;
+    border-radius: 4vw;
   }
 
   .btn span {
     font-size: 2.5vw;
   }
-
 }

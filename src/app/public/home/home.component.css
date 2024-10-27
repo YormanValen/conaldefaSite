@@ -1,246 +1,99 @@
-
-
-
-  /**/
-
-.txt_ctn {
-    align-items: center;
+.swiper_ctn {
+  position: relative; /* Asegura que el contenedor tenga referencia para la posición absoluta de la sección */
 }
 
-.nuestros_servicios_section {
-    padding: 4% 6%;
-    background-color: var(--section-color);
+.quienes_somos_section{
+    padding: 3%;
 }
+
+.quienes_somos_section .txt_ctn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  right: 0;
+  width: 70%;
+  bottom: -25vw;
+  color: #002c3f;
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  z-index: 10;
+  background-color: white;
+  padding: 2vw 4vw;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-items: center;
+  align-items: center;
+}
+
+/* From Uiverse.io by abrahamcalsin */
+.quienes_somos_section button {
+  position: relative;
+  display: flex;
+  padding: 1vw 2vw;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #f58736;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.quienes_somos_section button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.quienes_somos_section button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.quienes_somos_section button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.quienes_somos_section button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/** nuestros_servicios_section */
 
 .nuestros_servicios_section .title h2 {
-    color: var(--primary-color);
-    font-weight: 900;
-    text-align: center;
-
-}
-
-.nuestros_servicios_section .servicio {
-    display: grid;
-    grid-template-rows: 80% 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-.nuestros_servicios_section .servicio p {
-   font-weight: 700;
-}
-
-.nuestros_servicios_section .servicio img {
-    width: 17vw;
-}
-
-.btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #f58736;
-    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    cursor: pointer;
-    border: none;
-  }
-  
-  
-  .btn:after {
-    content: " ";
-    width: 0%;
-    height: 100%;
-    background: #ed3237;
-    position: absolute;
-    transition: all 0.4s ease-in-out;
-    right: 0;
-  }
-  
-  .btn:hover::after {
-    right: auto;
-    left: 0;
-    width: 100%;
-  }
-  
-  .btn span {
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    padding: 0;
-    color: white;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-    z-index: 20;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btn:hover span {
-    animation: scaleUp 0.3s ease-in-out;
-  }
-
-.column_ctn {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
-
-.column_ctn .first_column img {
-    width: 30vw;
-}
-
-/** Redcuf section **/
-.redcuf_section .title h2{
-    color: var(--primary-color);
-    font-weight: 900;
-    text-align: center;
-}
-
-.rediuf_ctn {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-}
-
-.rediuf_ctn .aliados_img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.rediuf_ctn .aliados_img img {
-    width: 15vw;
-    padding: 15px;
-}
-
-/* Estilos para el mapa */
-
-.mapa_mundo {
-    width: 25vw;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  
-}
-
-/* Estilo base para los países */
-.mapa_mundo path {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  /* Estilo al hacer hover sobre los países */
-  .mapa_mundo path:hover {
-   
-  }
-
-  /** comunity section **/
-  .comunity_section {
-    position: relative;
-    padding: 4% 6%;
-  }
-
-  .comunity_section svg{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-}
-
-.comunity_ctn {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-}
-
-.comunity_ctn img {
-    width: 100%;
-}
-
-.comunity_ctn__contain {
-    width: 100%;
-    position: absolute;
-    bottom: 5%;
-    display: flex;
-    z-index: 99;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
-.comunity_ctn__contain h4 {
-    color: white;    
-}
-
-.comunity_ctn__contain a {
-    border: 2px solid white;
-    
-}
-
-@media  (max-width: 767px) {
-
-    .quienes_somos_section {
-        text-align: center;
-    }
-
-    .nuestros_servicios_ctn img {
-        width: 30vw !important;
-    }
-
-   .nuestros_servicios_ctn .row {
-    flex-direction: column;
-    gap: 2vw;
-   }  
-
-    .column_ctn .first_column img {
-        width: 50vw;
-    }
-
-    .redcuf_section{
-        gap: 2vw  !important;
-        align-items: center;
-        text-align: center;
-    }
-
-    .redcuf_section .rediuf_ctn{
-        grid-template-columns: 100%;
-        gap: 10vw;
-    }
-
-    .rediuf_ctn .aliados_img img{
-        width: 30vw;
-    }
-
-    .rediuf_ctn .mapa_mundo{
-        width: 50vw;
-    }
-
-    .comunity_section{
-
-    }
-
-    .comunity_section svg{
-        display: none;
-    }
-
-    .comunity_section .comunity_ctn::before{
-        content: "";
-        background-color: black;
-        opacity: 0.5;
-        width: 100%;
-        height: 100%;
-        
-        position: absolute;
-
-    }
-
-    .comunity_section .comunity_ctn__contain {
-        bottom: 50%;
-        transform: translate(0, 50%);
-    }
+  color: #002c3f;
+  font-size: 70px;
+  font-weight: normal;
 
 }
