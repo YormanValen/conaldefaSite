@@ -129,6 +129,7 @@
   align-items: center;
   justify-content: center;
   padding: 2vw;
+  gap: 2vw;
   flex-direction: column;
 }
 
@@ -136,4 +137,23 @@
   font-size: 35px;
   line-height: 2vw;
   color: white;
+}
+
+.comunity_section .comunity_ctn button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: .5vw;
+  width: 90%;
+  color: white;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+
+.comunity_section .comunity_ctn button:hover {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: .5vw;
+  width: 90%;
+  color: #169BD4;
+  font-weight: 800;
 }

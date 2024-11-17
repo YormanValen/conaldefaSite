@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
 import { Router } from '@angular/router';
 
@@ -6,8 +6,92 @@ import { Router } from '@angular/router';
   selector: 'app-quienes-somos',
   templateUrl: './quienes-somos.component.html',
   styleUrls: ['./quienes-somos.component.css'],
+  encapsulation: ViewEncapsulation.None,
+
 })
 export class QuienesSomosComponent implements OnInit {
+  expandedCard: string | null = null;
+
+  historyCards = [
+    {
+      id: '1983',
+      year: '1983',
+      title: 'Gestión y aprobación de la facultad de desarrollo familiar',
+      description:
+        'Acta 016 (marzo 15 de 1983) Consejo Superior, Universidad de Caldas Acuerdo 295 de Diciembre 14 de 1983',
+    },
+    {
+      id: '1984',
+      year: '1984',
+      title: 'Ingreso de primeros estudiantes',
+      description: 'Currículo en prueba',
+    },
+    {
+      id: '1988',
+      year: '1988',
+      title: 'Primera promocion de Desarrolo Familiar en la Universidad de Caldas',
+      description: '',
+    },
+    {
+      id: '1992',
+      year: '1992',
+      title: 'Creación del programa de Desarrollo Familiar en la Universidad Católica Luis Amigó',
+      description: '',
+    },
+    {
+      id: '1998',
+      year: '1998',
+      title: 'LEY 429 DE 1998',
+      description: 'Reglamento del ejercicio de la Profesión en Desarrollo Familiar',
+    },
+    {
+      id: '2009',
+      year: '2009',
+      title: 'LEY 1361 DE 2009',
+      description: 'Ley de Protección Integral a la Familia',
+    },
+    {
+      id: '2014',
+      year: '2014',
+      title: 'Demanda inconstitucionalidad Ley 1098 por vulnerar el derecho al trabajo de lxs Profesionales en Desarrollo familiar',
+      description: 'CLÍNICA SOCIO-JURIDÍCA DE LA UNIVERSIDAD DE CALDAS',
+    },
+    {
+      id: '2014',
+      year: '2014',
+      title: 'Sentencia C-505/14 de la Corte Constitucional, que declara inconstitucional los artículo 73, 79 y 84.',
+      description: 'Comités de Adopción, Comisarias y Defensorías de Familia.',
+    },
+    {
+      id: '2018',
+      year: '2018',
+      title: 'Creación del Colegio de Profesionales',
+      description: '',
+      imagen: 'assets/img/logo.png',
+    },
+    {
+      id: '2021',
+      year: '2021',
+      title: ' Incorporación en la ley 2126 sobre Comisarías de Familia, el perfil profesional en Desarrollo Familiar',
+      description: '',
+    },
+    {
+      id: '2023',
+      year: '2023',
+      title: 'LEY 2336 DE 2023 -O ctubre 11',
+      description: 'Por medio de la cual se dicta normas para el ejercicio de la profesión de desarrollo familiar, se expide el código deontológico y ético, se le otorgan facultades al colegio nacional de profesionales en desarrollo familiar, se deroga la ley 429 de 1998 y se dictan otras disposiciones relativas al ejercicio de la profesión',
+    }
+
+  ];
+
+  toggleCard(cardId: string): void {
+    this.expandedCard = this.expandedCard === cardId ? null : cardId;
+  }
+
+  isExpanded(cardId: string): boolean {
+    return this.expandedCard === cardId;
+  }
+
   members = [
     {
       img: '/assets/img/nuestra_junta/gabriel.png',

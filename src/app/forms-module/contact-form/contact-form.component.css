@@ -2,8 +2,8 @@
     color: #145A7E;
 }
 
-.btn:hover {
-    background-color: #145A7E;
+.btn_custom{
+    width: 100%;
     color: white;
-
+    font-weight: bold;
 }
