@@ -1,8 +1,13 @@
+footer{
+  background-color: #D9D9D9;
+}
+
 .footer__first__ctn {
   z-index: 99;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 5vw 5vw 8vw 5vw;
+  padding: 5vw;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -16,11 +21,12 @@
 
 .footer__first__ctn__first__column i {
   font-size: 2vw;
+  color: #F58736;
 }
 
 .footer__first__ctn__first__column h5 {
   display: flex;
-  font-size: 2vw;
+  font-size: 4vw;
   align-items: center;
 }
 

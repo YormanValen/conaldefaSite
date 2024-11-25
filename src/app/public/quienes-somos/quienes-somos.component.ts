@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-quienes-somos',
@@ -94,7 +93,7 @@ export class QuienesSomosComponent implements OnInit {
 
   members = [
     {
-      img: '/assets/img/nuestra_junta/gabriel.png',
+      img: '/assets/img/nuestra_junta/gabriel.jpg',
       name: 'Gabriel Gallego Montes',
       position: 'Presidente',
       education:

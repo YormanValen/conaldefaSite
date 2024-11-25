@@ -165,7 +165,7 @@
 .junta_directiva_section{
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 4vw;
 }
 
 .junta_directiva_section .title{
@@ -184,6 +184,37 @@
 }
 
 .junta_directiva_section .slide-content {
-  display: flex;
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 8vw;
 }
+
+.junta_directiva_section .slide-content .img_ctn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.junta_directiva_section .slide-content .img_ctn img {
+  border-radius: 1.5vw;
+}
+
+.slide-content .text_ctn .position_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-content .text_ctn .position_text h3 {
+  margin: 0;
+}
+
+.slide-content .text_ctn .position_text span {
+  color: #f58736;
+  font-size: 20px;
+  font-family: 'Mulish-Bold-Italic';
+  font-weight: 800;
+}
+
+.slide-content .text_ctn p {
+  text-align: justify;
+}
+

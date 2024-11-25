@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-nuestros-asociados',
   templateUrl: './nuestros-asociados.component.html',
   styleUrls: ['./nuestros-asociados.component.css'],
+  encapsulation: ViewEncapsulation.None,
+
 })
 export class NuestrosAsociadosComponent {
   images = [

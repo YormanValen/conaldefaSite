@@ -1,9 +1,11 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-red-institucional',
   templateUrl: './red-institucional.component.html',
   styleUrls: ['./red-institucional.component.css'],
+  encapsulation: ViewEncapsulation.None,
+
 })
 export class RedInstitucionalComponent {
   @ViewChild('infoModal') modalRef: ElementRef | undefined;

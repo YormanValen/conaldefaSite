@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ResolucionesService } from 'src/app/services/resoluciones.service';
 
@@ -6,7 +6,9 @@ import { ResolucionesService } from 'src/app/services/resoluciones.service';
 @Component({
   selector: 'app-normatividad',
   templateUrl: './normatividad.component.html',
-  styleUrls: ['./normatividad.component.css']
+  styleUrls: ['./normatividad.component.css'],
+  encapsulation: ViewEncapsulation.None,
+
 })
 export class NormatividadComponent implements OnInit {
   resoluciones: any[] = [];

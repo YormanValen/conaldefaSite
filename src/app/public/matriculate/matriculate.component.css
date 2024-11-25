@@ -1,167 +1,148 @@
-/* banner section */
+.header__desktop .menu_navbar {
+  background-color: #6ebc44 !important;
+}
 
-.banner_section {
-    align-items: center;
-    gap: 1vw;
-    color: white;
-    padding: 5% 20%;
-    background: linear-gradient(to right, #3b8da9 0%, #a2c7eb 100%);
-  }
-  
-  .banner_section .title h1 {
-    font-weight: bold;
-  }
-  
-  .banner_section .banner_content {
-    border: 2px solid white;
-    padding: 1vw;
-    border-radius: 1vw;
-    
-  }
+.quienes_somos_section {
+  padding: 5%;
+  background-image: url("/assets/img/colegiados.png");
+  gap: 3vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  .banner_section .banner_content p{
-   color: white;
-   width: 100%;
-   text-align: center;
-    
-  }
+.quienes_somos_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #002c3f;
+  z-index: 1;
+}
 
-  /* matriculate section */
+.quienes_somos_section .quienes_somos_content {
+  z-index: 99;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
-  .btn-matriculate {
-    background-color: #CC454E;
-    padding: 3px 10px;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Dancing Script', sans-serif;
-    letter-spacing: 2px;
-    font-size: 25px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 2px dashed #CC454E;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .4s;
-   }
+.quienes_somos_section .quienes_somos_content p {
+  color: white;
+}
 
-   .btn-masInfo {
-    background-color: #f58736;
-    border: 2px dashed #f58736;
-    padding: 3px 10px;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Dancing Script', sans-serif;
-    letter-spacing: 2px;
-    font-size: 25px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .4s;
-   }
+.quienes_somos_section .quienes_somos_content h1 {
+  color: white;
+  line-height: 6vw;
+  font-size: 6vw;
+  font-weight: normal;
+}
 
-  
+.quienes_somos_section .quienes_somos_content h1 span {
+  color: white;
+  font-size: 7vw;
+  font-weight: bolder;
+}
 
-   .btn-masInfo span:last-child {
-    display: none;
-   }
-   
-   .btn-matriculate span:last-child {
-    display: none;
-   }
-   
-   .btn-matriculate:hover {
-    transition: .4s;
-    border: 2px dashed #CC454E;
-    background-color: #fff;
-    color: #CC454E;
-   }
+.quienes_somos_section .quienes_somos_content_final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
 
-   .btn-masInfo:hover {
-    transition: .4s;
-    border: 2px dashed #f58736;
-    background-color: #fff;
-    color: #f58736;
-   }
-   
-   .btn-matriculate:active {
-    background-color: #87dbd0;
-   }
+.quienes_somos_section .quienes_somos_content_final span {
+  color: white;
+  font-size: 4vw;
+  position: relative;
+  z-index: 99;
+}
 
-   .matriculate_section{
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-    padding: 0;
- 
-   }
+.quienes_somos_section .quienes_somos_content_final i {
+  color: #f58736;
+  font-size: 2vw;
+  position: relative;
+  z-index: 99;
+}
 
-   .matriculate_ctn {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    align-items: center;
-    padding: 0 5%;
-   }
+.second_column_matriculate {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #6ebc44;
+  border-radius: 2vw;
+  padding: 2vw;
+  gap: 3vw;
+  position: relative;
+  z-index: 99;
+}
 
-   .matriculate_section .title{
-    padding-top: 5%;
-   }
+.second_column_matriculate .title h3 {
+  color: white;
+  font-weight: bold;
+}
 
-   .matriculate_section .title h3{
-    color: #3C738C;
-    text-align: center;
-    font-weight: bold;
-   }
+.second_column_matriculate .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-   .matriculate_ctn .txt_ctn{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    gap: 1vw;
-    justify-content: center;
-    align-items: center;
-   }
+.info .list_ctn ul {
+  list-style: disc;
+  padding: 0;
+  color: white;
+  margin-left: 2%;
+}
 
-   .matriculate_ctn ul {
-    list-style: disc;
-   }
+.info .list_ctn ul p {
+  color: white;
+  margin: 0;
+}
 
-   .matriculate_section .final_ctn {
-    background: #3B8DA9;
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    padding: 20px;
-   }
+.info .btns_ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
 
-   .btn_ctn{
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-    align-items: center;
-   }
-   
-   @media (max-width: 767px) {
-  
-    .banner_section {
-      padding: 5% 10%;
-    }
+.btns_ctn .btn_ctn {
+  display: flex;
+  gap: 2vw;
+  justify-content: space-around;
+}
 
-    .banner_section .banner_content {
-      padding: 2vw;
-      
-    }
+.btn1 {
+  background-color: #6ebc44;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #6ebc44;
+}
 
-    .banner_section .banner_content p{
-     text-align: left;
-    }
+.btn2 {
+  background-color: transparent;
+  border: 2px solid white;
+}
 
-    .matriculate_ctn {
-      grid-template-columns: 100%;
-      gap: 4vw;
-    }
+.btns_ctn .info_ctn {
+  padding: 1vw;
+  display: flex;
+  border-radius: 1vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #002c3f;
+}
 
-
-  
-  }
-
-
-  
+.btns_ctn .info_ctn p {
+  color: white;
+  margin: 0;
+  text-align: justify;
+}

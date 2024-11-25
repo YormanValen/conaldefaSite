@@ -1,202 +1,76 @@
-.banner_section {
-  align-items: center;
-  gap: 1vw;
-  color: white;
-  padding: 5% 20%;
-  background: linear-gradient(to right, #3b8da9 0%, #a2c7eb 100%);
+.header__desktop .menu_navbar {
+  background-color: #FDB431 !important;
 }
 
-.banner_section .banner_content {
-  border: 2px solid white;
-  padding: 1vw;
-  border-radius: 1vw;
-}
-
-@media (max-width: 767px) {
-  .banner_section {
-    padding: 5% 10%;
-  }
-
-  .banner_section .banner_content {
-    border: 2px solid white;
-    padding: 2vw;
-    border-radius: 1vw;
-  }
-}
-
-/* nuestros_asociados_section */
-
-.nuestros_asociados_section {
+.quienes_somos_section {
+  padding: 5% 5% 1% 5%;
+  height: 100vh;
+  background-image: url("/assets/img/nuestros_asociados.png");
   display: flex;
   flex-direction: column;
-  gap: 15vw;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.nuestros_asociados_section .resenas_ctn {
-  display: grid;
-  gap: 1.5vw;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.nuestros_asociados_section .resena {
-  display: flex;
-  flex-direction: column;
+.quienes_somos_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  justify-content: space-evenly;
+  opacity: 0.6;
+  background: #002c3f;
+  z-index: 1;
 }
 
-.nuestros_asociados_section .resena p {
-  text-align: justify;
-}
-
-.nuestros_asociados_section .title h2 {
-  font-weight: bolder;
-  text-align: center;
-  color: #ff5500;
-}
-
-.nuestros_asociados_section .resenas_item {
-  border: #f7a66b 5px solid;
-  padding: 4vw 2vw 1vw 2vw;
+.quienes_somos_section .quienes_somos_content {
+  z-index: 99;
   position: relative;
-  border-radius: 4vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.nuestros_asociados_section .resenas_item .img {
-  border: #f7a66b 5px solid;
-  border-radius: 50%;
-  position: absolute;
-  overflow: hidden;
-  top: -10vw;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.nuestros_asociados_section .resenas_item .img img {
-  width: 15vw;
-}
-
-@media (max-width: 767px) {
-  .nuestros_asociados_section {
-    display: flex;
-    flex-direction: column;
-    gap: 30vw;
-  }
-
-  .nuestros_asociados_section .resenas_ctn {
-    display: grid;
-    gap: 25vw;
-    grid-template-columns: 100%;
-  }
-
-  .nuestros_asociados_section .resenas_item {
-    border: #f7a66b 5px solid;
-    padding: 10vw 2vw 1vw 2vw;
-    position: relative;
-    border-radius: 4vw;
-  }
-
-  .nuestros_asociados_section .resenas_item .img {
-    border: #f7a66b 5px solid;
-    border-radius: 50%;
-    position: absolute;
-    overflow: hidden;
-    top: -25vw;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .nuestros_asociados_section .resenas_item .img img {
-    width: 30vw;
-  }
-}
-
-/** fotos ctn **/
-
-.carousel_section {
-  display: flex;
-  background-color: #ff5500;
-  justify-content: center;
-  flex-direction: column;
-  gap: 6vw;
-  padding: 2% 5%;
-}
-
-swiper-slide {
-  padding: 0.5vw;
-  border-radius: 2vw;
-  background-color: #ffb06b;
-  overflow: hidden;
-}
-
-swiper-slide img {
-  overflow: hidden;
-  border-radius: 2vw;
-}
-
-.carousel_section .title h3 {
-  font-weight: bolder;
+.quienes_somos_section .quienes_somos_content p {
   color: white;
 }
 
-.carousel_section .fotos_ctn {
-  display: grid;
+.quienes_somos_section .quienes_somos_content h1 {
+  color: white;
+  line-height: 6vw;
+  font-size: 7vw;
+  font-weight: normal;
+}
+
+.quienes_somos_section .quienes_somos_content h1 span {
+  color: white;
+  font-size: 7vw;
+  font-weight: bolder;
+}
+
+.quienes_somos_section .quienes_somos_content_final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.quienes_somos_section .quienes_somos_content_final span {
+  color: white;
+  font-size: 4vw;
   position: relative;
-  grid-template-columns: 40% 20% 40%;
+  z-index: 99;
 }
 
-.carousel_section .fotos_ctn .img_ctn img {
-  padding: 0.5vw;
-  border-radius: 2vw;
-  background-color: #ffb06b;
-}
-
-.carousel_section .fotos_ctn .img_ctn:nth-child(2) {
+.quienes_somos_section .quienes_somos_content_final i {
+  color: #f58736;
+  font-size: 2vw;
   position: relative;
-}
-
-.carousel_section .fotos_ctn .img_ctn:nth-child(2) img {
-  position: absolute;
-  transform: scale(2);
-}
-
-.mySwiper .custom-swiper-button {
-  color: white !important; /* Fuerza el color blanco */
-}
-
-.mySwiper .custom-swiper-button.swiper-button-disabled {
-  opacity: 0.5;
-}
-
-.mySwiper .custom-swiper-button:hover {
-  color: #fff !important; /* Mantiene el color blanco al hacer hover */
-}
-
-.btn-matriculate {
-  background-color: #fa7e3f;
-  padding: 3px 10px;
-  text-decoration: none;
-  color: #fff;
-  font-family: "Dancing Script", sans-serif;
-  letter-spacing: 2px;
-  font-size: 25px;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 2px dashed #fa7e3f;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: 0.4s;
-}
-
-.btn-matriculate:hover {
-  transition: 0.4s;
-  border: 2px dashed #fa7e3f;
-  background-color: #fff;
-  color: #fa7e3f;
-}
-
-@media (max-width: 767px) {
-  .carousel_section {
-    align-items: center;
-  }
+  z-index: 99;
 }
