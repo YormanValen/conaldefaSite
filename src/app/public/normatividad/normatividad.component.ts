@@ -1,14 +1,13 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ResolucionesService } from 'src/app/services/resoluciones.service';
-
+import { ViewEncapsulation } from '@angular/core'; 
 
 @Component({
   selector: 'app-normatividad',
   templateUrl: './normatividad.component.html',
   styleUrls: ['./normatividad.component.css'],
-  encapsulation: ViewEncapsulation.None,
-
+  encapsulation: ViewEncapsulation.None 
 })
 export class NormatividadComponent implements OnInit {
   resoluciones: any[] = [];
@@ -17,9 +16,9 @@ export class NormatividadComponent implements OnInit {
 
   ngOnInit(): void {
     this.obtenerResoluciones();
-   }
+  }
 
-   obtenerResoluciones() {
+  obtenerResoluciones() {
     this.resolucionesServices.getResoluciones().subscribe((data) => {
       this.resoluciones = data;
       console.log(data);
@@ -29,7 +28,4 @@ export class NormatividadComponent implements OnInit {
   verMas(id: number) {
     this.router.navigate(['/noticia', id]);
   }
-
- 
 }
-
