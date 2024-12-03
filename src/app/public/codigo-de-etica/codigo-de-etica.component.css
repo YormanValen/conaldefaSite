@@ -1,67 +1,122 @@
-/* banner section */
+.header__desktop .menu_navbar {
+  background-color: #fdb431 !important;
+}
 
-.banner_section {
+.codigo_deontologico_section {
+  display: flex;
+  padding: 5% 5% 0 5%;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.codigo_deontologico_section .title h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  color: #002c3f;
+}
+
+.cod_deontologico_ctn {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  background-color: #002c3f;
+  padding: 2vw 4vw;
+  justify-items: center;
   align-items: center;
+  border-radius: 0.5vw;
+}
+
+.cod_deontologico_ctn p {
+  margin: 0;
+  color: white;
+}
+
+.cod_deontologico_ctn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdb431;
+  padding: 1vw;
+  width: 17vw;
   gap: 1vw;
   color: white;
-  padding: 5% 20%;
-  background: linear-gradient(to right, #3b8da9 0%, #a2c7eb 100%);
-}
-
-.banner_section .title h1 {
   font-weight: bold;
-}
-
-.banner_section .banner_content {
-  border: 2px solid white;
-  padding: 1vw;
-  border-radius: 1vw;
-}
-
-.banner_section .banner_content p {
-  color: white;
-  width: 100%;
-  text-align: center;
-}
-
-/** Boton descargar **/
-
-.cssbuttons-io-button {
-  display: flex;
   text-decoration: none;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 0.8em 1.5em 0.8em 1.2em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(0deg, #3b8da9 0%, #75b5ca 100%);
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em var(--primary-color);
-  letter-spacing: 0.05em;
-  border-radius: 20em;
+  border-radius: 0.5vw;
 }
 
-.cssbuttons-io-button span {
+.cod_deontologico_ctn span {
+  font-size: 1.3vw;
+}
+
+.cod_deontologico_ctn img {
+  width: 2vw;
+}
+
+/** reporte_casos_section */
+
+.reporte_casos_section {
+  padding: 2% 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.reporte_casos_section .title h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  color: #002c3f;
+}
+
+.text_ctn_1 {
+  display: grid;
+  gap: 3vw;
+  align-items: center;
+  grid-template-columns: 35% 1fr;
+}
+
+.text_ctn_1 .first_column {
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdb431;
+  border-radius: .5vw;
+  padding: 2vw;
+  text-align: justify;
   font-size: 1.2vw;
 }
 
-.cssbuttons-io-button svg {
-  margin-right: 8px;
+.text_ctn_1 .list_ctn h3{
+  font-size: 1.3vw;
+  color: #002c3f;
+  font-weight: bold;
 }
 
-.cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #3b8da9;
+.text_ctn_1 .list_ctn ul {
+  list-style: disc;
 }
 
-.cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #3b8da9;
+.text_ctn_1 .list_ctn p{
+margin: 0;
+font-size: 1.2vw;
+color: #002c3f;
 }
 
-/** media queries **/
-@media screen and (max-width: 768px) {
-  .cssbuttons-io-button span {
-    font-size: 3.5vw;
-  }
+
+.text_ctn_2 h3 {
+  font-size: 1.3vw;
+  color: #002c3f;
+  font-weight: bold;
 }
+
+.text_ctn_2 ul {
+  list-style: disc;
+
+}
+.text_ctn_2 p {
+  font-size: 1.2vw;
+  color: #002c3f;
+  margin: 0;
+}
+

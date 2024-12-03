@@ -1,67 +1,51 @@
-<div class="container">
-  <div class="search_box">
-    <div class="title">
-      <h2>Consulta Pública</h2>
-    </div>
-    <div class="btn_ctn">
-      <div class="input-group">
-        <input
-          required
-          type="text"
-          name="text"
-          [(ngModel)]="cedula"
-          autocomplete="off"
-          class="input"
-        />
-        <label class="user-label">Ingresa la cédula</label>
+<section class="consulta_section">
+  <div class="container">
+    <div class="search_box">
+      <div class="title">
+        <h2>Consulta Pública</h2>
       </div>
-      <button class="btn" (click)="searchGraduate()" [disabled]="isLoading">
-        <span *ngIf="!isLoading">Buscar</span>
-        <span *ngIf="isLoading">Buscando...</span>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+      <div class="btn_ctn">
+        <div class="input-group">
+          <input
+            required
+            type="text"
+            name="text"
+            [(ngModel)]="cedula"
+            autocomplete="off"
+            class="input"
+            id="cedula_input"
+            [ngClass]="{'has-text': cedula}"
+          />
+          <label class="user-label" for="cedula_input">Ingresa número de identificación</label>
+        </div>
+        <button class="btn" (click)="searchGraduate()" [disabled]="isLoading">
+          <span *ngIf="!isLoading">Buscar</span>
+          <span *ngIf="isLoading">Buscando...</span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    <div *ngIf="isLoading" class="loading-spinner">
+      <p>Cargando...</p>
+    </div>
+    <div class="text_ctn">
+      <p>
+        ARTÍCULO 59°. Desmaterialización de la tarjeta profesional. El Colegio
+        Nacional de Profesionales en Desarrollo Familiar organizará la emisión
+        de los certificados, constancias, paz y salvos o carnés, relacionados
+        con la expedición de la Tarjeta Profesional en Desarrollo Familiar, como
+        un registro público y habilitará su consulta gratuita por medios
+        digitales o electrónicos, conforme lo disponen los artículos 18 y 19 del
+        Decreto Ley 2106 de 2019, o aquellos que los modifiquen, deroguen o
+        sustituyan. Así mismo, deberá brindar información eficaz, oportuna y
+        sencilla a los ciudadanos acerca del trámite de esta tarjeta
+        profesional.
+      </p>
+      <p>
+        Para solicitar el certificado oficial escríbenos al correo
+        <a class="p-0" href="mailto:conaldefa@gmail.com">conaldefa@gmail.com</a
+        >. El costo del certificado es el 5% s.m.l.v y gratuito para colegiados.
+      </p>
     </div>
   </div>
-
-  <!-- Mostrar el indicador de carga mientras se busca el graduado -->
-  <div *ngIf="isLoading" class="loading-spinner">
-    <!-- Aquí podrías usar un spinner o cualquier indicador de carga -->
-    <p>Cargando...</p>
-  </div>
-
-  <!-- Mostrar el resultado si se encuentra el graduado -->
-  <div *ngIf="graduate" class="datos_ctn d-flex flex-column g-2">
-    <p><strong>Nombre:</strong> {{ graduate.nombre }}</p>
-    <p><strong>Matriculado:</strong> {{ graduate.matriculado ? "Sí" : "No" }}</p>
-    <p><strong>Colegiado:</strong> {{ graduate.colegiado ? "Sí" : "No" }}</p>
-    <p><strong>Graduado:</strong> {{ graduate.graduado }}</p>
-    <p><strong>Vigencia:</strong> {{ graduate.vigencia }}</p>
-    <p><strong>Antecedentes:</strong> {{ graduate.antecedentes }}</p>
-    <p>
-      <strong>Base de datos actualizada hasta:</strong>
-      {{ graduate.created_at | date : "dd/MM/yyyy" }}
-    </p>
-  </div>
-
-  <!-- Mostrar error si no se encuentra -->
-  <div *ngIf="error" class="error">
-    {{ error }}
-  </div>
-
-  <div class="text_ctn">
-    <p>
-      ARTÍCULO 59°. Desmaterialización de la tarjeta profesional. El Colegio
-      Nacional de Profesionales en Desarrollo Familiar organizará la emisión de
-      los certificados, constancias, paz y salvos o carnés, relacionados con la
-      expedición de la Tarjeta Profesional en Desarrollo Familiar, como un
-      registro público y habilitará su consulta gratuita por medios digitales o
-      electrónicos, conforme lo disponen los artículos 18 y 19 del Decreto Ley
-      2106 de 2019, o aquellos que los modifiquen, deroguen o sustituyan.
-      Así mismo, deberá brindar información eficaz, oportuna y sencilla a los
-      ciudadanos acerca del trámite de esta tarjeta profesional.
-    </p>
-    <p>
-      Para solicitar el certificado oficial escríbenos al correo <a class="p-0" href="mailto:conaldefa@gmail.com">conaldefa@gmail.com</a>. El costo del certificado es el 5% s.m.l.v y gratuito para colegiados.
-    </p>
-  </div>
-</div>
+</section>

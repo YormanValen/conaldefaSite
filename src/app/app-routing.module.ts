@@ -28,9 +28,9 @@ const routes: Routes = [
   { path: 'nuestros-asociados', component: NuestrosAsociadosComponent },
   { path: 'noticias/:id', component: NoticiaDetailComponent },
   { path: 'resoluciones/:id', component: ResolutionDetailComponent },
-  { path: 'código deontológico', component: CodigoDeEticaComponent },
-  { path: 'reporte de casos', component: ReporteDeCasosComponent },
-  { path: 'consultar graduados', component: ConsultarGraduadosComponent },
+  { path: 'código-deontológico', component: CodigoDeEticaComponent },
+  { path: 'reporte-de-casos', component: ReporteDeCasosComponent },
+  { path: 'consultar-graduados', component: ConsultarGraduadosComponent },
 ];
 
 @NgModule({

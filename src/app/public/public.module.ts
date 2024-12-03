@@ -16,6 +16,8 @@ import { NuestrosAsociadosComponent } from './nuestros-asociados/nuestros-asocia
 import { CodigoDeEticaComponent } from './codigo-de-etica/codigo-de-etica.component';
 import { ReporteDeCasosComponent } from './reporte-de-casos/reporte-de-casos.component';
 import { ConsultarGraduadosComponent } from './consultar-graduados/consultar-graduados.component';
+import { GraduateModalComponent } from './graduate-modal/graduate-modal.component';
+import { ErrorModalComponent } from './error-modal/error-modal.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ConsultarGraduadosComponent } from './consultar-graduados/consultar-gra
     NuestrosAsociadosComponent,
     CodigoDeEticaComponent,
     ReporteDeCasosComponent,
-    ConsultarGraduadosComponent
+    ConsultarGraduadosComponent,
+    GraduateModalComponent,
+    ErrorModalComponent
   ],
   imports: [
     CommonModule,

@@ -1,31 +1,47 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { GraduateService } from 'src/app/services/graduate.service';
+import { GraduateModalComponent } from '../graduate-modal/graduate-modal.component';
+import { ErrorModalComponent } from '../error-modal/error-modal.component';
 
 @Component({
   selector: 'app-consultar-graduados',
   templateUrl: './consultar-graduados.component.html',
-  styleUrls: ['./consultar-graduados.component.css']
+  styleUrls: ['./consultar-graduados.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ConsultarGraduadosComponent {
-
   cedula: string = '';
   graduate: any = null;
   error: string = '';
-  isLoading: boolean = false; // Indicador de carga
+  isLoading: boolean = false;
 
-  constructor(private graduateService: GraduateService) { }
+  constructor(private graduateService: GraduateService, private dialog: MatDialog) {}
 
-  // Método para buscar el graduado, ahora usando async/await
   async searchGraduate() {
-    this.isLoading = true; // Iniciar la carga
+    this.isLoading = true;
     try {
       this.graduate = await this.graduateService.getGraduateByCedula(this.cedula);
       this.error = '';
+      this.openGraduateModal(this.graduate);
     } catch (err) {
       this.graduate = null;
       this.error = 'No se encontró el graduado';
+      this.openErrorModal(this.error);
     } finally {
-      this.isLoading = false; // Finalizar la carga
+      this.isLoading = false;
     }
+  }
+
+  openGraduateModal(graduate: any) {
+    this.dialog.open(GraduateModalComponent, {
+      data: graduate,
+    });
+  }
+
+  openErrorModal(error: string) {
+    this.dialog.open(ErrorModalComponent, {
+      data: error,
+    });
   }
 }
