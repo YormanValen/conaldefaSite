@@ -16,7 +16,7 @@
             id="cedula_input"
             [ngClass]="{'has-text': cedula}"
           />
-          <label class="user-label" for="cedula_input">Ingresa número de identificación</label>
+          <label class="user-label" for="cedula_input">Ingresa número de identificación sin comas ni puntos</label>
         </div>
         <button class="btn" (click)="searchGraduate()" [disabled]="isLoading">
           <span *ngIf="!isLoading">Buscar</span>

@@ -89,7 +89,7 @@
   content: none;
 }
 
-.header__desktop .menu_navbar button {
+.header__desktop .menu_navbar .btn {
   background-color: transparent;
   border: 1px solid white;
   color: white;
