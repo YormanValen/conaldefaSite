@@ -1,515 +1,304 @@
+.header__desktop .menu_navbar {
+  background-color: #f58736 !important;
+}
+
 .quienes_somos_section {
-  background-color: #74a8ba;
+  padding: 5% 5% 1% 5%;
+  height: 100vh;
+  background-image: url("/assets/img/img_banner.png");
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 1vw;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.quienes_somos_section h1 {
-  font-weight: 600;
-  line-height: 1;
+.quienes_somos_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #002c3f;
+  z-index: 1;
+}
+
+.quienes_somos_section .quienes_somos_content {
+  z-index: 99;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.quienes_somos_section .quienes_somos_content p {
   color: white;
 }
 
-.quienes_somos_section p {
+.quienes_somos_section .quienes_somos_content h1 {
   color: white;
-  text-align: center;
+  line-height: 6vw;
+  font-size: 7vw;
+  font-weight: normal;
 }
 
-@media (max-width: 767px) {
-
-
-
+.quienes_somos_section .quienes_somos_content h1 span {
+  color: #f58736;
+  font-size: 7vw;
+  font-weight: bold;
 }
 
-/** Nuestra historia **/
+.quienes_somos_section .quienes_somos_content_final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.quienes_somos_section .quienes_somos_content_final span {
+  color: white;
+  font-size: 4vw;
+  position: relative;
+  z-index: 99;
+}
+
+.quienes_somos_section .quienes_somos_content_final i {
+  color: #f58736;
+  font-size: 2vw;
+  position: relative;
+  z-index: 99;
+}
+
+/** nuestra historia section */
 
 .nuestra_historia_section {
+  height: 100vh;
+  padding: 0;
+}
+
+.linea_historica_ctn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2vw;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  gap: 0px;
+  transition: all 0.3s ease-in-out;
 }
 
-.nuestra_historia_section .title {
+.card_ctn {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.nuestra_historia_section .linea_historica_ctn {
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
-}
-
-.nuestra_historia_section .card_ctn {
-  display: grid;
-  grid-template-columns: 20% 1fr;
-  align-items: center;
-}
-
-.nuestra_historia_section .card_ctn .fecha_ctn span {
-  width: 10vw !important;
   cursor: pointer;
-}
-
-.nuestra_historia_section .card_ctn {
-  width: 40vw;
-}
-
-@media (max-width: 767px) {
-
-  .nuestra_historia_section .card_ctn  {
-    grid-template-columns: 100%;
-    justify-items: center;
-    gap: 3vw;
-  }
-
-  .nuestra_historia_section .card_ctn  span{
-   border-radius: 3vw;
-  }
-
-  .nuestra_historia_section .card_ctn .info_fecha::before{
-    top: -5% !important;
-    display: none !important;
-    left: 50% !important;
-    width: 2vw !important;
-    height: 2vw !important;
-  }
-
-  .nuestra_historia_section .card_ctn .info_fecha{
-    border-radius: 3vw !important;
-    width: 90vw !important;
-    padding: 5% !important;
-  }
-
-  .nuestra_historia_section .card_ctn .info_fecha .card_1, .card_2{
-    border-radius: 3vw !important;
-    width: 90vw !important;
-    padding: 5% !important;
-  }
-
-  .linea_historica_ctn {
-    gap: 7vw !important;
-  }
-
-  .junta_directiva_section .junta_directiva_ctn{
-    grid-template-columns: 100%;
-    gap: 4vw;
-  }
-
-  .junta_directiva_section .junta_directiva_ctn .integrantes_1{
-    order: 2;
-  }
-
-  .junta_directiva_section .junta_directiva_ctn .integrantes_1 .integrante_ctn{
-    display: flex;
-    padding-top: 2vw;
-    border-bottom: #808080 solid 2px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .junta_directiva_section .junta_directiva_ctn .integrantes_1 .integrante_ctn .presidente_ctn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .junta_directiva_section .junta_directiva_ctn .integrantes_2{
-    order: 3;
-  }
-
-  .junta_directiva_section .junta_directiva_ctn .integrantes_2 .integrante_ctn{
-    display: flex;
-    padding-top: 2vw;
-    border-bottom: #808080 solid 2px;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-
-}
-
-/** 1983 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_1983 .fecha_ctn span {
-  background-color: #cbced1;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_1983 .info_fecha {
-  background-color: #cbced1;
-  padding: 1vw 1vw 1vw 3vw;
-  border-radius: 20vw 0 0 20vw;
-  text-align: center;
-  position: relative;
-}
-
-.nuestra_historia_section .card_1983 .info_fecha::before {
-  content: "";
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #cbced1;
-  transform: translate(0, -50%);
-}
-
-.nuestra_historia_section .card_1983 .info_fecha h6 {
-  font-weight: 900;
-}
-
-/** 1984 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_1984 .fecha_ctn span {
-  background-color: #cacdf8;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_1984 .info_fecha {
-  background-color: #cacdf8;
-  padding: 1vw 1vw 1vw 5vw;
-  border-radius: 20vw 0 0 20vw;
-  text-align: center;
-  position: relative;
-}
-
-.nuestra_historia_section .card_1984 .info_fecha::before {
-  content: "";
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #cacdf8;
-  transform: translate(0, -50%);
-}
-
-.nuestra_historia_section .card_1984 .info_fecha span {
-  font-weight: 900;
-}
-
-/** 1988 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_1988 .fecha_ctn span {
-  background-color: #a3d3d8;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_1988 .info_fecha {
-  background-color: #a3d3d8;
-  padding: 1vw 1vw 1vw 5vw;
-  border-radius: 20vw 0 0 20vw;
-  text-align: center;
-  position: relative;
-}
-
-.nuestra_historia_section .card_1988 .info_fecha::before {
-  content: "";
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #a3d3d8;
-  transform: translate(0, -50%);
-}
-
-.nuestra_historia_section .card_1988 .info_fecha span {
-  font-weight: 900;
-}
-
-/** 1992 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_1992 .fecha_ctn span {
-  background-color: #8cd6b5;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_1992 .info_fecha {
-  background-color: #8cd6b5;
-  padding: 1vw 1vw 1vw 5vw;
-  border-radius: 20vw 0 0 20vw;
-  text-align: center;
-  position: relative;
-}
-
-.nuestra_historia_section .card_1992 .info_fecha::before {
-  content: "";
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #8cd6b5;
-  transform: translate(0, -50%);
-}
-
-.nuestra_historia_section .card_1992 .info_fecha span {
-  font-weight: 900;
-}
-
-/** 1998 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_1998 .fecha_ctn span {
-  background-color: #c3df9c;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_1998 .info_fecha {
-  background-color: #c3df9c;
-  padding: 1vw 1vw 1vw 5vw;
-  border-radius: 20vw 0 0 20vw;
-  text-align: center;
-  position: relative;
-}
-
-.nuestra_historia_section .card_1998 .info_fecha::before {
-  content: "";
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #c3df9c;
-  transform: translate(0, -50%);
-}
-
-.nuestra_historia_section .card_1998 .info_fecha span {
-  font-weight: 900;
-}
-
-/** 2014 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_2014 .fecha_ctn span {
-  background-color: #f1e39d;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_2014 .info_fecha {
-  display: flex;
-  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+  flex: 1;
   gap: 1vw;
   text-align: center;
+  min-width: 50px;
+  flex-direction: column;
+}
+
+.card_ctn:nth-child(odd) {
+  background-color: #f5f5f5; /* Fondo más oscuro */
+}
+
+.card_ctn.expanded {
+  flex: 3; /* Tarjeta expandida ocupa más espacio */
+  background-color: #f58736;
+  color: #fff;
+}
+
+.card_ctn:not(.expanded) {
+  flex: 0.7; /* Las tarjetas no activas se reducen */
+}
+
+.card_ctn .info_fecha {
+  display: none;
+  padding: 10px;
+}
+
+.card_ctn .info_fecha p {
+  color: white;
+}
+
+.card_ctn.expanded .info_fecha {
+  display: block;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.fecha_ctn {
+  font-weight: bold;
   position: relative;
 }
 
-.nuestra_historia_section .card_2014 .info_fecha .card_1 {
-  background-color: #f1e39d;
-  padding: 1vw 1vw 1vw 5vw;
-  border-radius: 20vw 0 0 20vw;
+.fecha_ctn span {
+  font-size: 1.5vw;
 }
 
-.nuestra_historia_section .card_2014 .info_fecha::before {
-  content: "";
+.fecha_ctn::before {
   position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #f1e39d;
-  transform: translate(0, -50%);
-}
-
-.nuestra_historia_section .card_2014 .info_fecha span {
-  font-weight: 900;
-}
-
-/** 2018 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_2018 .fecha_ctn span {
-  background-color: #f9cbb2;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_2018 .info_fecha {
-  background-color: #f9cbb2;
-  padding: 1vw 1vw 1vw 5vw;
-  border-radius: 20vw 0 0 20vw;
-  text-align: center;
-  position: relative;
-}
-
-.nuestra_historia_section .card_2018 .info_fecha::before {
+  bottom: 1%;
   content: "";
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #f9cbb2;
-  transform: translate(0, -50%);
+  width: 100%;
+  background-color: #f58736;
+  height: 2px;
 }
 
-.nuestra_historia_section .card_2018 .info_fecha span {
-  font-weight: 900;
+.card_ctn.expanded .fecha_ctn::before {
+  background-color: white;
 }
 
-/** 2021 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_2021 .fecha_ctn span {
-  background-color: #ffcbec;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_2021 .info_fecha {
-  background-color: #ffcbec;
-  padding: 1vw 1vw 1vw 5vw;
-  border-radius: 20vw 0 0 20vw;
-  text-align: center;
-  position: relative;
-}
-
-.nuestra_historia_section .card_2021 .info_fecha::before {
-  content: "";
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #ffcbec;
-  transform: translate(0, -50%);
-}
-
-.nuestra_historia_section .card_2021 .info_fecha span {
-  font-weight: 900;
-}
-
-/** 2023 **/
-
-.nuestra_historia_section .linea_historica_ctn .card_2023 .fecha_ctn span {
-  background-color: #f1ceff;
-  padding: 5px;
-  font-weight: 900;
-  border-radius: 0.5vw;
-}
-
-.nuestra_historia_section .card_2023 .info_fecha {
-  background-color: #f1ceff;
-  padding: 1vw 1vw 1vw 5vw;
-  border-radius: 20vw 0 0 20vw;
-  text-align: center;
-  position: relative;
-}
-
-.nuestra_historia_section .card_2023 .info_fecha::before {
-  content: "";
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  border-radius: 100%;
-  width: 1vw;
-  height: 1vw;
-  background-color: #f1ceff;
-  transform: translate(0, -50%);
-}
-
-.nuestra_historia_section .card_2023 .info_fecha span {
-  font-weight: 900;
-}
-
-/** junta_directiva_section **/
+/** junta_directiva_section */
 
 .junta_directiva_section {
-  background-color: #3c738c;
   display: flex;
   flex-direction: column;
+  gap: 4vw;
+}
+
+.junta_directiva_section .title {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 2vw;
 }
 
 .junta_directiva_section .title h3 {
-  color: white;
+  font-size: 4vw;
+}
+
+.junta_directiva_section .title span {
+  font-size: 4vw;
   font-weight: bold;
 }
 
-.junta_directiva_ctn {
+.junta_directiva_section .slide-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 8vw;
 }
 
-.junta_directiva_ctn .integrantes_1 {
-  width: 100%;
+.junta_directiva_section .slide-content .img_ctn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.junta_directiva_section .slide-content .img_ctn img {
+  border-radius: 1.5vw;
+}
+
+.slide-content .text_ctn .position_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
-.integrantes_1 .integrante_ctn:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: left;
+.slide-content .text_ctn .position_text h3 {
+  margin: 0;
 }
 
-.integrantes_1 .integrante_ctn .presidente_ctn {
-  text-align: left;
+.slide-content .text_ctn .position_text span {
+  color: #f58736;
+  font-size: 20px;
+  font-family: "Mulish-Bold-Italic";
+  font-weight: 800;
 }
 
-.integrante_ctn h5 {
-  color: white;
-  font-weight: bold;
-  text-align: left;
+.slide-content .text_ctn p {
+  text-align: justify;
 }
 
-.integrante_ctn h6 {
-  color: white;
-  font-weight: 600;
-  text-align: left;
-}
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #f58736 !important;
+  }
 
-.integrante_ctn p {
-  color: white;
-}
+  .quienes_somos_section .quienes_somos_content {
+    z-index: 99;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    width: 100%;
+    justify-items: center;
+    gap: 3vw;
+    align-content: center;
+  }
 
-.junta_directiva_ctn .integrantes_2 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  .quienes_somos_section .quienes_somos_content h1 {
+    color: white;
+    line-height: 8vw;
+    font-size: 10vw;
+    font-weight: normal;
+  }
 
-.integrantes_2 .integrante_ctn:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
+  .quienes_somos_section .quienes_somos_content h1 span {
+    color: #f58736;
+    font-size: 10vw;
+    font-weight: bold;
+  }
 
-.integrantes_2 .integrante_ctn:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: left;
+  .quienes_somos_section .quienes_somos_content_final span {
+    color: white;
+    font-size: 6vw;
+    position: relative;
+    z-index: 99;
+  }
+
+  .quienes_somos_section .quienes_somos_content_final i {
+    color: #f58736;
+    font-size: 5vw;
+    position: relative;
+    z-index: 99;
+  }
+
+  .nuestra_historia_section {
+    height: fit-content;
+    padding: 0;
+  }
+
+  .linea_historica_ctn {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    gap: 0px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .fecha_ctn span {
+    font-size: 2.5vw;
+  }
+
+  .junta_directiva_section .slide-content {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0 8vw;
+  }
+
+  .junta_directiva_section .slide-content .img_ctn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .junta_directiva_section .slide-content .img_ctn img {
+    width: 40vw;
+    border-radius: 1.5vw;
+  }
+
+  .junta_directiva_section {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    padding: 5% 5% 0 5%;
+  }
 }

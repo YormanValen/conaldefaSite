@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
@@ -10,6 +10,7 @@ import { AcceptTermsDialogComponent } from '../../public/accept-terms-dialog/acc
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit  {
   
@@ -37,7 +38,7 @@ export class HomeComponent implements OnInit  {
   }
   
   ngOnInit() {
-    this.openDialog();
+    //this.openDialog();
  }
 
  openDialog(): void {

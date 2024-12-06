@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { InfoMatriculaDialogComponent } from '../../public/info-matricula-dialog/info-matricula-dialog.component';
 
@@ -7,7 +7,9 @@ import { InfoMatriculaDialogComponent } from '../../public/info-matricula-dialog
 @Component({
   selector: 'app-matriculate',
   templateUrl: './matriculate.component.html',
-  styleUrls: ['./matriculate.component.css']
+  styleUrls: ['./matriculate.component.css'],
+  encapsulation: ViewEncapsulation.None,
+
 })
 export class MatriculateComponent {
   constructor(public dialog: MatDialog) { }

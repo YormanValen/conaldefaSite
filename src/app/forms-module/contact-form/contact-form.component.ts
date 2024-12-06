@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { ContactService } from '../../services/contact.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,6 +8,7 @@ import { ContactService } from '../../services/contact.service';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactComponent {
+  successMessage: string | null = null;
 
   constructor(private contactService: ContactService) { }
 
@@ -16,10 +17,14 @@ export class ContactComponent {
       this.contactService.sendContactForm(contactForm.value).subscribe(
         response => {
           console.log(response);
+          this.successMessage = 'Correo enviado exitosamente.';
           contactForm.reset();
+          setTimeout(() => {
+            this.successMessage = null;
+          }, 5000); // Oculta el mensaje después de 5 segundos
         },
         error => {
-          console.log(error);
+          console.error('Error al enviar el mensaje', error);
         }
       );
     }

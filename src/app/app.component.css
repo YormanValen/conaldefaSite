@@ -3,11 +3,11 @@
   background-color: #40c351;
   position: fixed;
   padding: 5px;
-  border-radius: 2vw 0 0 2vw; /* Ajusta según necesidad */
-  right: 0%; /* Ajusta según necesidad */
-  bottom: 10%; /* Ajusta según necesidad */
-  transform: translateY(-50%); /* Centra verticalmente */
-  z-index: 1000; /* Asegura que está sobre otros elementos */
+  border-radius: 100%;
+  right: 0%;
+  bottom: 10%;
+  transform: translateY(-50%);
+  z-index: 1000;
   transition: all 0.4s;
   overflow: hidden;
 }
@@ -17,8 +17,17 @@
 }
 
 .whatsapp-button img {
-  width: 50px; /* Ajusta el tamaño del ícono */
-  height: 50px;
+  width: 3vw;
+  height: 3vw;
   transition: all 0.4s;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .whatsapp-button img {
+    width: 7vw;
+    height: 7vw;
+    transition: all 0.4s;
+    position: relative;
+  }
 }

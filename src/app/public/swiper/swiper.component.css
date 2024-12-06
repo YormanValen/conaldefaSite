@@ -4,6 +4,7 @@
 swiper-container {
   @apply w-full;
   --swiper-navigation-color: white;
+  z-index: 1;
 }
 
 
@@ -18,9 +19,7 @@ swiper-slide {
 }
 
 swiper-slide img {
-  width: 70vw;
-  border: 5px solid var(--primary-color);
-  border-radius: 1vw;
+  width: 100%;
   @apply block;
 
 }

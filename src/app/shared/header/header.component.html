@@ -1,40 +1,46 @@
 <header>
   <div class="header__desktop">
-    <div class="header__desktop__first__ctn d-flex">
       <div class="logo">
         <a routerLink="home">
           <img src="assets/img/logo.png" alt="Logo Conaldefa" />
         </a>
       </div>
-      <div class="header__desktop__btns">
-        <a class="btn" href="https://gmail.us21.list-manage.com/track/click?u=87a6b3d1f08aa9c74e5694697&id=ec147b1578&e=d0ae0f1e4b" target="_blank"><span>Matriculate</span></a>
-      </div>
-    </div>
-    <div class="header__desktop__second__ctn">
       <ul class="menu_navbar">
-        <a routerLink="/quienes-somos" class=""> ¿Quienes somos? </a>
-
         <li>
-          <a routerLink="/nuestros-servicios" class=""> Servicios </a>
+          <a routerLink="/quienes-somos" class="">¿Quienes somos? </a>
         </li>
         <li>
-          <a routerLink="/red-institucional" class=""> Red Institucional </a>
+          <a routerLink="/nuestros-servicios" class="">Servicios </a>
         </li>
         <li>
-          <a routerLink="/matriculate" class=""> Colegiatura </a>
+          <a routerLink="/red-institucional" class="">Red Institucional </a>
         </li>
         <li>
-          <a routerLink="/normatividad" class=""> Resoluciones y Acuerdos </a>
+          <a routerLink="/matriculate" class="">Colegiatura </a>
         </li>
         <li>
-          <a routerLink="/nuestros-asociados" class=""> Nuestros Asociados </a>
+          <a routerLink="/normatividad" class="">Resoluciones y Acuerdos </a>
         </li>
         <li>
-          <a routerLink="/noticias" class=""> Noticias </a>
+          <a routerLink="/nuestros-asociados" class="">Nuestros Asociados </a>
+        </li>
+        <li>
+          <a routerLink="/noticias" class=""> Noticias y eventos</a>
+        </li>
+        <li class="dropdown">
+          <a class="">Tribunal de ética</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a routerLink="/código-deontológico">Código deontológico</a>
+            </li>
+            <li><a routerLink="/reporte-de-casos">Reporte de casos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="btn" routerLink="/consultar-graduados">Trámites</a>
         </li>
       </ul>
     </div>
-  </div>
 
   <div class="header_mobile">
     <div
@@ -71,22 +77,53 @@
     >
       <ul class="menu_navbar">
         <li>
-          <a (click)="toggleMenu()" routerLink="/quienes-somos" class=""> ¿Quienes somos? </a>
+          <a (click)="toggleMenu()" routerLink="/quienes-somos" class="">
+            ¿Quienes somos?
+          </a>
         </li>
         <li>
-          <a (click)="toggleMenu()" routerLink="/nuestros-servicios" class=""> Servicios </a>
+          <a (click)="toggleMenu()" routerLink="/nuestros-servicios" class="">
+            Servicios
+          </a>
         </li>
         <li>
-          <a (click)="toggleMenu()" routerLink="/red-institucional" class=""> Red Institucional </a>
+          <a (click)="toggleMenu()" routerLink="/red-institucional" class="">
+            Red Institucional
+          </a>
         </li>
         <li>
-          <a (click)="toggleMenu()" routerLink="/matriculate" class=""> Colegiatura </a>
+          <a (click)="toggleMenu()" routerLink="/matriculate" class="">
+            Colegiatura
+          </a>
         </li>
         <li>
-          <a (click)="toggleMenu()" routerLink="/normatividad" class=""> Normatividad </a>
+          <a (click)="toggleMenu()" routerLink="/normatividad" class="">
+            Resoluciones y Acuerdos
+          </a>
         </li>
         <li>
-          <a (click)="toggleMenu()" routerLink="" class=""> Nuestros Asociados </a>
+          <a (click)="toggleMenu()" routerLink="/nuestros-asociados" class="">
+            Nuestros Asociados
+          </a>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" routerLink="/noticias" class="">
+            Noticias
+          </a>
+        </li>
+        <li class="dropdown">
+          <button class="">Tribunal de ética</button>
+          <ul class="dropdown-menu">
+            <li>
+              <a routerLink="/código-deontológico">Código deontológico</a>
+            </li>
+            <li><a routerLink="/reporte-de-casos">Reporte de casos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" class="btn" routerLink="/consultar-graduados"
+            ><span>Tramites</span></a
+          >
         </li>
       </ul>
     </div>

@@ -1,0 +1,20 @@
+<div class="modal_ctn">
+  <h2 mat-dialog-title>Información del Graduado</h2>
+  <div mat-dialog-content>
+    <p><strong>Nombre:</strong> {{ graduate.nombre }}</p>
+    <p>
+      <strong>Matriculado:</strong> {{ graduate.matriculado ? "Sí" : "No" }}
+    </p>
+    <p><strong>Colegiado:</strong> {{ graduate.colegiado ? "Sí" : "No" }}</p>
+    <p><strong>Graduado:</strong> {{ graduate.graduado }}</p>
+    <p><strong>Vigencia:</strong> {{ graduate.vigencia }}</p>
+    <p><strong>Antecedentes:</strong> {{ graduate.antecedentes }}</p>
+    <p>
+      <strong>Base de datos actualizada hasta:</strong>
+      {{ graduate.created_at | date : "dd/MM/yyyy" }}
+    </p>
+  </div>
+  <div mat-dialog-actions>
+    <button class="btn_custom" mat-button (click)="onNoClick()"><span>Cerrar</span></button>
+  </div>
+</div>

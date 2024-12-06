@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { NoticiasService } from 'src/app/services/noticias.service';
 import { ResolucionesService } from 'src/app/services/resoluciones.service';
@@ -7,6 +7,7 @@ import { ResolucionesService } from 'src/app/services/resoluciones.service';
   selector: 'app-noticias',
   templateUrl: './noticias.component.html',
   styleUrls: ['./noticias.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class NoticiasComponent implements OnInit {
   noticias: any[] = [];

@@ -10,7 +10,9 @@ import { NoticiasComponent } from './admin/noticias/noticias.component';
 import { NoticiaDetailComponent } from './admin/noticia-detail/noticia-detail.component';
 import { ResolutionDetailComponent } from './admin/resolution-detail/resolution-detail.component';
 import { NuestrosAsociadosComponent } from './public/nuestros-asociados/nuestros-asociados.component';
-
+import { CodigoDeEticaComponent } from './public/codigo-de-etica/codigo-de-etica.component';
+import { ReporteDeCasosComponent } from './public/reporte-de-casos/reporte-de-casos.component';
+import { ConsultarGraduadosComponent } from './public/consultar-graduados/consultar-graduados.component';
 
 const routerOptions: ExtraOptions = {};
 
@@ -26,8 +28,9 @@ const routes: Routes = [
   { path: 'nuestros-asociados', component: NuestrosAsociadosComponent },
   { path: 'noticias/:id', component: NoticiaDetailComponent },
   { path: 'resoluciones/:id', component: ResolutionDetailComponent },
-
-
+  { path: 'código-deontológico', component: CodigoDeEticaComponent },
+  { path: 'reporte-de-casos', component: ReporteDeCasosComponent },
+  { path: 'consultar-graduados', component: ConsultarGraduadosComponent },
 ];
 
 @NgModule({

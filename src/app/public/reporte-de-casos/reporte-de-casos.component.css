@@ -1,0 +1,137 @@
+/** reporte_casos_section */
+
+.reporte_casos_section {
+  padding: 2% 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.reporte_casos_section .title h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  color: #002c3f;
+}
+
+.text_ctn_1 {
+  display: grid;
+  gap: 3vw;
+  align-items: center;
+  grid-template-columns: 35% 1fr;
+}
+
+.text_ctn_1 .first_column {
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdb431;
+  border-radius: 0.5vw;
+  padding: 2vw;
+  text-align: justify;
+  font-size: 1.2vw;
+}
+
+.text_ctn_1 .list_ctn h3 {
+  font-size: 1.3vw;
+  color: #002c3f;
+  font-weight: bold;
+}
+
+.text_ctn_1 .list_ctn ul {
+  list-style: disc;
+}
+
+.text_ctn_1 .list_ctn p {
+  margin: 0;
+  font-size: 1.2vw;
+  color: #002c3f;
+}
+
+.text_ctn_2 h3 {
+  font-size: 1.3vw;
+  color: #002c3f;
+  font-weight: bold;
+}
+
+.text_ctn_2 ul {
+  list-style: disc;
+}
+.text_ctn_2 p {
+  font-size: 1.2vw;
+  color: #002c3f;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #fdb431 !important;
+  }
+
+  .reporte_casos_section[_ngcontent-ng-c263835440]
+    .title[_ngcontent-ng-c263835440]
+    h2[_ngcontent-ng-c263835440] {
+    font-size: 7vw;
+    text-align: center;
+    font-weight: bold;
+    color: #002c3f;
+  }
+
+  .text_ctn_1[_ngcontent-ng-c263835440] {
+    display: grid;
+    gap: 3vw;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .text_ctn_1[_ngcontent-ng-c263835440]
+    .first_column[_ngcontent-ng-c263835440] {
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdb431;
+    border-radius: 0.5vw;
+    padding: 2vw;
+    text-align: justify;
+    font-size: 3vw;
+  }
+
+  .list_ctn {
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text_ctn_1[_ngcontent-ng-c263835440]
+    .list_ctn[_ngcontent-ng-c263835440]
+    p[_ngcontent-ng-c263835440] {
+    margin: 0;
+    font-size: inherit;
+    color: #002c3f;
+  }
+
+  .text_ctn_1[_ngcontent-ng-c263835440]
+    .list_ctn[_ngcontent-ng-c263835440]
+    h3[_ngcontent-ng-c263835440] {
+    font-size: 5vw !important;
+    color: #002c3f;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .text_ctn_2[_ngcontent-ng-c263835440] h3[_ngcontent-ng-c263835440] {
+    font-size: 5vw !important;
+    color: #002c3f;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .text_ctn_2[_ngcontent-ng-c263835440] p[_ngcontent-ng-c263835440] {
+    font-size: inherit;
+    color: #002c3f;
+    margin: 0;
+  }
+}

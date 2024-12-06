@@ -1,218 +1,229 @@
-
-
-
-  /**/
-
-.txt_ctn {
-    align-items: center;
+.swiper_ctn {
+  position: relative; /* Asegura que el contenedor tenga referencia para la posición absoluta de la sección */
 }
 
+.quienes_somos_section {
+  padding: 3%;
+}
+
+.quienes_somos_section .txt_ctn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  right: 0;
+  width: 70%;
+  bottom: -25vw;
+  color: #002c3f;
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  z-index: 10;
+  background-color: white;
+  padding: 2vw 4vw;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-items: center;
+  align-items: center;
+}
+
+/** nuestros_servicios_section */
+
 .nuestros_servicios_section {
-    padding: 4% 6%;
-    background-color: var(--section-color);
+  padding: 4vw 0;
+}
+
+.nuestros_servicios_section .title {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.nuestros_servicios_section .title i {
+  color: #f58736;
+  font-size: 2vw;
 }
 
 .nuestros_servicios_section .title h2 {
-    color: var(--primary-color);
-    text-align: center;
+  color: #002c3f;
+  font-size: 70px;
 
+  font-weight: normal;
 }
 
-.btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #f58736;
-    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    cursor: pointer;
-    border: none;
+/** redcuf_section */
+.redcuf_section {
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.redcuf_section .first_row {
+  display: grid;
+  color: #002c3f;
+  grid-template-columns: 60% 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.redcuf_section .first_row h2 {
+  font-size: 3.65vw;
+  font-weight: bolder;
+}
+
+.redcuf_section .first_row .aliados_img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  margin-top: 5vw;
+}
+
+.redcuf_section .second_row ul {
+  display: grid;
+  background-color: #002c3f;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0.8vw 0;
+  border-radius: 0.8vw;
+}
+
+.redcuf_section .second_row ul li {
+  padding: 0 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** se agrega un borde derecho blanco solido para los li menos para el ultimo */
+.redcuf_section .second_row ul li:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+.redcuf_section .second_row p {
+  font-size: 1.82vw;
+  margin: 0;
+  color: white;
+}
+
+/** comunity_section */
+
+.comunity_section {
+  padding: 0% 5%;
+}
+
+.comunity_section .comunity_ctn {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+.comunity_section .comunity_ctn {
+  background-color: #169bd4;
+  border-radius: 1vw;
+}
+
+.comunity_section .comunity_ctn .img_ctn img {
+  width: 100%;
+}
+
+.comunity_section .comunity_ctn .txt_ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  gap: 2vw;
+  flex-direction: column;
+}
+
+.comunity_section .comunity_ctn p {
+  font-size: 35px;
+  line-height: 2vw;
+  color: white;
+}
+
+.comunity_section .comunity_ctn button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0.5vw;
+  width: 90%;
+  color: white;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+
+.comunity_section .comunity_ctn button:hover {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 0.5vw;
+  width: 90%;
+  color: #169bd4;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #169bd4 !important;
   }
-  
-  
-  .btn:after {
-    content: " ";
-    width: 0%;
-    height: 100%;
-    background: #ed3237;
+
+  .quienes_somos_section .txt_ctn {
     position: absolute;
-    transition: all 0.4s ease-in-out;
+    left: 50%;
+    transform: translate(-50%, 0);
     right: 0;
-  }
-  
-  .btn:hover::after {
-    right: auto;
-    left: 0;
-    width: 100%;
-  }
-  
-  .btn span {
+    gap: 1vw;
+    width: 90%;
+    bottom: 5vw;
+    color: #002c3f;
+    display: grid;
+    grid-template-columns: 100%;
+    z-index: 10;
+    background-color: white;
+    padding: 2vw 4vw;
     text-align: center;
-    text-decoration: none;
-    width: 100%;
-    padding: 0;
-    color: white;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-    z-index: 20;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btn:hover span {
-    animation: scaleUp 0.3s ease-in-out;
-  }
-
-.column_ctn {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-items: center;
-}
+    align-items: center;
+  }
 
-.column_ctn .first_column img {
-    width: 30vw;
-}
+  .nuestros_servicios_section {
+    padding: 25vw 0 0 0;
+  }
 
-.rediuf_ctn {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .nuestros_servicios_section .title h2 {
+    color: #002c3f;
+    font-size: 15vw;
+    line-height: 13vw;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .nuestros_servicios_section .title i {
+    color: #f58736;
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .comunity_section .comunity_ctn .img_ctn img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .comunity_section .comunity_ctn p {
+    font-size: 5vw;
+    line-height: 5vw;
+    color: white;
+  }
+
+  .comunity_section .comunity_ctn button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 1.5vw;
+    width: 90%;
+    display: flex;
+    color: white;
+    font-weight: 800;
+    transition: all 0.3s;
     justify-content: center;
     align-items: center;
-}
-
-.rediuf_ctn .aliados_img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.rediuf_ctn .aliados_img img {
-    width: 15vw;
-    padding: 15px;
-}
-
-/* Estilos para el mapa */
-
-.mapa_mundo {
-    width: 25vw;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  
-}
-
-/* Estilo base para los países */
-.mapa_mundo path {
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    align-content: center;
   }
-  
-  /* Estilo al hacer hover sobre los países */
-  .mapa_mundo path:hover {
-   
-  }
-
-  /** comunity section **/
-  .comunity_section {
-    position: relative;
-    padding: 4% 6%;
-  }
-
-  .comunity_section svg{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-}
-
-.comunity_ctn {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-}
-
-.comunity_ctn img {
-    width: 100%;
-}
-
-.comunity_ctn__contain {
-    width: 100%;
-    position: absolute;
-    bottom: 5%;
-    display: flex;
-    z-index: 99;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
-.comunity_ctn__contain h4 {
-    color: white;    
-}
-
-.comunity_ctn__contain a {
-    border: 2px solid white;
-    
-}
-
-@media  (max-width: 767px) {
-
-    .quienes_somos_section {
-        text-align: center;
-    }
-
-    .nuestros_servicios_section .column_ctn{
-        grid-template-columns: 100%;
-    }
-
-    .column_ctn .first_column img {
-        width: 50vw;
-    }
-
-    .redcuf_section{
-        gap: 2vw  !important;
-        align-items: center;
-        text-align: center;
-    }
-
-    .redcuf_section .rediuf_ctn{
-        grid-template-columns: 100%;
-        gap: 10vw;
-    }
-
-    .rediuf_ctn .aliados_img img{
-        width: 30vw;
-    }
-
-    .rediuf_ctn .mapa_mundo{
-        width: 50vw;
-    }
-
-    .comunity_section{
-
-    }
-
-    .comunity_section svg{
-        display: none;
-    }
-
-    .comunity_section .comunity_ctn::before{
-        content: "";
-        background-color: black;
-        opacity: 0.5;
-        width: 100%;
-        height: 100%;
-        
-        position: absolute;
-
-    }
-
-    .comunity_section .comunity_ctn__contain {
-        bottom: 50%;
-        transform: translate(0, 50%);
-    }
-
 }

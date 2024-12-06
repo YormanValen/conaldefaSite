@@ -1,117 +1,76 @@
 .pop-up {
-  width: 100%; /* Ajustar según sea necesario */
-  max-width: 600px; /* Ajustar según sea necesario */
-  margin: auto;
+  padding: 2vw;
+  margin: 0 auto;
+  max-width: 80vw; /* Ajusta el ancho máximo del modal */
+  max-height: 80vh; /* Ajusta el alto máximo del modal */
+  background-color: #fff;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.pop-up .title {
+  display: flex;
+  padding: 2vw;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pop-up .title::before {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 2px;
+  content: "";
+  background-color: #002c3f;
+}
+.pop-up .title img {
+  width: 207px;
+  height: 130px;
+}
+
+.pop-up .title h2 {
+  font-size: 3vw;
+  font-weight: bold;
+  color: #002c3f;
+}
+
+.pop-up .txt_ctn {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1vw;
+  max-height: 300px; /* Define la altura máxima del contenedor */
+  overflow-y: auto; /* Permite el desplazamiento vertical */
+  padding: 10px; /* Espaciado interno */
 }
 
-
-.scrollable-content {
-  max-height: 80vh; /* Ajusta la altura según sea necesario */
-  overflow-y: auto;
+.pop-up .txt_ctn::-webkit-scrollbar {
+  width: 8px;
 }
 
-.pop-up_ctn {
-  max-height: 80vh; /* Ajusta la altura máxima según sea necesario */
-  overflow-y: auto;
-  padding: 20px; /* Opcional, para agregar algo de espacio dentro del contenedor */
-  background-color: white; /* Asegurar el fondo blanco para el texto */
-  gap: 10px;
+.pop-up .txt_ctn::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 4px;
 }
 
-.pop-up_ctn h2 {
-  text-align: center;
-  width: 100%;
-  color: var(--primary-color);
+.pop-up .txt_ctn::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa;
 }
 
-.pop-up_ctn ul {
-  list-style: disc;
-}
-
-.pop-up_ctn span {
-  font-weight: 500;
-}
-
-.btn {
-  margin: 0 10px;
-  position: relative;
+.pop-up .btn_ctn {
+  padding: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  background: #f58736;
-  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  cursor: pointer;
-  border: none;
-}
-
-.btn:after {
-  content: " ";
-  width: 0%;
-  height: 100%;
-  background: white;
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-  right: 0;
-}
-
-.btn:hover::after {
-  right: auto;
-  left: 0;
-  width: 100%;
-}
-
-.btn span {
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  padding: 0;
-  color: white;
-  font-size: 0.9vw;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  z-index: 20;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn:hover span {
-  color: #f58736;
-  animation: scaleUp 0.3s ease-in-out;
-}
-
-
-@keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 @media (max-width: 767px) {
-  .pop-up_ctn {
-    padding: 3vw;
-    width: 100%;
-    max-height: 90vh; /* Ajusta esto según tus necesidades */
-    overflow-y: auto; /* Habilita el desplazamiento vertical */
-    padding: 20px; /* Añade algo de padding si es necesario */
-  }
-
-  .btn {
-    margin: 10px 0;
-  }
-
-  .btn span {
-    font-size: 3.5vw;
+  .pop-up[_ngcontent-ng-c996543278] .title[_ngcontent-ng-c996543278] {
+    display: flex;
+    gap: 3vw;
+    padding: 2vw;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
   }
 }

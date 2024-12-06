@@ -47,8 +47,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "8.2kb",
-                  "maximumError": "8.2kb"
+                  "maximumWarning": "8.70kb",
+                  "maximumError": "8.70kb"
                 }
               ],
               "outputHashing": "all"
@@ -95,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []

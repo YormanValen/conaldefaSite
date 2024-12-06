@@ -31,7 +31,7 @@ register();
     SharedModule,
     FormsModule,
     PublicModule,
-    AppRoutingModule, // Añade esto para importar tu configuración de rutas
+    AppRoutingModule, 
     RouterModule, BrowserAnimationsModule, 
     MatDialogModule,
     HttpClientModule
