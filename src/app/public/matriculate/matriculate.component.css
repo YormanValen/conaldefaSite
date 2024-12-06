@@ -146,3 +146,59 @@
   margin: 0;
   text-align: justify;
 }
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #6ebc44 !important;
+  }
+
+  .quienes_somos_section .quienes_somos_content {
+    z-index: 99;
+    position: relative;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  }
+
+  .second_column_matriculate {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #6ebc44;
+    border-radius: 2vw;
+    padding: 4vw;
+    gap: 3vw;
+    position: relative;
+    z-index: 99;
+  }
+
+  .second_column_matriculate .title h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 5vw !important;
+  }
+
+  .second_column_matriculate .info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .info .list_ctn ul {
+    list-style: disc;
+    padding: 0;
+    color: white;
+    margin-left: 8%;
+  }
+
+  .btns_ctn .info_ctn {
+    padding: 3vw;
+    display: flex;
+    border-radius: 1vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #002c3f;
+  }
+}

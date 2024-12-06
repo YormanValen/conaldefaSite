@@ -108,20 +108,19 @@
 /** compendio_section */
 
 .compendio_section {
-padding: 0 5%;
+  padding: 0 5%;
 }
 
 .compendio_section .compendio_ctn {
-  display: flex
-;
-    padding: 1vw;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 1vw;
-    background-color: #002C3F;
+  display: flex;
+  padding: 1vw;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1vw;
+  background-color: #002c3f;
 }
 
-.compendio_ctn .title h6{
+.compendio_ctn .title h6 {
   color: white;
   margin: 0;
 }
@@ -131,13 +130,10 @@ padding: 0 5%;
   transition: all 0.3s;
   background-color: #169bd4;
   border-radius: 1vw;
-  
 }
 
 .compendio_ctn .btn_descargar:hover {
   background-color: #0772a0;
-  
-  
 }
 
 .compendio_ctn .btn_descargar a {
@@ -158,13 +154,115 @@ padding: 0 5%;
   height: 2vw;
 }
 
-.resolution_section .cards_ctn{
+.cards_ctn {
   display: grid;
+  gap: 2vw;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.resolution_section .resoluciones_ctn {
-  box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.75);
-  
+.resoluciones_ctn {
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vw;
+  box-shadow: 0 0 0.7vw 0.2vw rgba(0, 0, 0, 0.1);
 }
 
+.resolucion_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+  justify-content: center;
+}
+
+.resolucion_item p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #169bd4 !important;
+  }
+
+  .quienes_somos_section .quienes_somos_content {
+    z-index: 99;
+    position: relative;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .normas_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    gap: 2vw;
+  }
+
+  .compendio_section .compendio_ctn {
+    display: flex;
+    gap: 3vw;
+    padding: 3vw;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1vw;
+    background-color: #002c3f;
+    flex-direction: column;
+  }
+
+  .compendio_ctn .title h6 {
+    color: white;
+    margin: 0;
+    text-align: center;
+  }
+
+  .compendio_ctn .btn_descargar a {
+    color: white;
+    display: flex;
+    gap: 1vw;
+    width: 23vw;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    border-radius: 1vw;
+    text-decoration: none;
+    padding: 2vw 1vw;
+  }
+
+  .compendio_ctn .btn_descargar a img {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .cards_ctn {
+    display: grid;
+    padding: 0;
+    gap: 4vw;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resoluciones {
+    align-items: center;
+  }
+
+  .resoluciones_ctn {
+    padding: 3vw;
+    border-radius: 2vw;
+  }
+
+  .resolucion_item {
+    gap: 2vw;
+    text-align: center;
+  }
+}

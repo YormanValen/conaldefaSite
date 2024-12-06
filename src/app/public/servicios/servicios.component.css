@@ -248,7 +248,7 @@
   background-repeat: no-repeat;
 }
 
-.compromiso_conaldefa_section h5{
+.compromiso_conaldefa_section h5 {
   border: 2px solid white;
   z-index: 100;
   width: 50%;
@@ -267,4 +267,69 @@
   opacity: 0.6;
   background: #002c3f;
   z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #f16355 !important;
+  }
+
+  .quienes_somos_section .quienes_somos_content {
+    z-index: 99;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2vw;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .cursos_diplomados_ctn .icon_ctn {
+    display: flex;
+    padding: 3vw;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #f16355;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .h3_w {
+    font-size: 4vw !important;
+    text-align: center;
+  }
+
+  .servicios_section .text_ctn p {
+    color: #002c3f;
+    text-align: justify;
+  }
+
+  .icon_ctn img {
+    width: 30vw;
+    border-radius: 100%;
+    height: 30vw;
+  }
+
+  .servicio_ctn .icon_ctn {
+    padding: 3vw 5vw;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .compromiso_conaldefa_section h5 {
+    border: 2px solid white;
+    z-index: 100;
+    width: 90%;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 3vw;
+    color: white;
+}
 }

@@ -1,13 +1,10 @@
-
-
 .pop-up {
   padding: 2vw;
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 80vw; /* Ajusta el ancho máximo del modal */
   max-height: 80vh; /* Ajusta el alto máximo del modal */
   background-color: #fff;
   border-radius: 10px; /* Bordes redondeados */
-  
 }
 
 .pop-up .title {
@@ -24,7 +21,7 @@
   width: 90%;
   height: 2px;
   content: "";
-  background-color: #002C3F;
+  background-color: #002c3f;
 }
 .pop-up .title img {
   width: 207px;
@@ -34,7 +31,7 @@
 .pop-up .title h2 {
   font-size: 3vw;
   font-weight: bold;
-  color: #002C3F;
+  color: #002c3f;
 }
 
 .pop-up .txt_ctn {
@@ -66,4 +63,14 @@
   align-items: center;
 }
 
-
+@media (max-width: 767px) {
+  .pop-up[_ngcontent-ng-c996543278] .title[_ngcontent-ng-c996543278] {
+    display: flex;
+    gap: 3vw;
+    padding: 2vw;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}

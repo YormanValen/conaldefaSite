@@ -4,7 +4,7 @@
 
 .codigo_deontologico_section {
   display: flex;
-  padding: 5% 5% 0 5%;
+  padding: 0% 5% 5% 5%;
   flex-direction: column;
   gap: 1vw;
 }
@@ -52,71 +52,57 @@
   width: 2vw;
 }
 
-/** reporte_casos_section */
 
-.reporte_casos_section {
-  padding: 2% 5% 5% 5%;
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #fdb431 !important;
+  }
+
+  .codigo_deontologico_section .title h2 {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #002c3f;
+    text-align: center;
+  }
+
+  .cod_deontologico_ctn {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr;
+    background-color: #002c3f;
+    padding: 4vw;
+    justify-items: center;
+    align-items: center;
+    border-radius: 2vw;
+  }
+
+  .cod_deontologico_ctn p {
+    margin: 0;
+    color: white;
+    text-align: center;
+  }
+
+  .cod_deontologico_ctn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdb431;
+    padding: 2vw;
+    width: 28vw;
+    gap: 1vw;
+    border-radius: 6vw;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2vw;
+  }
+
+  .cod_deontologico_ctn span {
+    font-size: 3.5vw;
+  }
+
+  .cod_deontologico_ctn img {
+    width: 5vw;
+  }
 }
-
-.reporte_casos_section .title h2 {
-  font-size: 4vw;
-  font-weight: bold;
-  color: #002c3f;
-}
-
-.text_ctn_1 {
-  display: grid;
-  gap: 3vw;
-  align-items: center;
-  grid-template-columns: 35% 1fr;
-}
-
-.text_ctn_1 .first_column {
-  color: white;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fdb431;
-  border-radius: .5vw;
-  padding: 2vw;
-  text-align: justify;
-  font-size: 1.2vw;
-}
-
-.text_ctn_1 .list_ctn h3{
-  font-size: 1.3vw;
-  color: #002c3f;
-  font-weight: bold;
-}
-
-.text_ctn_1 .list_ctn ul {
-  list-style: disc;
-}
-
-.text_ctn_1 .list_ctn p{
-margin: 0;
-font-size: 1.2vw;
-color: #002c3f;
-}
-
-
-.text_ctn_2 h3 {
-  font-size: 1.3vw;
-  color: #002c3f;
-  font-weight: bold;
-}
-
-.text_ctn_2 ul {
-  list-style: disc;
-
-}
-.text_ctn_2 p {
-  font-size: 1.2vw;
-  color: #002c3f;
-  margin: 0;
-}
-

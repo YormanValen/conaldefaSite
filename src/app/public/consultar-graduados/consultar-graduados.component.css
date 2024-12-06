@@ -115,3 +115,53 @@
 .container .text_ctn p {
   color: white;
 }
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #6ebc44 !important;
+  }
+
+  .consulta_section .container {
+    z-index: 98;
+    position: relative;
+  }
+
+  .container .title h2 {
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    font-weight: bold;
+  }
+
+  .container .input-group label {
+    font-size: 2.5vw;
+    position: absolute;
+    transition: all 0.3s;
+    top: 50%;
+    left: 2%;
+    color: #002c3f;
+    transform: translateY(-50%);
+  }
+
+  .container .btn_ctn {
+    display: grid;
+    grid-template-columns: 77% 1fr;
+  }
+
+  .container .btn_ctn .btn span {
+    font-size: 2.5vw;
+  }
+
+  .container .text_ctn {
+    margin-top: 4vw;
+    border: 2px solid #6ebc44;
+    padding: 3vw;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    gap: 2vw;
+  }
+}

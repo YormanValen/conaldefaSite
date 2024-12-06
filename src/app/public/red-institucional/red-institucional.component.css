@@ -25,19 +25,16 @@
   background-color: var(--primary-color);
   padding: 20px;
   color: white;
-  border-radius: .5vw;
-  
+  border-radius: 0.5vw;
 }
 
 .info-modal p {
   color: white;
-  
 }
 
 .info-modal.show {
   display: block; /* Show when needed */
-  box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
-
+  box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
 }
 
 /** quienes_somos_section */
@@ -117,7 +114,7 @@
 
 /* nuestros_aliados_section */
 .nuestros_aliados_section {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .nuestros_aliados_ctn {
@@ -150,13 +147,13 @@
 }
 
 .nuestros_aliados_ctn .logo_ctn {
-  border-radius:  0 1vw 1vw 0 ;
+  border-radius: 0 1vw 1vw 0;
   display: flex;
   padding: 2vw;
   gap: 2vw;
   background-color: white;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .nuestros_aliados_ctn .logo_ctn img {
@@ -166,8 +163,8 @@
 
 .nuestros_aliados_section .second_ctn {
   display: grid;
-  gap:2vw;
-  grid-template-columns: repeat(4,1fr);
+  gap: 2vw;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .nuestros_aliados_section .second_ctn img {
@@ -177,18 +174,18 @@
 
 .second_ctn .card .txt_ctn {
   background-color: #002c3f;
-  color: #FDB431;
+  color: #fdb431;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1vw;
-  border-radius: 1vw 1vw 0 0 ;
+  border-radius: 1vw 1vw 0 0;
 }
 
 .second_ctn .txt_ctn h5 {
   margin: 0;
   font-weight: bolder;
-} 
+}
 
 .second_ctn .logo_ctn {
   border-radius: 0 0 1vw 1vw;
@@ -196,7 +193,7 @@
 
 /** objetivos_section */
 .objetivos_section {
-padding: 0;
+  padding: 0;
 }
 
 .objetivos_ctn {
@@ -214,7 +211,7 @@ padding: 0;
 }
 
 .objetivos_ctn .first_ctn h4 {
-  color: #FDB431;
+  color: #fdb431;
   z-index: 100;
   position: relative;
 }
@@ -230,7 +227,7 @@ padding: 0;
   color: white;
   z-index: 100;
   position: relative;
-  }
+}
 
 .objetivos_ctn .first_ctn::before {
   content: "";
@@ -246,7 +243,7 @@ padding: 0;
 
 .objetivos_ctn .second_ctn {
   padding: 8%;
-  background-color: #FDB431;
+  background-color: #fdb431;
 }
 
 .objetivos_ctn .second_ctn h4 {
@@ -256,4 +253,61 @@ padding: 0;
 .objetivos_ctn .second_ctn ul {
   list-style: disc;
   color: #002c3f;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #fdb431 !important;
+  }
+
+  .quienes_somos_section .quienes_somos_content {
+    z-index: 99;
+    position: relative;
+    gap: 2vw;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .mapa_mundo_section svg {
+    width: 70vw;
+  }
+
+  .nuestros_aliados_ctn {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .nuestros_aliados_ctn .logo_ctn img {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .nuestros_aliados_ctn .first_ctn .text_ctn h2 {
+    font-size: 5vw;
+    margin: 0;
+    font-weight: bold;
+    color: #ba882f;
+  }
+
+  .second_ctn .txt_ctn h5 {
+    margin: 0;
+    font-size: 2.5vw;
+    font-weight: bolder;
+  }
+
+  .logo_u {
+    width: 15vw !important;
+    height: 15vw !important;
+  }
+
+  .objetivos_ctn {
+    display: grid;
+    grid-template-columns: 100%;
+  }
 }
