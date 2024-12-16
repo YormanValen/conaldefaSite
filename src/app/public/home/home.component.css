@@ -50,6 +50,14 @@
   font-weight: normal;
 }
 
+.nuestros_servicios_section .contenido_box {
+  width: 100%;
+}
+
+.nuestros_servicios_section .contenido_box img {
+  width: 100%;
+}
+
 /** redcuf_section */
 .redcuf_section {
   padding: 0% 5%;
