@@ -194,6 +194,11 @@
 }
 
 @media (max-width: 767px) {
+
+  .nuestra_historia_section .linea_historica_ctn{
+    align-items: center;
+  }
+
   .nuestra_historia_section .card_ctn {
     grid-template-columns: 100%;
     justify-items: center;
