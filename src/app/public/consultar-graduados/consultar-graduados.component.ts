@@ -23,7 +23,15 @@ export class ConsultarGraduadosComponent {
     try {
       this.graduate = await this.graduateService.getGraduateByCedula(this.cedula);
       this.error = '';
-      this.openGraduateModal(this.graduate);
+  
+      const today = new Date();
+      const vigenciaDate = new Date(this.graduate.vigencia); 
+      
+      if (vigenciaDate < today) {
+        this.openErrorModal('Profesional no vigente en consulta pública comunicarse con conaldefa@gmail.com');
+      } else {
+        this.openGraduateModal(this.graduate);
+      }
     } catch (err) {
       this.graduate = null;
       this.error = 'No se encontró el graduado';
@@ -32,6 +40,7 @@ export class ConsultarGraduadosComponent {
       this.isLoading = false;
     }
   }
+  
 
   openGraduateModal(graduate: any) {
     this.dialog.open(GraduateModalComponent, {

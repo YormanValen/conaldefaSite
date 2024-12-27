@@ -13,6 +13,7 @@ import { NuestrosAsociadosComponent } from './public/nuestros-asociados/nuestros
 import { CodigoDeEticaComponent } from './public/codigo-de-etica/codigo-de-etica.component';
 import { ReporteDeCasosComponent } from './public/reporte-de-casos/reporte-de-casos.component';
 import { ConsultarGraduadosComponent } from './public/consultar-graduados/consultar-graduados.component';
+import { ResolucionesComponent } from './public/resoluciones/resoluciones.component';
 
 const routerOptions: ExtraOptions = {};
 
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'código-deontológico', component: CodigoDeEticaComponent },
   { path: 'reporte-de-casos', component: ReporteDeCasosComponent },
   { path: 'consultar-graduados', component: ConsultarGraduadosComponent },
+  { path: 'resoluciones', component: ResolucionesComponent },
 ];
 
 @NgModule({

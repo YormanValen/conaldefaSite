@@ -18,6 +18,7 @@ import { ReporteDeCasosComponent } from './reporte-de-casos/reporte-de-casos.com
 import { ConsultarGraduadosComponent } from './consultar-graduados/consultar-graduados.component';
 import { GraduateModalComponent } from './graduate-modal/graduate-modal.component';
 import { ErrorModalComponent } from './error-modal/error-modal.component';
+import { ResolucionesComponent } from './resoluciones/resoluciones.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ErrorModalComponent } from './error-modal/error-modal.component';
     ReporteDeCasosComponent,
     ConsultarGraduadosComponent,
     GraduateModalComponent,
-    ErrorModalComponent
+    ErrorModalComponent,
+    ResolucionesComponent
   ],
   imports: [
     CommonModule,
@@ -51,7 +53,8 @@ import { ErrorModalComponent } from './error-modal/error-modal.component';
     AcceptTermsDialogComponent,
     ServiciosComponent,
     NormatividadComponent,
-    MatriculateComponent
+    MatriculateComponent,
+    ResolucionesComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
