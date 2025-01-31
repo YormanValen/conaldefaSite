@@ -6,7 +6,7 @@ import { Resolution } from '../../models/resolution.model';
 @Component({
   selector: 'app-resolution-detail',
   templateUrl: './resolution-detail.component.html',
-  styleUrls: ['./resolution-detail.component.css']
+  styleUrls: ['./resolution-detail.component.css'],
 })
 export class ResolutionDetailComponent implements OnInit {
   resolution: Resolution | undefined;
@@ -14,7 +14,7 @@ export class ResolutionDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private resolutionService: ResolucionesService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
@@ -23,8 +23,14 @@ export class ResolutionDetailComponent implements OnInit {
     });
   }
 
-   // Método para obtener la URL completa del PDF
+  // Método para obtener la URL completa del PDF
   getPdfUrl(pdfFile: string): string {
-    return `https://admin.conaldefa.org/${pdfFile}`;
+    // Si la URL ya contiene 'storage/', la retornamos tal cual
+    if (pdfFile.includes('storage/')) {
+      return `https://admin.conaldefa.org/${pdfFile}`;
+    }
+
+    // Si no tiene 'storage/', lo agregamos manualmente
+    return `https://admin.conaldefa.org/storage/${pdfFile}`;
   }
 }
