@@ -1,0 +1,268 @@
+.header__desktop .menu_navbar {
+  background-color: #169bd4 !important;
+}
+
+.quienes_somos_section {
+  padding: 5% 5% 1% 5%;
+  height: 100vh;
+  background-image: url("/assets/img/normatividad.png");
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.quienes_somos_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #002c3f;
+  z-index: 1;
+}
+
+.quienes_somos_section .quienes_somos_content {
+  z-index: 99;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.quienes_somos_section .quienes_somos_content p {
+  color: white;
+}
+
+.quienes_somos_section .quienes_somos_content h1 {
+  color: white;
+  line-height: 6vw;
+  font-size: 7vw;
+  font-weight: normal;
+}
+
+.quienes_somos_section .quienes_somos_content h1 span {
+  color: white;
+  font-size: 7vw;
+  font-weight: bolder;
+}
+
+.quienes_somos_section .quienes_somos_content_final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.quienes_somos_section .quienes_somos_content_final span {
+  color: white;
+  font-size: 4vw;
+  position: relative;
+  z-index: 99;
+}
+
+.quienes_somos_section .quienes_somos_content_final i {
+  color: #f58736;
+  font-size: 2vw;
+  position: relative;
+  z-index: 99;
+}
+
+/** normas_section */
+
+.normas_section {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  gap: 2vw;
+}
+
+.normas_section .norma_ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.normas_section .norma_ctn .title {
+  display: flex;
+  padding: 0.5vw 2vw;
+  border-radius: 1vw;
+  background-color: #169bd4;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.normas_section .norma_ctn .title h5 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+/** compendio_section */
+
+.compendio_section {
+  padding: 0 5%;
+}
+
+.compendio_section .compendio_ctn {
+  display: flex;
+  padding: 1vw;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1vw;
+  background-color: #002c3f;
+}
+
+.compendio_ctn .title h6 {
+  color: white;
+  margin: 0;
+}
+
+.compendio_ctn .btn_descargar {
+  display: flex;
+  transition: all 0.3s;
+  background-color: #169bd4;
+  border-radius: 1vw;
+}
+
+.compendio_ctn .btn_descargar:hover {
+  background-color: #0772a0;
+}
+
+.compendio_ctn .btn_descargar a {
+  color: white;
+  display: flex;
+  gap: 1vw;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  border-radius: 1vw;
+  text-decoration: none;
+  padding: 0.5vw 1vw;
+}
+
+.compendio_ctn .btn_descargar a img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.cards_ctn {
+  display: grid;
+  gap: 2vw;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.resoluciones_ctn {
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vw;
+  box-shadow: 0 0 0.7vw 0.2vw rgba(0, 0, 0, 0.1);
+}
+
+.resolucion_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+  justify-content: center;
+}
+
+.resolucion_item p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #169bd4 !important;
+  }
+
+  .quienes_somos_section .quienes_somos_content {
+    z-index: 99;
+    position: relative;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .normas_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    gap: 2vw;
+  }
+
+  .compendio_section .compendio_ctn {
+    display: flex;
+    gap: 3vw;
+    padding: 3vw;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1vw;
+    background-color: #002c3f;
+    flex-direction: column;
+  }
+
+  .compendio_ctn .title h6 {
+    color: white;
+    margin: 0;
+    text-align: center;
+  }
+
+  .compendio_ctn .btn_descargar a {
+    color: white;
+    display: flex;
+    gap: 1vw;
+    width: 23vw;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    border-radius: 1vw;
+    text-decoration: none;
+    padding: 2vw 1vw;
+  }
+
+  .compendio_ctn .btn_descargar a img {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .cards_ctn {
+    display: grid;
+    padding: 0;
+    gap: 4vw;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resoluciones {
+    align-items: center;
+  }
+
+  .resoluciones_ctn {
+    padding: 3vw;
+    border-radius: 2vw;
+  }
+
+  .resolucion_item {
+    gap: 2vw;
+    text-align: center;
+  }
+}

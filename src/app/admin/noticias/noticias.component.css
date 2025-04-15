@@ -1,0 +1,160 @@
+.header__desktop .menu_navbar {
+  background-color: #f16355 !important;
+}
+
+.quienes_somos_section {
+  padding: 5% 5% 1% 5%;
+  background-image: url("/assets/img/noticias_banner.png");
+  display: flex;
+  gap: 3vw;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.quienes_somos_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #002c3f;
+  z-index: 1;
+}
+
+.quienes_somos_section .title {
+  position: relative;
+  z-index: 100;
+  text-align: center;
+}
+
+.quienes_somos_section .title h1 {
+  color: white;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+/** NOTICIAS */
+
+.noticia_section {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.noticias_ctn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.noticia_item {
+  width: 25vw;
+  height: 100% !important;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: 1vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.noticia_item .img_ctn {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1vw 1vw 0 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 1vw;
+  background-color: white;
+}
+
+.content .titulo h4 {
+  color: #002c3f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content .btn_custom {
+  width: 100%;
+  background-color: #f16355;
+}
+
+.noticia_item p {
+  margin: 0;
+}
+
+.resoluciones_ctn {
+  display: flex;
+  justify-content: center;
+
+  gap: 1vw;
+}
+
+.resolucion_item {
+  width: 20vw;
+  height: fit-content;
+  border-radius: 10px;
+  border: 0.1vw solid black;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #f16355 !important;
+  }
+
+  .quienes_somos_section .title {
+    position: relative;
+    z-index: 98;
+    text-align: center;
+  }
+
+  .quienes_somos_section .title h1 {
+    color: white;
+    font-size: 15vw;
+    font-weight: bolder;
+  }
+
+  .noticia_section {
+    width: 100%;
+    position: relative;
+    z-index: 98;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 3vw;
+    background-color: white;
+  }
+
+  .noticias_container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 0;
+  }
+
+  .noticia_item {
+    width: 40vw;
+  }
+}

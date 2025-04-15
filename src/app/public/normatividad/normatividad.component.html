@@ -1,0 +1,157 @@
+<section class="quienes_somos_section">
+  <div class="quienes_somos_content">
+    <h1>
+      <strong>Leyes</strong> que <br />
+      nos rigen
+    </h1>
+    <p>
+      El ejercicio del Desarrollo Familiar en Colombia se rige por un conjunto
+      de leyes y normas que garantizan la calidad, la ética y el bienestar de
+      las familias. Estas leyes establecen las funciones y responsabilidades de
+      los profesionales, protegen los derechos de las familias y contribuyen al
+      fortalecimiento del tejido social. En esta página, encontrarás información
+      sobre las principales leyes que rigen nuestra profesión.
+    </p>
+  </div>
+</section>
+<section class="normas_section">
+  <div class="norma_ctn">
+    <div class="title">
+      <h5>Ley 2336 de 2023</h5>
+      <a
+        href="https://www.funcionpublica.gov.co/eva//gestornormativo/norma.php?i=222230"
+        target="_blank"
+        class="p-0"
+      >
+        <img src="assets/svg/Downloadcloud.svg" alt="" />
+      </a>
+    </div>
+    <div class="text_ctn">
+      <p>
+        La Ley 2336 de 2023 marca un hito en la historia del Desarrollo Familiar
+        en Colombia. Esta ley no solo reconoce y regula el ejercicio de la
+        profesión, sino que también establece un marco ético y deontológico que
+        garantiza la calidad y el profesionalismo de quienes se dedican a
+        fortalecer y acompañar a las familias colombianas.
+      </p>
+    </div>
+  </div>
+  <div class="norma_ctn">
+    <div class="title">
+      <h5>Ley 1361 de 2009</h5>
+      <a
+        href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=38145#:~:text=Objeto.-,La%20presente%20ley%20tiene%20por%20objeto%20fortalecer%20y%20garantizar%20el,Pol%C3%ADtica%20P%C3%BAblica%20para%20la%20familia"
+        target="_blank"
+        class="p-0"
+      >
+        <img src="assets/svg/Downloadcloud.svg" alt="" />
+      </a>
+    </div>
+
+    <div class="text_ctn">
+      <p>
+        La familia es la base de la sociedad, y su bienestar es fundamental para
+        el desarrollo integral de las personas. La Ley 1361 de 2009, conocida
+        como la Ley de Protección Integral a la Familia, reconoce la importancia
+        de la familia y establece los mecanismos para su protección, promoción y
+        fortalecimiento. Esta ley es un referente esencial para el trabajo de
+        los profesionales del Desarrollo Familiar.
+      </p>
+    </div>
+  </div>
+  <div class="norma_ctn">
+    <div class="title">
+      <h5>Ley 2126 de 2021</h5>
+      <a
+        href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=168066"
+        target="_blank"
+        class="p-0"
+      >
+        <img src="assets/svg/Downloadcloud.svg" alt="" />
+      </a>
+    </div>
+    <div class="text_ctn">
+      <p>
+        La Ley 2126 de 2021 regula la creación, conformación y funcionamiento de
+        las Comisarías de Familia, instancias esenciales para la atención de
+        situaciones de violencia intrafamiliar y la garantía de los derechos de
+        las familias. Esta ley busca facilitar el acceso a la justicia, brindar
+        atención especializada e interdisciplinaria, y prevenir y erradicar la
+        violencia en el contexto familiar.
+      </p>
+    </div>
+  </div>
+  <div class="norma_ctn">
+    <div class="title">
+      <h5>Sentencia C-505/14</h5>
+      <a
+        href="https://www.corteconstitucional.gov.co/relatoria/2014/C-505-14.htm"
+        target="_blank"
+        class="p-0"
+      >
+        <img src="assets/svg/Downloadcloud.svg" alt="" />
+      </a>
+    </div>
+    <div class="text_ctn">
+      <p>
+        La Sentencia C-505/14 de la Corte Constitucional reconoce la idoneidad
+        de los profesionales en Desarrollo Familiar para integrar los equipos
+        interdisciplinarios de las Defensorías y Comisarías de Familia, así como
+        los Comités de Adopción del ICBF. Esta sentencia es un paso importante
+        para la visibilización y el reconocimiento de la profesión, y amplía las
+        oportunidades laborales para los profesionales del Desarrollo Familiar.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="compendio_section">
+  <div class="compendio_ctn ">
+    <div class="title">
+      <h6>
+        COMPENDIO NORMATIVO PARA EL EJERCICIO DE LA PROFESION DE DESARROLLO
+        FAMILIAR EN COLOMBIA
+      </h6>
+    </div>
+
+    <div class="btn_descargar">
+      <a
+        href="assets/pdf/LIBRO DF - COMPENDIO.pdf"
+        download
+        class="cssbuttons-io-button"
+      >
+        <span>Descargar</span>
+        <img src="assets/svg/Downloadcloud.svg" alt="" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="resolucion_section">
+  <div class="resoluciones d-flex flex-column gap-2" *ngIf="resoluciones.length > 0">
+    <div class="title">
+      <h2>Resoluciones</h2>
+    </div>
+    <ul class="cards_ctn">
+      <li class="resoluciones_ctn" *ngFor="let resolucion of resoluciones">
+        <div class="resolucion_item">
+          <div class="titulo">
+            <h4>{{ resolucion.title }}</h4>
+          </div>
+          <div class="contenido">
+            <p>{{ resolucion.content | slice : 0 : 30 }}...</p>
+          </div>
+          <div class="contenido d-flex flex-column">
+            <span>Fecha de Publicación:</span>
+            <span>{{ resolucion.resolution_date | slice : 0 : 10 }}</span>
+          </div>
+          <button
+            class="btn-primary"
+            [routerLink]="['/resoluciones', resolucion.id]"
+          >
+            Ver más
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

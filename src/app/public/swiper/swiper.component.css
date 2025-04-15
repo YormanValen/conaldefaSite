@@ -1,0 +1,25 @@
+
+
+/** Carrousel section **/
+swiper-container {
+  @apply w-full;
+  --swiper-navigation-color: white;
+  z-index: 1;
+}
+
+
+.swiper-button-prev {
+    @apply ml-1.5;
+    z-index: 100;
+}
+
+
+swiper-slide {
+  @apply h-full w-80;
+}
+
+swiper-slide img {
+  width: 100%;
+  @apply block;
+
+}

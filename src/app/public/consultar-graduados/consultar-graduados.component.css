@@ -1,0 +1,167 @@
+.header__desktop .menu_navbar {
+  background-color: #6ebc44 !important;
+}
+
+.consulta_section {
+  padding: 5% 5% 1% 5%;
+  height: 100vh;
+  background-image: url("/assets/img/colegiados.png");
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.consulta_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #002c3f;
+  z-index: 1;
+}
+
+.consulta_section .container {
+  z-index: 100;
+  position: relative;
+}
+
+.container .search_box {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.container .title h2 {
+  color: white;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.container .btn_ctn {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+}
+
+.container .input-group {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.container .input-group input.has-text + label {
+  top: 0.7vw;
+  font-size: 1vw;
+}
+
+.container .input-group:focus-within label {
+  top: 0.7vw;
+  font-size: 1vw;
+}
+
+.container .input-group input {
+  border: none;
+  outline: none;
+  padding: 1.2vw 1vw 1vw 1vw;
+  width: 100%;
+  border-radius: 1vw;
+}
+
+.container .input-group label {
+  position: absolute;
+  transition: all 0.3s;
+  top: 50%;
+  left: 2%;
+  color: #002c3f;
+  transform: translateY(-50%);
+}
+
+.container .btn_ctn .btn {
+  background-color: #6ebc44;
+  border-radius: 0 1vw 1vw 0;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .btn_ctn .btn span {
+  font-size: 1.5vw;
+}
+
+.container .btn_ctn .btn i {
+  font-size: 2vw;
+}
+
+.container .text_ctn {
+  margin-top: 4vw;
+  border: 2px solid #6ebc44;
+  padding: 2vw;
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.container .text_ctn p {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #6ebc44 !important;
+  }
+
+  .consulta_section .container {
+    z-index: 98;
+    position: relative;
+  }
+
+  .container .title h2 {
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    font-weight: bold;
+  }
+
+  .container .input-group label {
+    font-size: 2.5vw;
+    position: absolute;
+    transition: all 0.3s;
+    top: 50%;
+    left: 2%;
+    color: #002c3f;
+    transform: translateY(-50%);
+  }
+
+  .container .btn_ctn {
+    display: grid;
+    grid-template-columns: 77% 1fr;
+  }
+
+  .container .btn_ctn .btn span {
+    font-size: 2.5vw;
+  }
+
+  .container .text_ctn {
+    margin-top: 4vw;
+    border: 2px solid #6ebc44;
+    padding: 3vw;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    gap: 2vw;
+  }
+}

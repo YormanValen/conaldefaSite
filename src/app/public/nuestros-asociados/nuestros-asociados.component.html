@@ -1,0 +1,99 @@
+<section class="quienes_somos_section">
+  <div class="quienes_somos_content">
+    <h1>
+      Nuestros<br />
+      <span>Aliados</span>
+    </h1>
+    <p>
+      CONALDEFA se enorgullece de contar con una comunidad vibrante de egresados
+      en Desarrollo Familiar que trabajan incansablemente por el bienestar de
+      las familias colombianas. En esta página, te invitamos a conocer a algunos
+      de nuestros asociados, sus experiencias y proyectos, y a ver cómo la
+      pasión por el desarrollo familiar se traduce en un impacto real en la
+      sociedad.
+    </p>
+  </div>
+</section>
+
+<section class="carousel_section">
+  <div class="title">
+    <h3>Conoce a algunos de nuestros asociados y sus experiencias</h3>
+  </div>
+
+  <div class="carousel_ctn">
+    <swiper-container
+      [centeredSlides]="swiperConfig.centeredSlides"
+      [paginationClickable]="swiperConfig.paginationClickable"
+      [spaceBetween]="swiperConfig.spaceBetween"
+      [loop]="swiperConfig.loop"
+      [autoplay]="swiperConfig.autoplay"
+      [speed]="swiperConfig.speed"
+      [effect]="swiperConfig.effect"
+      [slidesPerView]="swiperConfig.slidesPerView"
+      [pagination]="swiperConfig.pagination"
+      class="mySwiper"
+    >
+      <swiper-slide *ngFor="let item of images">
+        <div class="card_ctn">
+          <div class="card">
+            <div class="img_ctn">
+              <img
+                class="carousel-image"
+                [src]="item.img"
+                alt="Imagen de asociado"
+              />
+            </div>
+            <div class="desc_ctn">
+              <h3>{{ item.name }}</h3>
+              <p>{{ item.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+
+      <div class="swiper-pagination"></div>
+    </swiper-container>
+  </div>
+</section>
+
+<section class="collage_section">
+  <div class="collage_ctn">
+    <div class="collage_img">
+      <img src="assets/img/asociados_1.jpeg" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_2.jpeg" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_3.jpeg" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_4.jpg" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_5.jpeg" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_6.jpeg" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_7.jpeg" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_8.jpeg" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_9.png" alt="Collage de imágenes" />
+    </div>
+    <div class="collage_img">
+      <img src="assets/img/asociados_10.png" alt="Collage de imágenes" />
+    </div>
+  </div>
+  <div class="text_ctn">
+    <h3>
+      Ell@s ya la tienen <br /> ¿Y tú?
+    </h3>
+
+    <a href="https://gmail.us21.list-manage.com/track/click?u=87a6b3d1f08aa9c74e5694697&id=ec147b1578&e=d0ae0f1e4b" target="_blank" class="btn_custom btn1"><span>Matriculate</span></a>
+  </div>
+</section>

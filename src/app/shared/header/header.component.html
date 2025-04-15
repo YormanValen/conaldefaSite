@@ -1,0 +1,131 @@
+<header>
+  <div class="header__desktop">
+      <div class="logo">
+        <a routerLink="home">
+          <img src="assets/img/logo.png" alt="Logo Conaldefa" />
+        </a>
+      </div>
+      <ul class="menu_navbar">
+        <li>
+          <a routerLink="/quienes-somos" class="">¿Quienes somos? </a>
+        </li>
+        <li>
+          <a routerLink="/nuestros-servicios" class="">Servicios </a>
+        </li>
+        <li>
+          <a routerLink="/red-institucional" class="">Red Institucional </a>
+        </li>
+        <li>
+          <a routerLink="/matriculate" class="">Colegiatura </a>
+        </li>
+        <li>
+          <a routerLink="/normatividad" class="">Resoluciones y Acuerdos </a>
+        </li>
+        <li>
+          <a routerLink="/nuestros-asociados" class="">Nuestros Asociados </a>
+        </li>
+        <li>
+          <a routerLink="/noticias" class=""> Noticias y eventos</a>
+        </li>
+        <li class="dropdown">
+          <a class="">Tribunal de ética</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a routerLink="/código-deontológico">Código deontológico</a>
+            </li>
+            <li><a routerLink="/reporte-de-casos">Reporte de casos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="btn" routerLink="/consultar-graduados">Trámites</a>
+        </li>
+      </ul>
+    </div>
+
+  <div class="header_mobile">
+    <div
+      class="blur"
+      (click)="toggleMenu()"
+      [ngClass]="{ blur_active: isMenuOpen }"
+    ></div>
+    <div class="header_mobile__first__ctn">
+      <div class="logo">
+        <a routerLink="home">
+          <img src="assets/img/logo.png" alt="Logo Conaldefa" />
+        </a>
+      </div>
+      <div class="header_mobile__btns">
+        <label class="hamburger">
+          <input
+            type="checkbox"
+            [checked]="isMenuOpen"
+            (click)="toggleMenu()"
+          />
+          <svg viewBox="0 0 32 32">
+            <path
+              class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+            ></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+    </div>
+    <div
+      class="header_mobile__second__ctn"
+      [ngClass]="{ menu_active: isMenuOpen }"
+    >
+      <ul class="menu_navbar">
+        <li>
+          <a (click)="toggleMenu()" routerLink="/quienes-somos" class="">
+            ¿Quienes somos?
+          </a>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" routerLink="/nuestros-servicios" class="">
+            Servicios
+          </a>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" routerLink="/red-institucional" class="">
+            Red Institucional
+          </a>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" routerLink="/matriculate" class="">
+            Colegiatura
+          </a>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" routerLink="/normatividad" class="">
+            Resoluciones y Acuerdos
+          </a>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" routerLink="/nuestros-asociados" class="">
+            Nuestros Asociados
+          </a>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" routerLink="/noticias" class="">
+            Noticias
+          </a>
+        </li>
+        <li class="dropdown">
+          <button class="">Tribunal de ética</button>
+          <ul class="dropdown-menu">
+            <li>
+              <a routerLink="/código-deontológico">Código deontológico</a>
+            </li>
+            <li><a routerLink="/reporte-de-casos">Reporte de casos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a (click)="toggleMenu()" class="btn" routerLink="/consultar-graduados"
+            ><span>Tramites</span></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

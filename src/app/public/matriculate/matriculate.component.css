@@ -1,0 +1,204 @@
+.header__desktop .menu_navbar {
+  background-color: #6ebc44 !important;
+}
+
+.quienes_somos_section {
+  padding: 5%;
+  background-image: url("/assets/img/colegiados.png");
+  gap: 3vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.quienes_somos_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #002c3f;
+  z-index: 1;
+}
+
+.quienes_somos_section .quienes_somos_content {
+  z-index: 99;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.quienes_somos_section .quienes_somos_content p {
+  color: white;
+}
+
+.quienes_somos_section .quienes_somos_content h1 {
+  color: white;
+  line-height: 6vw;
+  font-size: 6vw;
+  font-weight: normal;
+}
+
+.quienes_somos_section .quienes_somos_content h1 span {
+  color: white;
+  font-size: 7vw;
+  font-weight: bolder;
+}
+
+.quienes_somos_section .quienes_somos_content_final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.quienes_somos_section .quienes_somos_content_final span {
+  color: white;
+  font-size: 4vw;
+  position: relative;
+  z-index: 99;
+}
+
+.quienes_somos_section .quienes_somos_content_final i {
+  color: #f58736;
+  font-size: 2vw;
+  position: relative;
+  z-index: 99;
+}
+
+.second_column_matriculate {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #6ebc44;
+  border-radius: 2vw;
+  padding: 2vw;
+  gap: 3vw;
+  position: relative;
+  z-index: 99;
+}
+
+.second_column_matriculate .title h3 {
+  color: white;
+  font-weight: bold;
+}
+
+.second_column_matriculate .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info .list_ctn ul {
+  list-style: disc;
+  padding: 0;
+  color: white;
+  margin-left: 2%;
+}
+
+.info .list_ctn ul p {
+  color: white;
+  margin: 0;
+}
+
+.info .btns_ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.btns_ctn .btn_ctn {
+  display: flex;
+  gap: 2vw;
+  justify-content: space-around;
+}
+
+.btn1 {
+  background-color: #6ebc44;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #6ebc44;
+}
+
+.btn2 {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btns_ctn .info_ctn {
+  padding: 1vw;
+  display: flex;
+  border-radius: 1vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #002c3f;
+}
+
+.btns_ctn .info_ctn p {
+  color: white;
+  margin: 0;
+  text-align: justify;
+}
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #6ebc44 !important;
+  }
+
+  .quienes_somos_section .quienes_somos_content {
+    z-index: 99;
+    position: relative;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  }
+
+  .second_column_matriculate {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #6ebc44;
+    border-radius: 2vw;
+    padding: 4vw;
+    gap: 3vw;
+    position: relative;
+    z-index: 99;
+  }
+
+  .second_column_matriculate .title h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 5vw !important;
+  }
+
+  .second_column_matriculate .info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .info .list_ctn ul {
+    list-style: disc;
+    padding: 0;
+    color: white;
+    margin-left: 8%;
+  }
+
+  .btns_ctn .info_ctn {
+    padding: 3vw;
+    display: flex;
+    border-radius: 1vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #002c3f;
+  }
+}

@@ -1,0 +1,108 @@
+.header__desktop .menu_navbar {
+  background-color: #fdb431 !important;
+}
+
+.codigo_deontologico_section {
+  display: flex;
+  padding: 0% 5% 5% 5%;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.codigo_deontologico_section .title h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  color: #002c3f;
+}
+
+.cod_deontologico_ctn {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  background-color: #002c3f;
+  padding: 2vw 4vw;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0.5vw;
+}
+
+.cod_deontologico_ctn p {
+  margin: 0;
+  color: white;
+}
+
+.cod_deontologico_ctn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdb431;
+  padding: 1vw;
+  width: 17vw;
+  gap: 1vw;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.5vw;
+}
+
+.cod_deontologico_ctn span {
+  font-size: 1.3vw;
+}
+
+.cod_deontologico_ctn img {
+  width: 2vw;
+}
+
+
+
+@media (max-width: 767px) {
+  .header_mobile__second__ctn {
+    background-color: #fdb431 !important;
+  }
+
+  .codigo_deontologico_section .title h2 {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #002c3f;
+    text-align: center;
+  }
+
+  .cod_deontologico_ctn {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr;
+    background-color: #002c3f;
+    padding: 4vw;
+    justify-items: center;
+    align-items: center;
+    border-radius: 2vw;
+  }
+
+  .cod_deontologico_ctn p {
+    margin: 0;
+    color: white;
+    text-align: center;
+  }
+
+  .cod_deontologico_ctn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdb431;
+    padding: 2vw;
+    width: 28vw;
+    gap: 1vw;
+    border-radius: 6vw;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2vw;
+  }
+
+  .cod_deontologico_ctn span {
+    font-size: 3.5vw;
+  }
+
+  .cod_deontologico_ctn img {
+    width: 5vw;
+  }
+}

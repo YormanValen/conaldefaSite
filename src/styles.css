@@ -1,0 +1,274 @@
+@import "~wowjs/css/libs/animate.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  box-sizing: border-box;
+  word-break: break-word;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("./assets/fonts/Mulish-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish-ExtraBold-Italic";
+  src: url("./assets/fonts/Mulish-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish-Bold-Italic";
+  src: url("./assets/fonts/Mulish-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("./assets/fonts/DancingScript-Bold.ttf");
+  font-weight: bold;
+}
+
+:root {
+  --deep_blue: #045699;
+  --banner_blue: #74a8ba;
+  --soft_blue: #228ffc;
+  --gray: #808080;
+  --primary-color: #3b8da9;
+  --text-color: #494949;
+  --section-color: #caebf6;
+}
+
+body {
+  background: white;
+}
+
+img,
+svg {
+  max-width: 100%;
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+a {
+  cursor: pointer;
+  font-size: 1.2vw;
+  width: fit-content;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 0.5vw 2vw;
+}
+
+button {
+  padding: 0.5vw 2vw;
+}
+
+button {
+  font-size: 1.2vw;
+  padding: 0.5vw 2vw;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.2vw 2vw;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.5vw;
+  transition: all 0.4s;
+}
+
+i {
+  cursor: auto;
+  transition: 0.4s;
+  font-size: 1.3vw;
+}
+
+span {
+  transition: all 0.4s;
+  font-size: 1vw;
+}
+
+section {
+  padding: 5%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2vw;
+  line-height: 1;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5vw;
+  line-height: 1;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 996px) {
+  section {
+    padding: 10% 8%;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 7vw;
+  }
+  h3 {
+    font-size: 6vw !important;
+    hyphens: auto;
+  }
+  p,
+  ol,
+  ul {
+    font-size: 3vw;
+  }
+  button {
+    padding: 2vw 6vw;
+    font-size: 3.5vw;
+  }
+  i {
+    font-size: 6vw;
+  }
+
+  a {
+    font-size: 3vw;
+  }
+
+  span {
+    font-size: 2.5vw;
+  }
+}
+
+.cdk-overlay-backdrop {
+  background-color: #002c3f;
+  opacity: 0.7 !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* From Uiverse.io by abrahamcalsin */
+.btn_custom {
+  position: relative;
+  display: flex;
+  padding: 1vw 2vw;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #f58736;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.btn_custom:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.btn_custom:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.btn_custom span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_custom:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,12 @@
+<div class="noticia_ctn" *ngIf="resolution">
+  <div class="content">
+    <h2>{{ resolution.title }}</h2>
+    <p>{{ resolution.content }}</p>
+    <p><strong>Fecha de publicación: </strong> {{ resolution.resolution_date }}</p>
+    
+    <!-- Botón para descargar el PDF -->
+    <p *ngIf="resolution.pdf_file">
+      <a class="btn btn-info" [href]="getPdfUrl(resolution.pdf_file)" target="_blank">Descargar PDF</a>
+    </p>
+  </div>
+</div>

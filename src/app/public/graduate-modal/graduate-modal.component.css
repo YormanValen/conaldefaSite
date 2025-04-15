@@ -1,0 +1,8 @@
+.modal_ctn {
+    padding: 2vw;
+    display: flex;
+    border-radius: 4vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  

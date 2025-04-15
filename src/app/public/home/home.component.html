@@ -1,0 +1,100 @@
+<div class="swiper_ctn pa-4">
+  <app-swiper [images]="sliderImages"></app-swiper>
+</div>
+<section class="quienes_somos_section">
+  <div class="txt_ctn">
+    <p class="text-lg-center">
+      El Colegio Profesional de Desarrollo Familiar es una comunidad vibrante de
+      profesionales comprometidos con el mejoramiento de las condiciones y la
+      calidad de vida de las familias. A través de la proyección profesional, la
+      investigación, la incidencia política y el fortalecimiento de redes a
+      nivel nacional e internacional.
+    </p>
+    <button class="btn_custom" (click)="navigateToQuienesSomos()">
+      <span>Conocénos</span>
+    </button>
+  </div>
+</section>
+
+<section class="nuestros_servicios_section">
+  <div
+    class="nuestros_servicios_ctn d-flex items-center flex-column gap-4 align-items-center"
+  >
+    <div class="title text-lg-center">
+      <h2>Nuestros <strong>Servicios</strong></h2>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="contenido_box">
+      <img src="assets/img/services.png" alt="servicios" />
+    </div>
+
+    <div class="btn_ctn">
+      <button class="btn_custom" (click)="navigateToServicios()">
+        <span>Más información</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="redcuf_section">
+  <div class="first_row">
+    <div class="text_ctn">
+      <h2>REDCUF</h2>
+      <p>
+        Tenemos una red de aliados que apoyan nuestra labor y estan
+        comprometidos con la promoción, el fortalecimiento y desarrollo de la
+        formación profesionales en familias en la región de las américas.
+      </p>
+
+      <button class="btn_custom" (click)="navigateToRedInstitucional()">
+        <span>Descúbrelos</span>
+      </button>
+    </div>
+    <div class="aliados_img">
+      <img src="assets/webp/slide_1.webp" alt="aliados" />
+      <img src="assets/webp/slide_2.webp" alt="aliados" />
+      <img src="assets/webp/slide_3.webp" alt="aliados" />
+      <img src="assets/webp/slide_5.webp" alt="aliados" />
+      <img src="assets/webp/slide_6.webp" alt="aliados" /><img
+        src="assets/webp/slide_7.webp"
+        alt="aliados"
+      />
+    </div>
+  </div>
+  <div class="second_row">
+    <ul>
+      <li>
+        <p>Colombia</p>
+      </li>
+      <li>
+        <p>México</p>
+      </li>
+      <li>
+        <p>Ecuador</p>
+      </li>
+      <li>
+        <p>Chile</p>
+      </li>
+      <li>
+        <p>Argentina</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="comunity_section">
+  <div class="comunity_ctn">
+    <div class="img_ctn">
+      <img src="assets/img/comunidad_2.png" alt="comunidad" />
+    </div>
+    <div class="txt_ctn">
+      <p>
+        Somos una comunidad <br />
+        con <strong>gran proyección</strong>
+      </p>
+      <button class="btn">
+        <span>Únete</span>
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+<section class="consulta_section">
+  <div class="container">
+    <div class="search_box">
+      <div class="title">
+        <h2>Consulta Pública</h2>
+      </div>
+      <div class="btn_ctn">
+        <div class="input-group">
+          <input
+            required
+            type="text"
+            name="text"
+            [(ngModel)]="cedula"
+            autocomplete="off"
+            class="input"
+            id="cedula_input"
+            [ngClass]="{'has-text': cedula}"
+          />
+          <label class="user-label" for="cedula_input">Ingresa número de identificación sin comas ni puntos</label>
+        </div>
+        <button class="btn" (click)="searchGraduate()" [disabled]="isLoading">
+          <span *ngIf="!isLoading">Buscar</span>
+          <span *ngIf="isLoading">Buscando...</span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    <div *ngIf="isLoading" class="loading-spinner">
+      <p>Cargando...</p>
+    </div>
+    <div class="text_ctn">
+      <p>
+        ARTÍCULO 59°. Desmaterialización de la tarjeta profesional. El Colegio
+        Nacional de Profesionales en Desarrollo Familiar organizará la emisión
+        de los certificados, constancias, paz y salvos o carnés, relacionados
+        con la expedición de la Tarjeta Profesional en Desarrollo Familiar, como
+        un registro público y habilitará su consulta gratuita por medios
+        digitales o electrónicos, conforme lo disponen los artículos 18 y 19 del
+        Decreto Ley 2106 de 2019, o aquellos que los modifiquen, deroguen o
+        sustituyan. Así mismo, deberá brindar información eficaz, oportuna y
+        sencilla a los ciudadanos acerca del trámite de esta tarjeta
+        profesional.
+      </p>
+      <p>
+        Para solicitar el certificado oficial escríbenos al correo
+        <a class="p-0" href="mailto:conaldefa@gmail.com">conaldefa@gmail.com</a
+        >. El costo del certificado es el 5% s.m.l.v y gratuito para colegiados.
+      </p>
+    </div>
+  </div>
+</section>

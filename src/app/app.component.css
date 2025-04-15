@@ -1,0 +1,33 @@
+/* styles.css o app.component.css */
+.whatsapp-button {
+  background-color: #40c351;
+  position: fixed;
+  padding: 5px;
+  border-radius: 100%;
+  right: 0%;
+  bottom: 10%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.whatsapp-button:hover img {
+  transform: scale(1.09);
+}
+
+.whatsapp-button img {
+  width: 3vw;
+  height: 3vw;
+  transition: all 0.4s;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .whatsapp-button img {
+    width: 7vw;
+    height: 7vw;
+    transition: all 0.4s;
+    position: relative;
+  }
+}

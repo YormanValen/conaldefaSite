@@ -1,0 +1,42 @@
+<section class="quienes_somos_section">
+  <div class="title">
+    <h1>Noticias</h1>
+  </div>
+  <div class="noticia_section">
+    <div class="d-flex flex-column gap-2" *ngIf="noticias.length > 0">
+      <ul class="noticias_container d-flex gap-3 d-flex flex-wrap">
+        <li class="noticias_ctn" *ngFor="let noticia of noticias">
+          <div class="noticia_item">
+            <div class="img_ctn d-flex justify-content-center">
+              <img
+                *ngIf="noticia.imagen_url"
+                [src]="noticia.imagen_url"
+                alt="Imagen de {{ noticia.titulo }}"
+              />
+            </div>
+            <div class="content">
+              <div class="titulo">
+                <h4>{{ noticia.titulo }}</h4>
+              </div>
+              <div class="contenido">
+                <p>{{ noticia.contenido | slice : 0 : 30 }}...</p>
+                <!-- Muestra solo los primeros 100 caracteres -->
+              </div>
+              <div class="contenido d-flex flex-column">
+                <span>Fecha de Publicación:</span>
+                <span>{{ noticia.fecha_publicacion | slice : 0 : 10 }}</span>
+              </div>
+              <button
+                class="btn_custom"
+                [routerLink]="['/noticias', noticia.id]"
+              >
+                <span>Ver más</span>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
