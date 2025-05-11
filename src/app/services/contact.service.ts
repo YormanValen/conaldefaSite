@@ -7,7 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class ContactService {
 
-  private apiUrl = 'https://admin.conaldefa.org/contact';
+  //private apiUrl = 'https://admin.conaldefa.org/contact';
+  private apiUrl = 'http://127.0.0.1:8000/contact';
+  
 
   constructor(private http: HttpClient) { }
 
